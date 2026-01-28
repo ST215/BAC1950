@@ -1,0 +1,45 @@
+---
+layout: base.njk
+title: Programs
+description: Community programs of the Boston (MA) Alumni Chapter including Kappa League and Cuts & Curls.
+permalink: /programs/
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>Our Programs</h1>
+    <p class="tagline">Guide Right - Inspiring Service in the Public's Interest</p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ programs.guideRight.name }}</h2>
+    </div>
+    <p class="text-center">{{ programs.guideRight.description }}</p>
+    <p class="text-center"><strong>Purpose:</strong> {{ programs.guideRight.purpose }}</p>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Local Programs</h2>
+    </div>
+    <div class="card-grid">
+      {% for program in programs.programs %}
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">{{ program.name }}</h3>
+          <p class="card-text"><em>"{{ program.tagline }}"</em></p>
+          <p class="card-text">{{ program.description | truncate(150) }}</p>
+          <a href="/programs/{{ program.id }}/" class="btn btn-secondary mt-1">Learn More</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>

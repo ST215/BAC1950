@@ -1,0 +1,111 @@
+---
+layout: base.njk
+title: Kappa League
+description: Kappa League youth mentorship program - training young men for leadership in Greater Boston.
+permalink: /programs/kappa-league/
+---
+
+{% set kl = programs.programs | selectattr("id", "equalto", "kappa-league") | first %}
+
+<section class="hero">
+  <div class="container">
+    <h1>{{ kl.fullName }}</h1>
+    <p class="tagline">"{{ kl.tagline }}"</p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>About Kappa League</h2>
+    </div>
+    <p>{{ kl.description }}</p>
+    <p><strong>Mission:</strong> {{ kl.mission }}</p>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Eligibility</h2>
+    </div>
+    <ul style="margin-left: var(--spacing-lg);">
+      <li><strong>Grades:</strong> {{ kl.eligibility.grades }}</li>
+      <li><strong>Gender:</strong> {{ kl.eligibility.gender }}</li>
+      <li><strong>Location:</strong> {{ kl.eligibility.location }}</li>
+    </ul>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>The Five Phases of Development</h2>
+    </div>
+    <p>{{ kl.objectives }}</p>
+    <div class="card-grid mt-2">
+      {% for phase in kl.fivePhases %}
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">{{ loop.index }}. {{ phase.name }}</h3>
+          <ul style="margin-left: var(--spacing-sm);">
+            {% for comp in phase.components %}
+            <li>{{ comp }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Workshops & Training</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--spacing-sm);">
+      {% for workshop in kl.workshops %}
+      <div style="background: var(--cream); padding: var(--spacing-sm); border-radius: 4px;">
+        {{ workshop }}
+      </div>
+      {% endfor %}
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Member Requirements</h2>
+    </div>
+    <ul style="margin-left: var(--spacing-lg);">
+      {% for req in kl.memberRequirements %}
+      <li>{{ req }}</li>
+      {% endfor %}
+    </ul>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Get Involved</h2>
+    </div>
+    <div class="text-center">
+      <p>For more information about enrolling your son in Kappa League, please contact us:</p>
+      <p><a href="mailto:{{ kl.contactEmail }}">{{ kl.contactEmail }}</a></p>
+      <div class="mt-2">
+        <a href="{{ kl.externalLinks.national }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary external-link">National Kappa League</a>
+        <a href="{{ kl.externalLinks.youtube }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary external-link">Kappa League TV</a>
+      </div>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>

@@ -1,0 +1,96 @@
+---
+layout: base.njk
+title: Cuts and Curls
+description: Free Cuts and Curls Back to School Event - preparing Boston students for success.
+permalink: /programs/cuts-and-curls/
+---
+
+{% set cc = programs.programs | selectattr("id", "equalto", "cuts-and-curls") | first %}
+
+<section class="hero">
+  <div class="container">
+    <h1>{{ cc.fullName }}</h1>
+    <p class="tagline">"{{ cc.tagline }}"</p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>About Cuts and Curls</h2>
+    </div>
+    <p>{{ cc.description }}</p>
+    <p><strong>Community Impact:</strong> {{ cc.communityImpact }}</p>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Services Provided</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">For Boys</h3>
+          <ul style="margin-left: var(--spacing-sm);">
+            {% for service in cc.services.boys %}
+            <li>{{ service }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">For Girls</h3>
+          <ul style="margin-left: var(--spacing-sm);">
+            {% for service in cc.services.girls %}
+            <li>{{ service }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">For Everyone</h3>
+          <ul style="margin-left: var(--spacing-sm);">
+            {% for service in cc.services.all %}
+            <li>{{ service }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Event Details</h2>
+    </div>
+    <div class="text-center">
+      <p><strong>Location:</strong> {{ cc.location }}</p>
+      <p><strong>Frequency:</strong> {{ cc.frequency }}</p>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Stay Informed</h2>
+    </div>
+    <div class="text-center">
+      <p>{{ cc.callToAction }}</p>
+      <p>Contact us at: <a href="mailto:{{ cc.contactEmail }}">{{ cc.contactEmail }}</a></p>
+      <div class="mt-2">
+        <a href="/contact/" class="btn btn-primary">Contact Us</a>
+      </div>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
