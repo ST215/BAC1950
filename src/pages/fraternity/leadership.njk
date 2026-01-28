@@ -1,0 +1,77 @@
+---
+layout: base.njk
+title: Grand Chapter Leadership
+description: Current leadership of Kappa Alpha Psi Fraternity, Inc. at the national level.
+permalink: /fraternity/leadership/
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>Grand Chapter Leadership</h1>
+    <p class="tagline">"{{ site.grandChapter.grandPolemarch.theme }}"</p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Grand Board of Directors</h2>
+    </div>
+
+    <div class="card-grid">
+      <div class="card profile-card">
+        <h3>{{ site.grandChapter.grandPolemarch.name }}</h3>
+        <p class="title">{{ site.grandChapter.grandPolemarch.number | ordinal }} Grand Polemarch</p>
+        <p>Leading the fraternity with the theme: <em>"{{ site.grandChapter.grandPolemarch.theme }}"</em></p>
+      </div>
+
+      <div class="card profile-card">
+        <h3>{{ site.grandChapter.seniorGrandVicePolemarch.name }}</h3>
+        <p class="title">Senior Grand Vice Polemarch</p>
+      </div>
+
+      <div class="card profile-card">
+        <h3>{{ site.grandChapter.juniorGrandVicePolemarch.name }}</h3>
+        <p class="title">Junior Grand Vice Polemarch</p>
+      </div>
+
+      <div class="card profile-card">
+        <h3>{{ site.grandChapter.grandKeeperOfRecords.name }}</h3>
+        <p class="title">Grand Keeper of Records</p>
+      </div>
+    </div>
+
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>International Headquarters</h2>
+    </div>
+    <div class="text-center">
+      <p><strong>Kappa Alpha Psi Fraternity, Inc.</strong></p>
+      <p>{{ site.grandChapter.headquarters.address }}</p>
+      <div class="mt-2">
+        <a href="{{ site.grandChapter.headquarters.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary external-link">Visit Official Website</a>
+      </div>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Northeastern Province</h2>
+    </div>
+    <div class="text-center">
+      <p>The Boston (MA) Alumni Chapter is a proud member of the <strong>{{ site.province.name }}</strong>.</p>
+      <div class="mt-2">
+        <a href="{{ site.province.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary external-link">Visit Province Website</a>
+      </div>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>

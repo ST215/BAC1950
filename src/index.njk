@@ -1,0 +1,99 @@
+---
+layout: base.njk
+title: Home
+description: Official website of the Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc. Serving Greater Boston since 1950.
+---
+
+<section class="hero">
+  <div class="container">
+    <img src="/assets/images/kappa-crest.png" alt="Kappa Alpha Psi Coat of Arms" class="crest">
+    <h1>Boston (MA) Alumni Chapter</h1>
+    <p class="tagline">"{{ site.tagline }}"</p>
+    <p>Serving Greater Boston Since {{ site.foundedYear }}</p>
+    <div class="mt-2">
+      <a href="/membership/" class="btn btn-primary">Become a Member</a>
+      <a href="/contact/" class="btn btn-secondary">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>About Kappa Alpha Psi</h2>
+    </div>
+    <p>Kappa Alpha Psi Fraternity, Inc. was founded on January 5, 1911, at Indiana University in Bloomington, Indiana. The fundamental purpose of Kappa Alpha Psi is achievement. For over {{ site.fraternity.foundedYear | ordinal }} years, the fraternity has been dedicated to inspiring men to achieve in every field of human endeavor.</p>
+    <p>With {{ site.fraternity.membershipCount }} members and {{ site.fraternity.chaptersCount }} chapters worldwide, Kappa Alpha Psi continues to train its members for leadership and service to their communities.</p>
+    <div class="text-center mt-2">
+      <a href="/fraternity/history/" class="btn btn-secondary">Learn More About Our History</a>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Chapter</h2>
+    </div>
+    <p>The Boston (MA) Alumni Chapter was chartered on {{ site.founded }} with {{ site.charterMembersCount }} charter members. We are proud to be part of the Northeastern Province and have been keeping the spirit of Phi Nu Pi alive in Greater Boston for over 70 years.</p>
+    <p>Under the leadership of our {{ site.currentLeadership.polemarch.number | ordinal }} Polemarch, Brother {{ site.currentLeadership.polemarch.name }}, we continue to serve our community through mentorship, scholarship, and service.</p>
+
+    <div class="card-grid mt-2">
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">{{ site.polemarchsCount }} Polemarchs</h3>
+          <p class="card-text">Our chapter has been led by {{ site.polemarchsCount }} distinguished brothers since 1950.</p>
+          <a href="/chapter/past-polemarchs/" class="btn btn-secondary mt-1">View Past Polemarchs</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">3 Undergraduate Chapters</h3>
+          <p class="card-text">We support undergraduate brothers at MIT, Northeastern, and UMass Boston.</p>
+          <a href="/chapter/undergraduate-chapters/" class="btn btn-secondary mt-1">View Chapters</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">Community Programs</h3>
+          <p class="card-text">Kappa League youth mentorship and Cuts & Curls back-to-school events.</p>
+          <a href="/programs/kappa-league/" class="btn btn-secondary mt-1">Our Programs</a>
+        </div>
+      </div>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Current Grand Chapter Leadership</h2>
+    </div>
+    <p class="text-center">{{ site.grandChapter.grandPolemarch.number | ordinal }} Grand Polemarch: <strong>{{ site.grandChapter.grandPolemarch.name }}</strong></p>
+    <p class="text-center"><em>"{{ site.grandChapter.grandPolemarch.theme }}"</em></p>
+    <div class="text-center mt-2">
+      <a href="{{ site.externalLinks.national.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary external-link">Visit Kappa Alpha Psi International</a>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="text-center">
+      <p><strong>{{ site.name }}</strong></p>
+      <p>{{ site.contact.address.full }}</p>
+      <p>Email: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+      <p>Chapter Meetings: {{ site.meetings.frequency }} at {{ site.meetings.time }}</p>
+      <div class="mt-2">
+        <a href="/contact/" class="btn btn-primary">Get in Touch</a>
+      </div>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>

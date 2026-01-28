@@ -1,0 +1,84 @@
+---
+layout: base.njk
+title: Our Founders
+description: Meet the 10 founders of Kappa Alpha Psi Fraternity, Inc. who established the fraternity on January 5, 1911.
+permalink: /fraternity/founders/
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>Our Founders</h1>
+    <p class="tagline">The Ten Revered Founders of Kappa Alpha Psi</p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <p class="text-center">{{ founders.introduction }}</p>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>The Revered Founders</h2>
+    </div>
+
+    {% for founder in founders.founders %}
+    <article class="founder-profile" id="founder-{{ founder.id }}" style="margin-bottom: var(--spacing-xl); padding-bottom: var(--spacing-xl); border-bottom: 1px solid var(--gray-light);">
+      <h3>{{ founder.name }}{% if founder.nickname %} <small style="color: var(--gray);">"{{ founder.nickname }}"</small>{% endif %}</h3>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); margin-top: var(--spacing-md);">
+        <div>
+          <p><strong>Born:</strong> {{ founder.birthDate or "Unknown" }}{% if founder.birthPlace %}, {{ founder.birthPlace }}{% endif %}</p>
+          <p><strong>Died:</strong> {{ founder.deathDate }}</p>
+          <p><strong>Profession:</strong> {{ founder.profession }}</p>
+          {% if founder.militaryService %}
+          <p><strong>Military Service:</strong> {{ founder.militaryService }}</p>
+          {% endif %}
+        </div>
+        <div>
+          <p><strong>Education:</strong></p>
+          <ul style="margin-left: var(--spacing-md);">
+            {% for edu in founder.education %}
+            <li>{{ edu }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top: var(--spacing-md);">
+        <p><strong>Biography:</strong> {{ founder.bio }}</p>
+      </div>
+
+      {% if founder.contributions.length > 0 %}
+      <div style="margin-top: var(--spacing-md);">
+        <p><strong>Key Contributions:</strong></p>
+        <ul style="margin-left: var(--spacing-md);">
+          {% for contribution in founder.contributions %}
+          <li>{{ contribution }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      {% if founder.quote %}
+      <blockquote style="background: var(--cream); padding: var(--spacing-md); border-left: 4px solid var(--crimson); margin-top: var(--spacing-md); font-style: italic;">
+        "{{ founder.quote }}"
+      </blockquote>
+      {% endif %}
+
+      {% if founder.legacy %}
+      <p style="margin-top: var(--spacing-md);"><strong>Legacy:</strong> {{ founder.legacy }}</p>
+      {% endif %}
+    </article>
+
+    {% if loop.index % 3 == 0 %}
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+    {% endif %}
+    {% endfor %}
+
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
