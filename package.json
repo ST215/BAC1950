@@ -1,0 +1,17 @@
+{
+  "name": "boston-alumni-chapter-kappa-alpha-psi",
+  "version": "1.0.0",
+  "description": "Official website of the Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc.",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve",
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "keywords": ["kappa-alpha-psi", "fraternity", "boston", "eleventy"],
+  "author": "Boston (MA) Alumni Chapter",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
