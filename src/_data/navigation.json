@@ -1,0 +1,185 @@
+{
+  "mainNav": [
+    {
+      "label": "Home",
+      "url": "/",
+      "children": null
+    },
+    {
+      "label": "Fraternity",
+      "url": "/fraternity/",
+      "children": [
+        {
+          "label": "Fraternity History",
+          "url": "/fraternity/history/"
+        },
+        {
+          "label": "Our Founders",
+          "url": "/fraternity/founders/"
+        },
+        {
+          "label": "Grand Chapter Leadership",
+          "url": "/fraternity/leadership/",
+          "external": false
+        }
+      ]
+    },
+    {
+      "label": "Chapter",
+      "url": "/chapter/",
+      "children": [
+        {
+          "label": "Chapter History",
+          "url": "/chapter/history/"
+        },
+        {
+          "label": "Leadership",
+          "url": "/chapter/leadership/"
+        },
+        {
+          "label": "Past Polemarchs",
+          "url": "/chapter/past-polemarchs/"
+        },
+        {
+          "label": "Undergraduate Chapters",
+          "url": "/chapter/undergraduate-chapters/"
+        }
+      ]
+    },
+    {
+      "label": "Programs",
+      "url": "/programs/",
+      "children": [
+        {
+          "label": "Kappa League",
+          "url": "/programs/kappa-league/"
+        },
+        {
+          "label": "Cuts and Curls",
+          "url": "/programs/cuts-and-curls/"
+        }
+      ]
+    },
+    {
+      "label": "Membership",
+      "url": "/membership/",
+      "children": [
+        {
+          "label": "Become a Member",
+          "url": "/membership/"
+        },
+        {
+          "label": "Reclamation",
+          "url": "/membership/reclamation/"
+        }
+      ]
+    },
+    {
+      "label": "Contact",
+      "url": "/contact/",
+      "children": null
+    }
+  ],
+  "secondaryNav": [
+    {
+      "label": "Privacy Policy",
+      "url": "/privacy-policy/"
+    },
+    {
+      "label": "Terms of Use",
+      "url": "/terms-of-use/"
+    }
+  ],
+  "quickLinks": [
+    {
+      "label": "Kappa Alpha Psi International",
+      "url": "https://kappaalphapsi1911.com/",
+      "external": true
+    },
+    {
+      "label": "Northeastern Province",
+      "url": "https://kapsinep.org/",
+      "external": true
+    },
+    {
+      "label": "Chi Chapter",
+      "url": "/chapter/undergraduate-chapters/#chi",
+      "external": false
+    },
+    {
+      "label": "Theta Iota Chapter",
+      "url": "/chapter/undergraduate-chapters/#theta-iota",
+      "external": false
+    },
+    {
+      "label": "Lambda Xi Chapter",
+      "url": "/chapter/undergraduate-chapters/#lambda-xi",
+      "external": false
+    }
+  ],
+  "externalLinks": {
+    "national": [
+      {
+        "label": "Kappa Alpha Psi International Headquarters",
+        "url": "https://kappaalphapsi1911.com/",
+        "description": "Official website of Kappa Alpha Psi Fraternity, Inc."
+      },
+      {
+        "label": "National Kappa League",
+        "url": "https://natlkappaleague.org/",
+        "description": "National Guide Right youth mentorship program"
+      },
+      {
+        "label": "Kappa League TV",
+        "url": "https://www.youtube.com/c/KappaLeagueTV/videos",
+        "description": "Official Kappa League YouTube channel"
+      },
+      {
+        "label": "Military and Veteran Affairs Commission",
+        "url": "https://kappaalphapsi1911.com/page/MVAC",
+        "description": "Supporting Kappa veterans and active military"
+      },
+      {
+        "label": "Senior Kappa Affairs",
+        "url": "https://kappaalphapsi1911.com/page/seniorkappaaffairs",
+        "description": "Programs for senior members of the fraternity"
+      }
+    ],
+    "provincial": [
+      {
+        "label": "Northeastern Province",
+        "url": "https://kapsinep.org/",
+        "description": "Official website of the Northeastern Province"
+      }
+    ],
+    "resources": [
+      {
+        "label": "Kappa Media Kit",
+        "url": "https://kappamediakit.com/",
+        "description": "Official branding guide and media kit"
+      },
+      {
+        "label": "Membership Information",
+        "url": "https://kappaalphapsi1911.com/page/MembershipInformtion",
+        "description": "National membership information"
+      }
+    ]
+  },
+  "socialMedia": [
+    {
+      "platform": "Facebook",
+      "url": "",
+      "icon": "facebook"
+    },
+    {
+      "platform": "Instagram",
+      "url": "",
+      "icon": "instagram"
+    },
+    {
+      "platform": "Twitter",
+      "url": "",
+      "icon": "twitter"
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "introduction": "On Thursday, January 5th, in the year 1911, the noble Kappa Alpha Psi® Fraternity, Inc., was founded on the campus of Indiana University, Bloomington, Indiana. Kappa Alpha Psi®, a college Fraternity, now comprised of functioning Undergraduate and Alumni Chapters on major campuses and in cities throughout the country, is the crystallization of a dream. It is the beautiful realization of a vision shared commonly by the late Revered Founders.",
+  "founders": [
+    {
+      "id": 1,
+      "name": "Elder Watson Diggs",
+      "nickname": "Father of Kappa",
+      "image": "diggs.jpg",
+      "birthDate": "December 23, 1883",
+      "birthPlace": "Hopkinsville, Christian County, Kentucky",
+      "deathDate": "November 8, 1947",
+      "burialLocation": "Crown Hill Cemetery, Indianapolis, Indiana",
+      "education": [
+        "Indiana State Normal School (1908)",
+        "Indiana University, A.B. in Education (1916) - First African-American to graduate with A.B. from IU School of Education",
+        "Howard University, M.A. in Education (1944)"
+      ],
+      "profession": "Educator, Principal",
+      "militaryService": "First Lieutenant, 368th Infantry, WWI. Rose to Captain in Army Reserve Officers Training Corps.",
+      "characteristics": "Quiet, polished, scholarly, a prolific writer",
+      "contributions": [
+        "First Grand Polemarch (served first 6 years)",
+        "Wrote the Kappa Hymn lyrics",
+        "Established the Kappa Alpha Nu Journal (first periodical of any national Black college fraternity)",
+        "Assisted in designing the Coat of Arms",
+        "Prepared initiation ceremonial forms",
+        "Completed the fraternity's first Constitution",
+        "Took a course in Greek heraldry and mythology to ensure authenticity",
+        "Pawned his watch to pay for incorporation fee",
+        "Established several initial undergraduate chapters",
+        "Established Indianapolis (IN) Alumni Chapter",
+        "Awarded first Past Grand Polemarch's medal",
+        "Awarded first Laurel Wreath",
+        "Assisted in writing The 1928 Handbook of Kappa Alpha Psi"
+      ],
+      "fraternityPositions": [
+        "Grand Polemarch (1911-1917)",
+        "Grand Board Member",
+        "Grand Historian"
+      ],
+      "legacy": "The Elder Watson Diggs Award, the second-highest award available to celebrate a member's achievements or service to the fraternity, is dedicated in his name. The Elder W. Diggs Memorial at Indiana University was constructed in his honor in 1962. School #42 in Indianapolis was named in his honor where he served as principal for 26 years.",
+      "quote": "A Kappaman must be good; upright, moral and manly.",
+      "bio": "Founder Elder Watson Diggs was quiet, polished, scholarly, a prolific writer, and commonly referred to as 'the Father of Kappa'. He was the eldest son of three children, reared by their mother, Cornelia. He received a one-room school education in Louisville, Kentucky, where he helped teach the younger children. Following graduation from Indiana State Normal School in the spring of 1908, Diggs enrolled at Howard University in 1909. While a student there, he developed a friendship with fellow Hoosier, Byron K. Armstrong. During the summer of that year, Byron Armstrong visited his cousin, Irven Armstrong at Indiana University. Byron was so impressed that he persuaded Diggs to enroll with him in the fall. Diggs was an educator who held teaching positions and served as principal at public schools throughout Indiana. He was also a past commander of the American Legion and was instrumental in having the Indiana Constitution amended to permit Negro enlistment in the Indiana National Guard."
+    },
+    {
+      "id": 2,
+      "name": "Byron Kenneth Armstrong",
+      "nickname": null,
+      "image": "armstrong.jpg",
+      "birthDate": null,
+      "birthPlace": null,
+      "deathDate": "June 28, 1980",
+      "burialLocation": "Inglewood Cemetery, Inglewood, California",
+      "education": [
+        "Howard University (1909)",
+        "Indiana University, A.B. in Philosophy, Mathematics, and Sociology (1913)",
+        "Columbia University, M.A. (1914)",
+        "University of Michigan, Ph.D. (1940)"
+      ],
+      "profession": "Professor, Dean, Personnel Director",
+      "militaryService": "Investigator for the Department of Labor during WWI",
+      "characteristics": "Primary potent force behind the founding",
+      "contributions": [
+        "Created the fraternity motto",
+        "Assisted Diggs in preparing the Coat of Arms",
+        "Produced the fraternity badge",
+        "Suggested the Laurel Wreath award concept",
+        "Established Beta, Theta, Xi, Alpha Pi, Gamma Xi chapters",
+        "Established Chicago (IL), Langston (OK), and Tulsa (OK) Alumni Chapters",
+        "Assisted in writing the 1928 Handbook of Kappa Alpha Psi",
+        "Authored 'Crossing the Jordan and Beyond'",
+        "Served as Editor of the Journal"
+      ],
+      "fraternityPositions": [
+        "1st Grand Strategus",
+        "5th Grand Historian",
+        "Grand Board Member"
+      ],
+      "legacy": "The Byron K. Armstrong Scholars Award, the only Grand Chapter award available to fraternity undergraduate members for outstanding achievement, is named in his honor. He was awarded the 6th Laurel Wreath.",
+      "quote": "Any practice which tends to divide off American citizens is certainly inconsistent with progressive democratic ideals, and must pass.",
+      "bio": "Armstrong enrolled at Howard University in 1909, met Elder W. Diggs, and together, they transferred to Indiana University in the fall of 1910 where he studied philosophy, mathematics and sociology. He held teaching positions as a professor at universities in Florida, Indiana, Kansas, Maryland and Michigan and served as Dean in Maryland and Oklahoma. He subsequently worked as Personnel Director for Chrysler Motors for 22 years. Armstrong was one of the primary potent forces behind the founding of Kappa Alpha Nu."
+    },
+    {
+      "id": 3,
+      "name": "Ezra Dee Alexander",
+      "nickname": "Dee",
+      "image": "alexander.jpg",
+      "birthDate": "July 18, 1891",
+      "birthPlace": "Monroe County, Bloomington, Indiana",
+      "deathDate": "September 29, 1971",
+      "burialLocation": "Crown Hill Cemetery, Indianapolis, Indiana",
+      "education": [
+        "Bloomington High School (1910)",
+        "Indiana University, A.B. (1917)",
+        "Medical School of Indiana University, M.D. (1919)",
+        "Provident Hospital, Chicago, Internship (1920)"
+      ],
+      "profession": "Physician",
+      "militaryService": "Army Medical Corps during WWI, Medical examiner during WWII",
+      "characteristics": "Outgoing and dedicated worker",
+      "contributions": [
+        "Served 22 years as non-voting member of Grand Board of Directors",
+        "Presented and dedicated new KAΨ flag at 47th Grand Chapter Meeting (1957)",
+        "Helped establish Chicago (IL) Alumni Chapter",
+        "Helped establish Indianapolis (IN) Alumni Chapter"
+      ],
+      "fraternityPositions": [
+        "Grand Board of Directors (non-voting member, 22 years)"
+      ],
+      "legacy": "His affiliation with the Indianapolis Alumni Chapter lasted until his death.",
+      "quote": null,
+      "bio": "Founder Ezra Dee Alexander, an outgoing and dedicated worker, fondly known as 'Dee', was the second eldest of seven children. He graduated from Bloomington High School in 1910 and matriculated to Indiana University in the fall of 1910. Prior to graduation, he held positions as a teacher and principal at Indiana public schools. He practiced medicine in Indianapolis for nearly 50 years. In 1920, he was married to Mary Hunter, a teacher in the Indianapolis Public School system. They had a son, Ezra D. Alexander Jr., and a daughter, Dorothy Alexander. He later married Leota Snorden in 1961."
+    },
+    {
+      "id": 4,
+      "name": "Henry Tourner Asher",
+      "nickname": null,
+      "image": "asher.jpg",
+      "birthDate": "June 30, 1890",
+      "birthPlace": "Owensboro, Kentucky",
+      "deathDate": "March 5, 1963",
+      "burialLocation": "Detroit Memorial Park (East), Warren, Michigan",
+      "education": [
+        "Bloomington High School (1910)",
+        "Indiana University, A.B. (1914)",
+        "University of Wisconsin (graduate work)",
+        "University of Illinois (graduate work)",
+        "University of Minnesota, M.A. (1917)",
+        "Detroit College of Law, LL.B. (1928)"
+      ],
+      "profession": "Postal Service Worker",
+      "militaryService": "Corporal, 809th Pioneer Infantry, U.S. Army, WWI. Served a year overseas in France.",
+      "characteristics": "Unassuming, dependable supporter of Negro youth, equal rights, higher education and religious affairs",
+      "contributions": [
+        "One of first three freshman initiates of Alpha of Kappa Alpha Nu",
+        "Among first to affiliate with Detroit (MI) Alumni Chapter in 1920"
+      ],
+      "fraternityPositions": [],
+      "legacy": "Was an active member of several organizations including the NAACP, the Elks, and the Veterans of Foreign Wars.",
+      "quote": null,
+      "bio": "Founder Henry Tourner Asher, an unassuming, dependable supporter of Negro youth, equal rights, higher education and religious affairs and son of a Baptist Minister, was the eldest of seven children. He moved to Bloomington, Indiana, attended public schools and graduated from Bloomington High School in 1910. He enrolled at Indiana University in 1910. He became an instructor at Lincoln Institute at Jefferson City, Missouri from 1914-1915. After completing his military service in 1919, he chose to give up a possible teaching career at Wilberforce University for one in real estate. He subsequently ended up in Detroit, where he decided to enter the postal service. He spent the remainder of his life in Detroit, Michigan."
+    },
+    {
+      "id": 5,
+      "name": "Marcus Peter Blakemore",
+      "nickname": "Blakie",
+      "image": "blakemore.jpg",
+      "birthDate": "January 3, 1889",
+      "birthPlace": "Franklin, Indiana",
+      "deathDate": "October 9, 1959",
+      "burialLocation": "Allegheny Cemetery, Pittsburgh, Pennsylvania",
+      "education": [
+        "Anderson, Indiana High School (1909)",
+        "Indiana University (1910-1912)",
+        "University of Pittsburgh, B.S.",
+        "University of Pittsburgh Dental School, D.D.S. (1923)",
+        "University of Pittsburgh Dental School, M.S. in Prosthetic Dentistry (1949) - First Black to receive this degree"
+      ],
+      "profession": "Dentist",
+      "militaryService": "Private, 30th Company, 154th Depot Brigade, U.S. Army, WWI. Honorably discharged August 1918.",
+      "characteristics": "Deep religious convictions and quiet confidence",
+      "contributions": [
+        "Roommate of Byron K. Armstrong",
+        "Pawned his watch to help raise incorporation fee",
+        "One of first three freshman initiates of Kappa Alpha Nu",
+        "Wired the first Fraternity house for electricity (first Negro home ever wired for electricity in Bloomington)",
+        "Charter member of Pittsburgh (PA) Alumni Chapter",
+        "Instrumental in establishment of Beta Epsilon Chapter"
+      ],
+      "fraternityPositions": [],
+      "legacy": "Contributed greatly to education, his community, his church, hospitals, and his Fraternity. Maintained his practice of dentistry in Pittsburgh for 35 years until his death.",
+      "quote": null,
+      "bio": "Founder Marcus Peter Blakemore, affectionately known as 'Blakie', a man of deep religious convictions and quiet confidence, contributed greatly to education, his community, his church, hospitals, and his Fraternity. He was the eldest of four children. He moved with his family to Anderson, Indiana where he attended public schools. After leaving Indiana University in the spring term of 1912, he organized the Electric Engineering Company, which he operated until he enlisted with the U.S. Army in WWI. He married Azalea Hall in September 1918. They had one daughter, Elizabeth. He was a member of national and local Dental Societies and a staunch member of Ebenezer Baptist Church, having served as a trustee and a clarinet soloist."
+    },
+    {
+      "id": 6,
+      "name": "Paul Waymond Caine",
+      "nickname": null,
+      "image": "caine.jpg",
+      "birthDate": "May 17, 1890",
+      "birthPlace": "Greencastle, Indiana",
+      "deathDate": "April 15, 1931",
+      "burialLocation": "Greenwood Cemetery, Rockford, Illinois",
+      "education": [
+        "Greencastle public schools",
+        "Indiana University, Business Major (1909-1911)"
+      ],
+      "profession": "Chef, Caterer, Entrepreneur",
+      "militaryService": null,
+      "characteristics": "Consummate entrepreneur, chef before his time, always friendly and displaying a pleasant disposition",
+      "contributions": [
+        "Helped organize Kappa Alpha Nu",
+        "Among the first to be initiated into the Fraternity",
+        "Instrumental in setting up Beta, Gamma, Delta, Zeta, and Theta Chapters",
+        "Assisted to organize and furnish the Chicago (IL) Alumni Chapter's 'Kappa Kastle'",
+        "Published 'Artistic Dishes' catering book (1919)"
+      ],
+      "fraternityPositions": [],
+      "legacy": "The Paul W. Caine Award, the highest Grand Chapter award available to alumni chapters for outstanding achievement during Conclave, is named in his honor.",
+      "quote": null,
+      "bio": "Founder Paul Waymond Caine, the consummate entrepreneur, chef before his time, always friendly and displaying a pleasant disposition. He was long thought to be an only child but now known to have a half-brother. He attended Greencastle public schools and enrolled at Indiana University sometime between 1909 and 1910 as a business major. He was adept at cooking and honed those skills while working at DePauw University, where he worked as a cook in the sorority houses prior to enrolling at Indiana University. He was a fine caterer and was in demand by the White fraternities on campus and kept many of the Founding Brothers from hunger. Because of a disastrous fire in the Phi Gamma Delta Fraternity house in which he was employed, he lost all of his personal belongings during his freshman year. Caine persevered but was eventually forced to withdraw from school during his Sophomore year, the winter quarter of 1911. He subsequently set up the Caine Catering Company in his hometown. He opened a restaurant and bakery while residing in Peoria, Illinois. He became well known in the culinary circles and was well sought after to teach and conduct lectures. He later acquired a secondhand goods clothing store and dry-cleaner business in Rockford, Illinois. He was burned during an explosion of gaseous materials as he worked in his dry cleaning business and subsequently died of pneumonia from injuries sustained from the fire."
+    },
+    {
+      "id": 7,
+      "name": "George Wesley Edmonds",
+      "nickname": null,
+      "image": "edmonds.jpg",
+      "birthDate": "August 13, 1890",
+      "birthPlace": "Knight Township, Vanderburgh County, Indiana",
+      "deathDate": "June 13, 1962",
+      "burialLocation": "Oak Hill Cemetery, Evansville, Indiana",
+      "education": [
+        "Carver Elementary School, Evansville",
+        "Clark High School, Evansville",
+        "Indiana University (Fall 1910 - Summer 1911)"
+      ],
+      "profession": "Coal Miner, Railroad Worker",
+      "militaryService": null,
+      "characteristics": "Witty in nature and an enigma to most in the Fraternity",
+      "contributions": [
+        "Listed as Corresponding Secretary in articles of incorporation",
+        "One of three freshmen (along with Asher and Blakemore) who were first initiates of Alpha of Kappa Alpha Nu"
+      ],
+      "fraternityPositions": [
+        "Corresponding Secretary (in incorporation documents)"
+      ],
+      "legacy": "Unfortunately, little is known of Edmonds because of his premature withdrawal from school. The Fraternity had attempted to locate Edmonds for several years. His location was unknown to the Fraternity for sixty-seven years. In 1975, Founder Edward G. Irvin urged the Brothers to intensify their search. Edmonds' burial site was finally confirmed in 1978.",
+      "quote": null,
+      "bio": "Founder George Wesley Edmonds, witty in nature and an enigma to most in the Fraternity, was the eldest of two sons. He attended the Carver Elementary School and Clark High School in nearby Evansville, Indiana and enrolled at Indiana University in the fall of 1910. After Edmonds returned home for the summer of 1911, he never returned to school. Instead, he worked in the coal mines and railroads of Vanderburgh County for many years. Edmonds also lived in Lake County, Indiana (1917-18) and Warwick County, Indiana (1942). Edmonds married Willa Mae Forte and settled in Stevenson, Indiana. They became the parents of one son, Noel. The circumstances of his life prevented him from moving into the circles of higher education. Edmonds' lack of contact with college colleagues prevented him from knowing the organization he assisted to found. In 1915, the Fraternity changed its name from Kappa Alpha Nu to Kappa Alpha Psi. Attempts to locate him were also hindered due to his last name being misspelled in the Fraternity's records."
+    },
+    {
+      "id": 8,
+      "name": "Guy Levis Grant",
+      "nickname": null,
+      "image": "grant.jpg",
+      "birthDate": "April 9, 1891",
+      "birthPlace": "New Albany, Indiana",
+      "deathDate": "November 11, 1973",
+      "burialLocation": "Crown Hill Cemetery, Indianapolis, Indiana",
+      "education": [
+        "Scribner High School (1909)",
+        "Indiana University, A.B. (1915)",
+        "Indiana Dental School (part of Indiana University), D.D.S. (1920)"
+      ],
+      "profession": "Dentist",
+      "militaryService": "Veteran of World War I",
+      "characteristics": "Small in stature, but a giant in charitable endeavors and preserver of history",
+      "contributions": [
+        "Helped establish Beta Chapter",
+        "Helped establish Indianapolis (IN) Alumni Chapter (1920)",
+        "First Polemarch of Indianapolis (IN) Alumni Chapter",
+        "Gathered bits and pieces of Kappa history for posterity",
+        "Archive collection became factual supportive base for written Fraternity history"
+      ],
+      "fraternityPositions": [
+        "Grand Board of Directors (non-voting member, several terms)",
+        "Grand Historian",
+        "Grand Historian Emeritus (conferred at 54th Grand Chapter Meeting, 1967)"
+      ],
+      "legacy": "The 2nd Edition of the Story of Kappa Alpha Psi was dedicated to him. The Guy Levis Grant Award is named in his honor to undergraduate members of the fraternity who exhibit extra meritorious contributions to the Fraternity's advancement.",
+      "quote": null,
+      "bio": "Founder Guy Levis Grant, small in stature, but a giant in charitable endeavors and preserver of history, was the third of thirteen children, five of which became members of the Fraternity. When his father died, he became head of household and assumed responsibility for educating himself and his siblings. He attended public schools in his hometown. In 1929, he married Laura Hammons. He practiced dentistry in Indianapolis for over 50 years. He was also the Founder and President of Recorder Charities, and active in several civic, professional and business organizations. He was also a member of the Second Baptist Church in Indianapolis. Following 16 years of dedicated service as the Grand Historian, the Fraternity conferred the title of Grand Historian Emeritus upon him at the 54th Grand Chapter Meeting in 1967."
+    },
+    {
+      "id": 9,
+      "name": "Edward Giles Irvin",
+      "nickname": null,
+      "image": "irvin.jpg",
+      "birthDate": "August 13, 1893",
+      "birthPlace": "Spencer, Indiana",
+      "deathDate": "November 4, 1982",
+      "burialLocation": "Burr Oak Cemetery, Alsip, Illinois",
+      "education": [
+        "Kokomo Indiana High School (1910)",
+        "Indiana University (Fall 1910 - Spring 1911)"
+      ],
+      "profession": "Journalist, Entrepreneur",
+      "militaryService": "Combat Medic, WWI. Cited for bravery with Expeditionary Forces in France. Received 2nd highest medal for valor. Two Distinguished Service Awards from Presidents Truman and Eisenhower. Served on Selective Service Board during WWII and Korean War.",
+      "characteristics": "Civic and religious leader, journalist and entrepreneur. Youngest Founder at 17 years of age.",
+      "contributions": [
+        "Served on Fraternity's Incorporation Committee",
+        "Long-time member of Chicago (IL) Alumni Chapter"
+      ],
+      "fraternityPositions": [
+        "Incorporation Committee Member"
+      ],
+      "legacy": "The Fraternity's last living Founder. Awarded the Laurel Wreath (24th laureate, 1976) - the award he cherished most. The Edward Giles Irvin Award is named in his honor, bestowed upon the most outstanding Undergraduate Chapter.",
+      "quote": null,
+      "bio": "Founder Edward Giles Irvin, a civic and religious leader, journalist and entrepreneur, was the seventh of nine children of an African Methodist Episcopal minister. Following graduation from Kokomo Indiana High School in 1910, he enrolled at Indiana University the same year. While attending Indiana University, at only 17 years of age, Irvin was the youngest one of ten Black students who assisted to found Kappa Alpha Psi® Fraternity, Inc. Irvin and the other Founders endured and persevered acts of racial hatred and hostility as students, then organized this fraternity dedicated to the principles of achievement and to alleviate the isolation and raise the sights of Black undergraduates. Irvin left the University following the spring term of 1911. After leaving the University, Irvin pursued a career in journalism until World War I. Following his honorable discharge from the Army, he met Maywilla, who became his wife. He subsequently moved to Indianapolis and was on the staff of the Indianapolis Freeman, the first Negro newspaper in the nation with pictures. In 1922, he established the Shining Star, a weekly newspaper based in Anderson, IN. He subsequently moved to Gary, IN in 1923, to become the editor of the Gary Sun newspaper. Irvin moved to Chicago, IL, in 1928, to work as the sports editor for the Chicago Daily Bulletin newspaper. After it collapsed, he worked at the U.S. Post Office and became the owner and operator of the Afro-American Manufacturing Company, a distributor of candy, novelties and specialty items. Irvin enjoyed sporting events and sponsored basketball and track events at small schools in Indiana. Deeply rooted in the community, he was also an active member of the Masonic order, the Odd Fellows, and the St. James African Methodist Church. He was also a trustee of St. James A.M.E. Church in Chicago and founded and edited the lay newspaper, Voice of the A.M.E. Laymen. He was the third Founder to receive the Laurel Wreath award. He is survived by his daughter, Dorothy Mayweather."
+    },
+    {
+      "id": 10,
+      "name": "John Milton Lee",
+      "nickname": "A Dreamer",
+      "image": "lee.jpg",
+      "birthDate": "September 7, 1890",
+      "birthPlace": "Danville, Indiana",
+      "deathDate": "January 3, 1958",
+      "burialLocation": "Cremated. Ashes preserved in an urn at International Headquarters, Philadelphia, Pennsylvania",
+      "education": [
+        "Danville public schools",
+        "Indiana University (1910-1913, three years pre-medical)",
+        "University of Pennsylvania (1914, withdrew for health reasons)",
+        "Temple University (1915, withdrew due to family death)"
+      ],
+      "profession": "Various enterprises including catering, Vice-President of Mutual Emergency Union",
+      "militaryService": "Sergeant First Class and Gunner, Battery F, 349th Field Artillery Regiment, 167th Field Artillery Brigade, 92nd Division, WWI. His battery was the first Battery of Negro Artillerymen ever to open fire upon an enemy.",
+      "characteristics": "Scholar, loyal and tireless worker, commonly referred to as 'a dreamer' because of his idealist character",
+      "contributions": [
+        "Listed as Secretary of Kappa Alpha Nu in articles of incorporation",
+        "Close confidant of Founder Diggs",
+        "Assisted in development of emblems of Kappa Alpha Nu",
+        "Helped establish Epsilon, Lambda, and Philadelphia (PA) Alumni Chapters",
+        "Served as interim Polemarch until Philadelphia Alumni Chapter elected its first Polemarch",
+        "Associate editor of Modern Artillerymen (official record of Battery F)",
+        "Organized and was president of Fairview Golf Club (first Negro Golf Club in Pennsylvania) for several years",
+        "Editor of The Golfer (monthly publication of Fairview Golf Club) for two years"
+      ],
+      "fraternityPositions": [
+        "Secretary (in incorporation documents)"
+      ],
+      "legacy": "He is the only Founder to be cremated and his ashes are preserved in an urn located at International Headquarters in Philadelphia, Pennsylvania.",
+      "quote": null,
+      "bio": "Founder John Milton Lee, a scholar, a loyal and tireless worker for the growth of the Fraternity and because of his idealist character was commonly referred to as 'a dreamer', was the third of four children. He attended public schools in Danville and enrolled at Indiana University in 1910. He completed three years of pre-medical work before leaving the university. He enlisted in the Army in 1917. The Division organized at Fort Dix (New Jersey) in November 1917. The Field Artillery component was the first Negro Artillery Regiment in the history of the military. Lee served overseas as a Sergeant First Class and Gunner. His battery enjoys the unique distinction of having been the first Battery of Negro Artillerymen ever to open fire upon an enemy. In 1931, he was married to Mary Walker Robinson. For eight years, Lee conducted a successful catering business in Philadelphia; he organized and served as Vice-President and Secretary of the Mutual Emergency Union, a mutual aid company in Philadelphia. He was also a member of the Board of Managers of the Columbia Community Branch of the YMCA. Lee was a close confidant of Founder Diggs and was a source of comfort when Diggs lost his first wife. He contributed greatly to the vision and development of the fraternity in its early years. At the time of his death, he was employed by the Commonwealth of Pennsylvania."
+    }
+  ]
+}

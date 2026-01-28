@@ -1,0 +1,99 @@
+{
+  "introduction": "Boston (MA) Alumni Chapter is responsible for advising the undergraduate chapters at Chi Chapter (Boston University), Theta Iota (Massachusetts Institute of Technology), and Lambda Xi (Brown University).",
+  "chapters": [
+    {
+      "id": "chi",
+      "name": "Chi Chapter",
+      "greekLetters": "Χ",
+      "school": "Boston University",
+      "location": "Boston, MA",
+      "chartered": "February 15, 1924",
+      "charterMembers": "Significant Six",
+      "advisor": {
+        "name": "Jonathan Thompson",
+        "title": "Undergraduate Advisor"
+      },
+      "logo": "chi-chapter.gif",
+      "description": "The Mighty Chi Chapter of Kappa Alpha Psi Fraternity, Inc. was chartered by the Significant Six on the campus of Boston University. Being a city-wide chapter, the Chi Chapter has members from all over the Boston Area.",
+      "activities": [
+        "Works closely with the Paul Robeson Institute for Positive Self-Development (PRI) to tutor Boston's high school students each week in mathematics, science, English, and social studies",
+        "826 Boston community service",
+        "East Boston Soup Kitchen volunteer work"
+      ],
+      "website": null,
+      "socialMedia": null,
+      "notable": "Chi Chapter Brothers play an active role in the Boston community and continue to lead the city socially."
+    },
+    {
+      "id": "theta-iota",
+      "name": "Theta Iota Chapter",
+      "greekLetters": "ΘΙ",
+      "school": "Massachusetts Institute of Technology",
+      "location": "Cambridge, MA",
+      "chartered": "October 11, 1975",
+      "charterMembers": "Nine Brothers",
+      "advisor": {
+        "name": "Kevin Sibley",
+        "title": "Undergraduate Advisor"
+      },
+      "logo": "theta-iota.gif",
+      "description": "Theta Iota Chapter was chartered at the Massachusetts Institute of Technology. For the nine Brothers of this Chapter, it was the realization of an idea to bring a black fraternity to their campus, and make it a viable organization within their black community.",
+      "activities": [],
+      "reach": [
+        "Harvard University",
+        "Tufts University",
+        "Dartmouth College (now Mu Chi)",
+        "University of Massachusetts at Amherst (now Nu Tau)",
+        "University of Connecticut (now Nu Psi)"
+      ],
+      "website": null,
+      "socialMedia": null,
+      "notable": "The chapter's reach includes universities that lie north and west of the Charles River. The Theta Iota Chapter welcomed four new members in Spring 2018."
+    },
+    {
+      "id": "lambda-xi",
+      "name": "Lambda Xi Chapter",
+      "greekLetters": "ΛΞ",
+      "school": "Brown University",
+      "location": "Providence, RI",
+      "chartered": "March 12, 1983",
+      "charterMembers": "Seven men",
+      "advisor": {
+        "name": "William Whitehead",
+        "title": "Undergraduate Advisor"
+      },
+      "logo": "lambda-xi.gif",
+      "description": "The Lambda Xi Chapter of Kappa Alpha Psi Fraternity, Incorporated was established at Brown University. Seven men were instrumental in bringing Kappa Alpha Psi to the state of Rhode Island.",
+      "activities": [
+        "Captivating step performances",
+        "Tireless community service efforts",
+        "Leadership roles on-and-off campus"
+      ],
+      "reach": [
+        "Brown University",
+        "Johnson & Wales University",
+        "University of Rhode Island",
+        "Rhode Island College",
+        "Bryant University"
+      ],
+      "milestones": [
+        {
+          "year": "Spring 1982",
+          "event": "Brother Joseph Barros became the first initiate from Johnson & Wales University"
+        },
+        {
+          "year": "Spring 2014",
+          "event": "Branched out to Bryant University with Brothers Dale Codrington, Devante Heath, and Dujuan Heath as first initiates"
+        }
+      ],
+      "awards": [
+        "Fraternity of the Year 2011",
+        "Fraternity of the Year 2012"
+      ],
+      "website": null,
+      "socialMedia": null,
+      "vision": "To foster a positive fraternal environment; to achieve and continue growth within the local community and on campus, while continuing to serve as an invaluable asset to the State of Rhode Island through active participation.",
+      "notable": "Lambda Xi has proven that Kappa Alpha Psi is the premier fraternity in Rhode Island."
+    }
+  ]
+}

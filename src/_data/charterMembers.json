@@ -1,0 +1,83 @@
+{
+  "charterDate": "June 3, 1950",
+  "totalMembers": 37,
+  "foundingOfficers": [
+    {
+      "position": "Polemarch",
+      "name": "Dr. Henry B. Aaron Hill"
+    },
+    {
+      "position": "Vice-Polemarch",
+      "name": "James Paul Goss, Jr."
+    },
+    {
+      "position": "Keeper of Records",
+      "name": "Charles E. Anderson"
+    },
+    {
+      "position": "Keeper of Exchequer",
+      "name": "Herbert B. Dowse"
+    },
+    {
+      "position": "Strategus",
+      "name": "Charles Knowles"
+    },
+    {
+      "position": "Lt. Strategus",
+      "name": "Abraham B. Fisher, Jr."
+    }
+  ],
+  "notableMembers": [
+    {
+      "name": "Dr. Henry Aaron Hill",
+      "achievement": "Co-founded National Polychemicals, Inc. and the Riverside Research Laboratories. Became the 1st Black president of the American Chemical Society in 1977."
+    },
+    {
+      "name": "Abraham B. Fischer",
+      "achievement": "Became the 1st African American to become a licensed pharmacist in the state of Massachusetts."
+    },
+    {
+      "name": "Wade H. McCree, Sr.",
+      "achievement": "Also helped charter the Gamma chapter at the University of Iowa on March 7, 1914."
+    }
+  ],
+  "members": [
+    { "name": "Charles E. Anderson" },
+    { "name": "Arthur B. Calvin" },
+    { "name": "Cyril O. Chapman" },
+    { "name": "William Cousins, Jr." },
+    { "name": "Madison E. Denniston" },
+    { "name": "Abraham B. Fischer, Jr." },
+    { "name": "Lloyd H. Davis" },
+    { "name": "Albert P. Byrd" },
+    { "name": "Jackson W. Campbell" },
+    { "name": "Granville C. Coggs" },
+    { "name": "Herbert B. Dawse" },
+    { "name": "James P. Goss, Jr." },
+    { "name": "Harold B. Frye" },
+    { "name": "David H. Green" },
+    { "name": "Sherman L. Greene" },
+    { "name": "Dr. Henry A. Hill" },
+    { "name": "William D. Holder, III" },
+    { "name": "Ernest M. Hunt" },
+    { "name": "Robert J. Hughes" },
+    { "name": "James A. Johnson" },
+    { "name": "Albert C. Johnson" },
+    { "name": "James H. Jones" },
+    { "name": "Oswald L. Jordan" },
+    { "name": "John A. Joyce" },
+    { "name": "Victor R. Lee" },
+    { "name": "Wade H. McCree, Sr." },
+    { "name": "Richard H. Newhouse" },
+    { "name": "Horace E. Palmer" },
+    { "name": "Joseph F. Patterson" },
+    { "name": "Joseph L. Pierce" },
+    { "name": "Frank R. Robinson, III" },
+    { "name": "Richard D. Skeete, Jr." },
+    { "name": "James A. Smith" },
+    { "name": "James P. Terrell" },
+    { "name": "William L. Williams" },
+    { "name": "Daniel W. Wynn" },
+    { "name": "Charles Knowles" }
+  ]
+}

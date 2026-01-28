@@ -1,0 +1,179 @@
+{
+  "name": "Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc.",
+  "shortName": "Boston Alumni Chapter",
+  "abbreviation": "BAC",
+  "tagline": "Achievement in Every Field of Human Endeavor",
+  "description": "The official website of the Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc., keeping the spirit of Phi Nu Pi active in Greater Boston since 1950.",
+  "url": "https://bostonkapsi.org",
+  "founded": "June 3, 1950",
+  "foundedYear": 1950,
+  "charterMembersCount": 37,
+  "polemarchsCount": 36,
+  
+  "currentLeadership": {
+    "polemarch": {
+      "name": "Anthony Munro",
+      "number": 36,
+      "termStart": 2023,
+      "initiatingChapter": "Boston Alumni",
+      "initiationDate": "Fall 2017",
+      "email": "polemarch@bostonkapsi.org"
+    },
+    "keeperOfRecords": {
+      "name": "André Morgan",
+      "email": "kor@bostonkapsi.org"
+    }
+  },
+
+  "contact": {
+    "address": {
+      "street": "377 Willard Street, STE 243",
+      "city": "Quincy",
+      "state": "MA",
+      "zip": "02169",
+      "full": "377 Willard Street, STE 243, Quincy, MA 02169"
+    },
+    "email": "info@bostonkapsi.org",
+    "phone": "TBD"
+  },
+
+  "meetings": {
+    "frequency": "Every Third Saturday",
+    "time": "10:00 a.m."
+  },
+
+  "grandChapter": {
+    "grandPolemarch": {
+      "name": "Jimmy McMikle",
+      "number": 35,
+      "theme": "PERFORMANCE OVER POLITICS"
+    },
+    "seniorGrandVicePolemarch": {
+      "name": "Robert L. Jenkins, Jr., Esq."
+    },
+    "juniorGrandVicePolemarch": {
+      "name": "Jordan Q. Smith"
+    },
+    "grandKeeperOfRecords": {
+      "name": "Kevin D. Kyles"
+    },
+    "headquarters": {
+      "address": "2322-24 North Broad Street, Philadelphia, PA 19132-4590",
+      "website": "https://kappaalphapsi1911.com/"
+    }
+  },
+
+  "province": {
+    "name": "Northeastern Province",
+    "website": "https://kapsinep.org/"
+  },
+
+  "branding": {
+    "colors": {
+      "crimson": "#70110C",
+      "cream": "#F2EBD7",
+      "creamDigital": "#EDEBEB",
+      "red": "#FF0000",
+      "white": "#FFFFFF"
+    },
+    "fonts": {
+      "heading": "Source Sans Pro",
+      "body": "Open Sans",
+      "accent": "Roboto",
+      "formal": "Trajan Pro Regular",
+      "veryFormal": "Cloister Black"
+    }
+  },
+
+  "socialMedia": {
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "youtube": ""
+  },
+
+  "externalLinks": {
+    "national": {
+      "name": "Kappa Alpha Psi International",
+      "url": "https://kappaalphapsi1911.com/"
+    },
+    "province": {
+      "name": "Northeastern Province",
+      "url": "https://kapsinep.org/"
+    },
+    "kappaLeague": {
+      "name": "National Kappa League",
+      "url": "https://natlkappaleague.org/"
+    },
+    "kappaLeagueTV": {
+      "name": "Kappa League TV",
+      "url": "https://www.youtube.com/c/KappaLeagueTV/videos"
+    },
+    "militaryVeterans": {
+      "name": "Military and Veteran Affairs Commission",
+      "url": "https://kappaalphapsi1911.com/page/MVAC"
+    },
+    "seniorKappa": {
+      "name": "Senior Kappa Affairs",
+      "url": "https://kappaalphapsi1911.com/page/seniorkappaaffairs"
+    },
+    "mediaKit": {
+      "name": "Kappa Media Kit",
+      "url": "https://kappamediakit.com/"
+    }
+  },
+
+  "fraternity": {
+    "name": "Kappa Alpha Psi Fraternity, Inc.",
+    "greekLetters": "ΚΑΨ",
+    "nickname": "Kappa",
+    "founded": "January 5, 1911",
+    "foundedYear": 1911,
+    "foundingLocation": "Indiana University, Bloomington, Indiana",
+    "motto": "Achievement in Every Field of Human Endeavor",
+    "colors": "Crimson and Cream",
+    "foundersCount": 10,
+    "membershipCount": "170,000+",
+    "chaptersCount": "700+"
+  },
+
+  "legal": {
+    "disclaimer": "Kappa Alpha Psi® Fraternity, Inc. is not responsible for any content contained within this site.",
+    "hazingStatement": "Kappa Alpha Psi Fraternity, Inc. is unalterably opposed to hazing in any form. The Fraternity has banned paddling and other forms of physical abuse and has introduced constructive endeavors during pledgeship and probation.",
+    "copyright": "The Boston (MA) Alumni Chapter of Kappa Alpha Psi® Fraternity"
+  },
+
+  "programs": {
+    "guideRight": {
+      "name": "Guide Right",
+      "description": "The National Service Initiative of Kappa Alpha Psi Fraternity, Inc."
+    },
+    "kappaLeague": {
+      "name": "Kappa League",
+      "description": "A leadership development program for young men in grades 6-12, designed to help them grow and develop their leadership talents."
+    },
+    "cutsAndCurls": {
+      "name": "Cuts and Curls",
+      "description": "Annual back-to-school community event providing free haircuts, styling, food, and school supplies."
+    }
+  },
+
+  "hostedEvents": [
+    {
+      "event": "53rd Grand Chapter Meeting",
+      "year": 1965
+    },
+    {
+      "event": "54th Northeast Province Council",
+      "year": 1984
+    },
+    {
+      "event": "67th Northeast Province Council",
+      "year": 1997
+    },
+    {
+      "event": "85th Northeast Province Council",
+      "year": 2015
+    }
+  ]
+}

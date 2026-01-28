@@ -1,0 +1,366 @@
+{
+  "note": "As we go into our 71st chapter anniversary year in 2021, Boston (MA) Alumni Chapter would like to personally thank Brother Past Historian & Reporter - Jon Thompson for securing this information for us.",
+  "deceasedMarker": "*",
+  "polemarchs": [
+    {
+      "number": 1,
+      "name": "Henry A. Hill",
+      "term": "1950-53",
+      "initiatingChapter": "Alpha Epsilon",
+      "initiationDate": "Fall 1934",
+      "deceased": true,
+      "image": null,
+      "notable": "Co-founded National Polychemicals, Inc. and the Riverside Research Laboratories. Became the 1st Black president of the American Chemical Society in 1977."
+    },
+    {
+      "number": 2,
+      "name": "Jackson W. Campbell",
+      "term": "1954-55",
+      "initiatingChapter": "Chi",
+      "initiationDate": "Fall 1947",
+      "deceased": true,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 3,
+      "name": "John A. Joyce",
+      "term": "1955-56",
+      "initiatingChapter": "Alpha Iota",
+      "initiationDate": "Spring 1931",
+      "deceased": true,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 4,
+      "name": "Oswald L. Jordan",
+      "term": "1957-58",
+      "initiatingChapter": "Chi",
+      "initiationDate": "Fall 1939",
+      "deceased": true,
+      "image": null,
+      "notable": "Also served as 7th Polemarch (1962-63)"
+    },
+    {
+      "number": 5,
+      "name": "Julian W. McPherson",
+      "term": "1958-61",
+      "initiatingChapter": "Alpha Eta",
+      "initiationDate": "Spring 1936",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 6,
+      "name": "Charles Green",
+      "term": "1961-62",
+      "initiatingChapter": "Alpha",
+      "initiationDate": "Fall 1953",
+      "deceased": true,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 7,
+      "name": "Oswald L. Jordan",
+      "term": "1962-63",
+      "initiatingChapter": "Chi",
+      "initiationDate": "Fall 1939",
+      "deceased": true,
+      "image": null,
+      "notable": "Second term as Polemarch (also served as 4th)"
+    },
+    {
+      "number": 8,
+      "name": "Charles A. Knowles, Sr.",
+      "term": "1966-68",
+      "initiatingChapter": "Chi",
+      "initiationDate": "Fall 1941",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 9,
+      "name": "Eugene E. Grant",
+      "term": "1970-72",
+      "initiatingChapter": "Chi",
+      "initiationDate": "Spring 1951",
+      "deceased": true,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 10,
+      "name": "Theodore S. Wilkins",
+      "term": "1972-73",
+      "initiatingChapter": "Delta Zeta",
+      "initiationDate": "Fall 1957",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 11,
+      "name": "Richard M. Wilkins",
+      "term": "1975-78",
+      "initiatingChapter": "Gamma Tau",
+      "initiationDate": "Spring 1964",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 12,
+      "name": "Clarence T. Tucker",
+      "term": "1978-79",
+      "initiatingChapter": "Gamma Phi",
+      "initiationDate": "Spring 1960",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 13,
+      "name": "Warren R. Wilkins",
+      "term": "1979-80",
+      "initiatingChapter": "Chi",
+      "initiationDate": "Fall 1966",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 14,
+      "name": "Maurice B. Wright",
+      "term": "1980-83",
+      "initiatingChapter": "Beta Rho",
+      "initiationDate": "Fall 1966",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 15,
+      "name": "William Boone",
+      "term": "1983-84",
+      "initiatingChapter": "Alpha Nu",
+      "initiationDate": "Spring 1977",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 16,
+      "name": "Louis Elisa",
+      "term": "1984-85",
+      "initiatingChapter": "Boston Alumni",
+      "initiationDate": "Spring 1983",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 17,
+      "name": "Haywood S. Barnes",
+      "term": "1985-87",
+      "initiatingChapter": "Newark Alumni",
+      "initiationDate": "Spring 1980",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 18,
+      "name": "James T. Kimble",
+      "term": "1987-88",
+      "initiatingChapter": "Las Vegas Alumni",
+      "initiationDate": "Spring 1975",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 19,
+      "name": "Hilton McDaniel",
+      "term": "1988-89",
+      "initiatingChapter": "Boston Alumni",
+      "initiationDate": "Spring 1983",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 20,
+      "name": "Frank W. Griffith",
+      "term": "1989-92",
+      "initiatingChapter": "Theta Iota",
+      "initiationDate": "Spring 1986",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 21,
+      "name": "Alan L. Smith",
+      "term": "1992-93",
+      "initiatingChapter": "Theta Iota",
+      "initiationDate": "Spring 1987",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 22,
+      "name": "Lt. Col. Elegear J. Primus",
+      "term": "1993-94",
+      "initiatingChapter": "Delta Beta",
+      "initiationDate": "Spring 1981",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 23,
+      "name": "Stephen Marshall",
+      "term": "1994-98",
+      "initiatingChapter": "Chi",
+      "initiationDate": "Fall 1965",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 24,
+      "name": "Lawrence H. Aldrick",
+      "term": "1998-2000",
+      "initiatingChapter": "Boston Alumni",
+      "initiationDate": "Spring 1993",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 25,
+      "name": "Donald Cost",
+      "term": "2000-03",
+      "initiatingChapter": "Boston Alumni",
+      "initiationDate": "Spring 1994",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 26,
+      "name": "Michael E. Gaskins",
+      "term": "2003-06",
+      "initiatingChapter": "Chi",
+      "initiationDate": "Spring 1991",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 27,
+      "name": "Lawrence E. Rock",
+      "term": "2006-08",
+      "initiatingChapter": "Boston Alumni",
+      "initiationDate": "Spring 1998",
+      "deceased": false,
+      "image": null,
+      "notable": "Also served as 34th Polemarch (2019-21)"
+    },
+    {
+      "number": 28,
+      "name": "Jermaine G. Myrie",
+      "term": "2008-11",
+      "initiatingChapter": "Boston Alumni",
+      "initiationDate": "Spring 1998",
+      "deceased": false,
+      "image": null,
+      "notable": "Also served as 31st Polemarch (2014-15)"
+    },
+    {
+      "number": 29,
+      "name": "Jason F. Marshall",
+      "term": "2011-13",
+      "initiatingChapter": "Eta Sigma",
+      "initiationDate": "Spring 1999",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 30,
+      "name": "Kevin R. Sibley",
+      "term": "2013-14",
+      "initiatingChapter": "Theta Iota",
+      "initiationDate": "Spring 1988",
+      "deceased": false,
+      "image": null,
+      "notable": "Current Undergraduate Advisor for Theta Iota Chapter"
+    },
+    {
+      "number": 31,
+      "name": "Jermaine G. Myrie",
+      "term": "2014-15",
+      "initiatingChapter": "Boston Alumni",
+      "initiationDate": "Spring 1998",
+      "deceased": false,
+      "image": null,
+      "notable": "Second term as Polemarch (also served as 28th)"
+    },
+    {
+      "number": 32,
+      "name": "Sean K. Daughtry",
+      "term": "2015-17",
+      "initiatingChapter": "Boston Alumni",
+      "initiationDate": "Fall 2001",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 33,
+      "name": "Roy A. Thompson",
+      "term": "2017-19",
+      "initiatingChapter": "Delta Omicron",
+      "initiationDate": "Spring 1989",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 34,
+      "name": "Lawrence E. Rock",
+      "term": "2019-21",
+      "initiatingChapter": "Boston Alumni",
+      "initiationDate": "Spring 1998",
+      "deceased": false,
+      "image": null,
+      "notable": "Second term as Polemarch (also served as 27th)"
+    },
+    {
+      "number": 35,
+      "name": "Brian Lunceford",
+      "term": "2021-2023",
+      "initiatingChapter": "Beta Epsilon",
+      "initiationDate": "Summer 1990",
+      "deceased": false,
+      "image": null,
+      "notable": null
+    },
+    {
+      "number": 36,
+      "name": "Anthony Munro",
+      "term": "2023-present",
+      "initiatingChapter": "Boston Alumni",
+      "initiationDate": "Fall 2017",
+      "deceased": false,
+      "image": null,
+      "notable": "Current Polemarch"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "programs": [
+    {
+      "id": "kappa-league",
+      "name": "Kappa League",
+      "fullName": "Kappa Leadership Development League",
+      "parentProgram": "Guide Right",
+      "logo": "kappa-league.png",
+      "tagline": "Training for Leadership",
+      "history": {
+        "origin": "Under the chairmanship of Mel Davis, the Los Angeles Alumni Chapter's Social Action Program took the form of training activity for young men of the Alain Leroy Locke High School.",
+        "originalName": "Kappa Instructional Leadership League",
+        "purpose": "Designed to help young men grow, receive, and develop their leadership talents in every phase of human endeavor."
+      },
+      "description": "The Boston (MA) Alumni Chapter welcomes the Kappa Leadership Development League, a program oriented toward helping young men to grow and develop their leadership talents in every phase of human endeavor. Kappa League, for short, provides both a challenging and rewarding experience, which richly enhances the lives of the young men in the program.",
+      "mission": "Since the fundamental purpose of Kappa Alpha Psi is ACHIEVEMENT, it is, therefore, the Fraternity's primary purpose to help these young men to achieve worthy goals for themselves and to make constructive contributions to their community when leadership roles become their responsibility.",
+      "eligibility": {
+        "grades": "6-12",
+        "gender": "Male",
+        "location": "Boston metropolitan area high schools"
+      },
+      "objectives": "To promote and develop the leadership potential of its members through participation in club-oriented activities and motivation to raise their aspiration level. Kappa League members participate in activities and development projects that will expose them to planning, implementing, and discussing ideas that stimulate good leadership characteristics.",
+      "fivePhases": [
+        {
+          "name": "Self-Identity",
+          "components": ["Discipline", "Assurance", "Awareness", "Appearance"]
+        },
+        {
+          "name": "Training",
+          "components": ["Academic", "Career-Choice", "Preparation", "Organization"]
+        },
+        {
+          "name": "Competition",
+          "components": ["Politics", "Career Advancement", "Sports"]
+        },
+        {
+          "name": "Social",
+          "components": ["Religion", "The Arts", "Entertainment", "Conversation/Communication", "Etiquette/Manners"]
+        },
+        {
+          "name": "Health Education",
+          "components": ["Physical Fitness", "Sex Education", "Drug Education", "Health and Safety"]
+        }
+      ],
+      "workshops": [
+        "SAT/PSAT preparation",
+        "Study techniques",
+        "Interviewing skills",
+        "Economics",
+        "Finance",
+        "Leadership development",
+        "College entry requirements",
+        "Deciding on a college major",
+        "Community service",
+        "Enterprise projects"
+      ],
+      "memberRequirements": [
+        "Dedicate enough time to participate and grow in the organization",
+        "Commit to following Kappa League guidelines for behavior and conduct"
+      ],
+      "externalLinks": {
+        "national": "https://natlkappaleague.org/",
+        "youtube": "https://www.youtube.com/c/KappaLeagueTV/videos"
+      },
+      "contactEmail": "info@bostonkapsi.org"
+    },
+    {
+      "id": "cuts-and-curls",
+      "name": "Cuts and Curls",
+      "fullName": "Free Cuts, Curls Back to School Event",
+      "parentProgram": "Guide Right",
+      "logo": "cuts-and-curls.png",
+      "tagline": "Preparing Students for Success",
+      "description": "The Brothers of the Boston Alumni Chapter volunteer their time at Mattapan's Finest Barbers and Stylist of Grove Hall annually for the community event, 'Free Cuts, Curls Back to School Event'.",
+      "services": {
+        "boys": ["Free haircuts"],
+        "girls": ["Press and curls", "Wash and sets", "Manicures"],
+        "all": ["Free food", "Free school supplies"]
+      },
+      "location": "Mattapan's Finest Barbers and Stylist of Grove Hall",
+      "frequency": "Annual (Back to School)",
+      "communityImpact": "Prepares children in the community for the new school year by providing grooming services and essential school supplies at no cost to families.",
+      "contactEmail": "info@bostonkapsi.org",
+      "callToAction": "Stay in the Loop by subscribing to our chapter's event communications list to learn when we will host our next Cuts and Curls Back to School Event."
+    }
+  ],
+  "guideRight": {
+    "name": "Guide Right",
+    "description": "The National Service Initiative of Kappa Alpha Psi Fraternity, Inc.",
+    "purpose": "To inspire service in the public's interest.",
+    "localPrograms": ["Kappa League", "Cuts and Curls", "Greater Boston Food Bank Partnership"]
+  }
+}
