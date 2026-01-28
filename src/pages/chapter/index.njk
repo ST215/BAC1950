@@ -1,0 +1,63 @@
+---
+layout: base.njk
+title: Our Chapter
+description: Learn about the Boston (MA) Alumni Chapter of Kappa Alpha Psi, serving Greater Boston since 1950.
+permalink: /chapter/
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>Our Chapter</h1>
+    <p class="tagline">Boston (MA) Alumni Chapter</p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>About Boston Alumni Chapter</h2>
+    </div>
+    <p>The Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc. was chartered on {{ site.founded }} with {{ site.charterMembersCount }} charter members. We are proud members of the Northeastern Province and have been serving the Greater Boston community for over 70 years.</p>
+    <p>Under the leadership of our {{ site.currentLeadership.polemarch.number | ordinal }} Polemarch, Brother {{ site.currentLeadership.polemarch.name }}, we continue our mission of mentorship, scholarship, and community service.</p>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Explore Our Chapter</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">Chapter History</h3>
+          <p class="card-text">Learn about our founding and legacy in Boston.</p>
+          <a href="/chapter/history/" class="btn btn-secondary mt-1">Read History</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">Leadership</h3>
+          <p class="card-text">Meet our current chapter leadership.</p>
+          <a href="/chapter/leadership/" class="btn btn-secondary mt-1">View Leadership</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">Past Polemarchs</h3>
+          <p class="card-text">{{ site.polemarchsCount }} brothers have led our chapter.</p>
+          <a href="/chapter/past-polemarchs/" class="btn btn-secondary mt-1">View Polemarchs</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">Undergraduate Chapters</h3>
+          <p class="card-text">We advise Chi, Theta Iota, and Lambda Xi chapters.</p>
+          <a href="/chapter/undergraduate-chapters/" class="btn btn-secondary mt-1">View Chapters</a>
+        </div>
+      </div>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>

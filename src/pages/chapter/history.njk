@@ -1,0 +1,53 @@
+---
+layout: base.njk
+title: Chapter History
+description: The history of the Boston (MA) Alumni Chapter of Kappa Alpha Psi, chartered June 3, 1950.
+permalink: /chapter/history/
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>Chapter History</h1>
+    <p class="tagline">Chartered {{ site.founded }}</p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Founding</h2>
+    </div>
+    <p>The Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc. was chartered on {{ site.founded }} with {{ site.charterMembersCount }} charter members. These dedicated brothers laid the foundation for what would become one of the most active alumni chapters in the Northeastern Province.</p>
+    <p>Our first Polemarch was Brother Henry A. Hill, who served from 1950 to 1953. Brother Hill went on to become the first Black president of the American Chemical Society in 1977, exemplifying the fraternity's commitment to achievement in every field of human endeavor.</p>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Notable Hosted Events</h2>
+    </div>
+    <p>The Boston (MA) Alumni Chapter has been honored to host several important fraternity events:</p>
+    <ul style="margin-left: var(--spacing-lg);">
+      {% for event in site.hostedEvents %}
+      <li><strong>{{ event.event }}</strong> ({{ event.year }})</li>
+      {% endfor %}
+    </ul>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Legacy</h2>
+    </div>
+    <p>Since our founding, the Boston (MA) Alumni Chapter has been led by {{ site.polemarchsCount }} Polemarchs. Our chapter has remained committed to the fraternity's fundamental purpose of achievement, mentoring young men through the Kappa League program and serving the Greater Boston community.</p>
+    <p>We continue to advise three undergraduate chapters: Chi Chapter at Boston University, Theta Iota Chapter at MIT, and Lambda Xi Chapter at Brown University.</p>
+    <div class="text-center mt-2">
+      <a href="/chapter/past-polemarchs/" class="btn btn-primary">View Our Past Polemarchs</a>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>

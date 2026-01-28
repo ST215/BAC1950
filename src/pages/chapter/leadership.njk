@@ -1,0 +1,71 @@
+---
+layout: base.njk
+title: Chapter Leadership
+description: Current leadership of the Boston (MA) Alumni Chapter of Kappa Alpha Psi.
+permalink: /chapter/leadership/
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>Chapter Leadership</h1>
+    <p class="tagline">Boston (MA) Alumni Chapter</p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Executive Board</h2>
+    </div>
+
+    <div class="card-grid">
+      <div class="card profile-card">
+        <h3>{{ site.currentLeadership.polemarch.name }}</h3>
+        <p class="title">{{ site.currentLeadership.polemarch.number | ordinal }} Polemarch</p>
+        <p>Initiated: {{ site.currentLeadership.polemarch.initiatingChapter }}, {{ site.currentLeadership.polemarch.initiationDate }}</p>
+        <p><a href="mailto:{{ site.currentLeadership.polemarch.email }}">{{ site.currentLeadership.polemarch.email }}</a></p>
+      </div>
+
+      <div class="card profile-card">
+        <h3>{{ site.currentLeadership.keeperOfRecords.name }}</h3>
+        <p class="title">Keeper of Records</p>
+        <p><a href="mailto:{{ site.currentLeadership.keeperOfRecords.email }}">{{ site.currentLeadership.keeperOfRecords.email }}</a></p>
+      </div>
+    </div>
+
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Meeting Information</h2>
+    </div>
+    <div class="text-center">
+      <p><strong>Chapter Meetings:</strong> {{ site.meetings.frequency }} at {{ site.meetings.time }}</p>
+      <p>For meeting locations and additional information, please contact the Keeper of Records.</p>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Undergraduate Advisors</h2>
+    </div>
+    <div class="card-grid">
+      {% for chapter in undergradChapters.chapters %}
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">{{ chapter.name }}</h3>
+          <p class="card-text">{{ chapter.school }}</p>
+          <p><strong>Advisor:</strong> {{ chapter.advisor.name }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>

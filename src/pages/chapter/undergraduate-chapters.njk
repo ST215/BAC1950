@@ -1,0 +1,87 @@
+---
+layout: base.njk
+title: Undergraduate Chapters
+description: Boston Alumni Chapter advises Chi (BU), Theta Iota (MIT), and Lambda Xi (Brown) undergraduate chapters.
+permalink: /chapter/undergraduate-chapters/
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>Undergraduate Chapters</h1>
+    <p class="tagline">Advising the Next Generation of Achievers</p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <p class="text-center">{{ undergradChapters.introduction }}</p>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+{% for chapter in undergradChapters.chapters %}
+<section class="page-section" id="{{ chapter.id }}">
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ chapter.name }} ({{ chapter.greekLetters }})</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg);">
+      <div>
+        <p><strong>University:</strong> {{ chapter.school }}</p>
+        <p><strong>Location:</strong> {{ chapter.location }}</p>
+        <p><strong>Chartered:</strong> {{ chapter.chartered }}</p>
+        <p><strong>Charter Members:</strong> {{ chapter.charterMembers }}</p>
+        <p><strong>Undergraduate Advisor:</strong> {{ chapter.advisor.name }}</p>
+      </div>
+      <div>
+        <p>{{ chapter.description }}</p>
+        {% if chapter.notable %}
+        <p><em>{{ chapter.notable }}</em></p>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if chapter.activities.length > 0 %}
+    <div style="margin-top: var(--spacing-md);">
+      <h4>Activities & Community Service</h4>
+      <ul style="margin-left: var(--spacing-lg);">
+        {% for activity in chapter.activities %}
+        <li>{{ activity }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if chapter.reach %}
+    <div style="margin-top: var(--spacing-md);">
+      <h4>Chapter Reach</h4>
+      <ul style="margin-left: var(--spacing-lg);">
+        {% for school in chapter.reach %}
+        <li>{{ school }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if chapter.awards %}
+    <div style="margin-top: var(--spacing-md);">
+      <h4>Awards & Recognition</h4>
+      <ul style="margin-left: var(--spacing-lg);">
+        {% for award in chapter.awards %}
+        <li>{{ award }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if chapter.vision %}
+    <div style="margin-top: var(--spacing-md);">
+      <p><strong>Vision:</strong> {{ chapter.vision }}</p>
+    </div>
+    {% endif %}
+
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+{% endfor %}
