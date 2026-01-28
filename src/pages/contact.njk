@@ -1,0 +1,110 @@
+---
+layout: base.njk
+title: Contact Us
+description: Contact the Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity.
+permalink: /contact/
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p class="tagline">We'd Love to Hear From You</p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Get in Touch</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl);">
+      <div>
+        <h3>Contact Information</h3>
+        <p><strong>{{ site.name }}</strong></p>
+        <p>{{ site.contact.address.street }}<br>
+        {{ site.contact.address.city }}, {{ site.contact.address.state }} {{ site.contact.address.zip }}</p>
+
+        <p style="margin-top: var(--spacing-md);"><strong>Email:</strong><br>
+        General: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a><br>
+        Polemarch: <a href="mailto:{{ site.currentLeadership.polemarch.email }}">{{ site.currentLeadership.polemarch.email }}</a><br>
+        Keeper of Records: <a href="mailto:{{ site.currentLeadership.keeperOfRecords.email }}">{{ site.currentLeadership.keeperOfRecords.email }}</a></p>
+
+        <p style="margin-top: var(--spacing-md);"><strong>Chapter Meetings:</strong><br>
+        {{ site.meetings.frequency }} at {{ site.meetings.time }}</p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul style="list-style: none;">
+          <li style="margin-bottom: var(--spacing-sm);">
+            <strong>Interested in Membership?</strong><br>
+            <a href="/membership/">Learn about joining Kappa Alpha Psi</a>
+          </li>
+          <li style="margin-bottom: var(--spacing-sm);">
+            <strong>Already a Kappa?</strong><br>
+            <a href="/membership/reclamation/">Reclaim your membership</a>
+          </li>
+          <li style="margin-bottom: var(--spacing-sm);">
+            <strong>Kappa League Information</strong><br>
+            <a href="/programs/kappa-league/">Youth mentorship program</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Chapter Leadership</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card profile-card">
+        <h3>{{ site.currentLeadership.polemarch.name }}</h3>
+        <p class="title">{{ site.currentLeadership.polemarch.number | ordinal }} Polemarch</p>
+        <p><a href="mailto:{{ site.currentLeadership.polemarch.email }}">{{ site.currentLeadership.polemarch.email }}</a></p>
+      </div>
+      <div class="card profile-card">
+        <h3>{{ site.currentLeadership.keeperOfRecords.name }}</h3>
+        <p class="title">Keeper of Records</p>
+        <p><a href="mailto:{{ site.currentLeadership.keeperOfRecords.email }}">{{ site.currentLeadership.keeperOfRecords.email }}</a></p>
+      </div>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>External Links</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">Kappa Alpha Psi International</h3>
+          <p class="card-text">Official website of the fraternity</p>
+          <a href="{{ site.externalLinks.national.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mt-1 external-link">Visit Site</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">Northeastern Province</h3>
+          <p class="card-text">Our provincial organization</p>
+          <a href="{{ site.externalLinks.province.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mt-1 external-link">Visit Site</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">National Kappa League</h3>
+          <p class="card-text">Youth leadership development</p>
+          <a href="{{ site.externalLinks.kappaLeague.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mt-1 external-link">Visit Site</a>
+        </div>
+      </div>
+    </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
