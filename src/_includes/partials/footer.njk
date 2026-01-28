@@ -1,0 +1,41 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>{{ site.contact.address.full }}</p>
+        <p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+        <p>Meetings: {{ site.meetings.frequency }} at {{ site.meetings.time }}</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="{{ site.externalLinks.national.url }}" target="_blank" rel="noopener noreferrer" class="external-link">Kappa Alpha Psi International</a></li>
+          <li><a href="{{ site.externalLinks.province.url }}" target="_blank" rel="noopener noreferrer" class="external-link">Northeastern Province</a></li>
+          <li><a href="/membership/">Become a Member</a></li>
+          <li><a href="/membership/reclamation/">Reclaim Your Membership</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Undergraduate Chapters</h3>
+        <ul>
+          {% for chapter in undergradChapters %}
+          <li><a href="/chapter/undergraduate-chapters/#{{ chapter.name | lower | replace(' ', '-') }}">{{ chapter.name }} - {{ chapter.university }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {% year %} {{ site.legal.copyright }}. All rights reserved.</p>
+      <p>{{ site.legal.disclaimer }}</p>
+      <p>
+        <a href="/privacy-policy/">Privacy Policy</a> |
+        <a href="#top">Back to Top ↑</a>
+      </p>
+    </div>
+  </div>
+</footer>
