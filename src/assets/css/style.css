@@ -977,6 +977,108 @@ main {
   }
 }
 
+/* --- Polemarch's Message (Apple HIG: asymmetric two-column, content-first) --- */
+
+.polemarch-message {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.polemarch-message-photo {
+  text-align: center;
+}
+
+.polemarch-portrait {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  background-color: var(--color-surface-secondary);
+}
+
+.polemarch-message-name {
+  margin-top: var(--space-5);
+}
+
+.polemarch-message-name h3 {
+  font-size: var(--text-title3);
+  margin-bottom: var(--space-1);
+}
+
+.polemarch-message-name p {
+  font-size: var(--text-callout);
+  color: var(--color-label-secondary);
+  letter-spacing: 0.012em;
+  max-width: none;
+}
+
+.polemarch-message-body {
+  padding-top: var(--space-2);
+}
+
+.polemarch-message-body p {
+  font-size: var(--text-body);
+  line-height: 1.58;       /* Apple: generous line-height for long-form reading */
+  color: var(--color-label-primary);
+  margin-bottom: var(--space-5);
+}
+
+.polemarch-message-closing {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-1) !important;
+  font-style: italic;
+  color: var(--color-label-secondary) !important;
+}
+
+.polemarch-message-signature {
+  margin-bottom: 0 !important;
+}
+
+.polemarch-message-signature strong {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline);
+  color: var(--color-primary);
+}
+
+.polemarch-message-signature span {
+  font-size: var(--text-callout);
+  color: var(--color-label-secondary);
+}
+
+/* Medium (tablet): narrower photo column */
+@media only screen and (max-width: 1068px) {
+  .polemarch-message {
+    grid-template-columns: 220px 1fr;
+    gap: var(--space-8);
+  }
+}
+
+/* Small (mobile): stack vertically, center photo */
+@media only screen and (max-width: 735px) {
+  .polemarch-message {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .polemarch-message-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .polemarch-portrait {
+    max-width: 200px;
+  }
+
+  .polemarch-message-body p {
+    line-height: 1.52;
+  }
+}
+
 /* --- Utilities --- */
 
 .text-center { text-align: center; }
