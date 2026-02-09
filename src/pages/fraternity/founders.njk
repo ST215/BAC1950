@@ -27,7 +27,16 @@ permalink: /fraternity/founders/
 
     {% for founder in founders.founders %}
     <article class="founder-profile" id="founder-{{ founder.id }}" style="margin-bottom: var(--spacing-xl); padding-bottom: var(--spacing-xl); border-bottom: 1px solid var(--gray-light);">
-      <h3>{{ founder.name }}{% if founder.nickname %} <small style="color: var(--gray);">"{{ founder.nickname }}"</small>{% endif %}</h3>
+      <div style="display: flex; align-items: flex-start; gap: var(--spacing-lg); flex-wrap: wrap;">
+        {% if founder.image %}
+        <div style="flex-shrink: 0;">
+          <img src="{{ founder.image }}" alt="{{ founder.name }}" style="width: 150px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        </div>
+        {% endif %}
+        <div style="flex: 1; min-width: 200px;">
+          <h3 style="margin-top: 0;">{{ founder.name }}{% if founder.nickname %} <small style="color: var(--gray);">"{{ founder.nickname }}"</small>{% endif %}</h3>
+        </div>
+      </div>
 
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); margin-top: var(--spacing-md);">
         <div>

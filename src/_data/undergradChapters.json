@@ -13,7 +13,8 @@
         "name": "Jonathan Thompson",
         "title": "Undergraduate Advisor"
       },
-      "logo": "chi-chapter.gif",
+      "logo": "/assets/images/chapters/chi-bu.gif",
+      "photo": null,
       "description": "The Mighty Chi Chapter of Kappa Alpha Psi Fraternity, Inc. was chartered by the Significant Six on the campus of Boston University. Being a city-wide chapter, the Chi Chapter has members from all over the Boston Area.",
       "activities": [
         "Works closely with the Paul Robeson Institute for Positive Self-Development (PRI) to tutor Boston's high school students each week in mathematics, science, English, and social studies",
@@ -36,7 +37,8 @@
         "name": "Kevin Sibley",
         "title": "Undergraduate Advisor"
       },
-      "logo": "theta-iota.gif",
+      "logo": "/assets/images/chapters/theta-iota-mit.gif",
+      "photo": "/assets/images/chapters/theta-iota-photo.jpg",
       "description": "Theta Iota Chapter was chartered at the Massachusetts Institute of Technology. For the nine Brothers of this Chapter, it was the realization of an idea to bring a black fraternity to their campus, and make it a viable organization within their black community.",
       "activities": [],
       "reach": [
@@ -62,7 +64,8 @@
         "name": "William Whitehead",
         "title": "Undergraduate Advisor"
       },
-      "logo": "lambda-xi.gif",
+      "logo": "/assets/images/chapters/lambda-xi-brown.gif",
+      "photo": "/assets/images/chapters/lambda-xi-photo.jpg",
       "description": "The Lambda Xi Chapter of Kappa Alpha Psi Fraternity, Incorporated was established at Brown University. Seven men were instrumental in bringing Kappa Alpha Psi to the state of Rhode Island.",
       "activities": [
         "Captivating step performances",
