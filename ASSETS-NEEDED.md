@@ -55,9 +55,9 @@ This file tracks images and assets that need to be provided or sourced.
 - mvac-logo.png
 - gbfb-logo.png
 
-## Images in oldSiteREF Not Yet Used
+## Images in legacy-site-reference Not Yet Used
 
-The following images are available in `/oldSiteREF/bostonkapsi.org/wp-content/uploads/` but haven't been integrated yet:
+The following images are available in `/legacy-site-reference/bostonkapsi.org/wp-content/uploads/` but haven't been integrated yet:
 
 - lunceford.jpg - Unknown context
 - state-capita.jpg - State capital building

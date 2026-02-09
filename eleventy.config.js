@@ -1,6 +1,57 @@
+const Image = require("@11ty/eleventy-img");
+const path = require("path");
+
+// Image shortcode for optimized images
+async function imageShortcode(src, alt, sizes = "100vw", widths = [400, 800, 1200], loading = "lazy", fetchpriority = null, className = null) {
+  // Handle both absolute paths and relative paths
+  let imagePath = src;
+  if (src.startsWith("/")) {
+    imagePath = path.join("src", src);
+  }
+
+  let metadata = await Image(imagePath, {
+    widths: widths,
+    formats: ["avif", "webp", "auto"], // auto = original format as fallback
+    outputDir: "./_site/assets/images/optimized/",
+    urlPath: "/assets/images/optimized/",
+    filenameFormat: function (id, src, width, format) {
+      const extension = path.extname(src);
+      const name = path.basename(src, extension);
+      return `${name}-${width}w.${format}`;
+    }
+  });
+
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading: loading,
+    decoding: "async",
+  };
+
+  // Add fetchpriority for LCP images
+  if (fetchpriority) {
+    imageAttributes.fetchpriority = fetchpriority;
+  }
+
+  // Add class if provided
+  if (className) {
+    imageAttributes.class = className;
+  }
+
+  return Image.generateHTML(metadata, imageAttributes);
+}
+
 module.exports = function(eleventyConfig) {
-  // Pass through static assets
-  eleventyConfig.addPassthroughCopy("src/assets");
+  // Add image shortcode
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+
+  // Pass through static assets (excluding images that will be optimized)
+  eleventyConfig.addPassthroughCopy("src/assets/css");
+  eleventyConfig.addPassthroughCopy("src/assets/js");
+  eleventyConfig.addPassthroughCopy("src/assets/images"); // Keep originals as fallback
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
+  eleventyConfig.addPassthroughCopy("src/site.webmanifest");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
 
   // Watch for changes in CSS
   eleventyConfig.addWatchTarget("src/assets/css/");
