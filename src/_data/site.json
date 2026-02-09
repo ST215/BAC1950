@@ -19,10 +19,21 @@
       "initiationDate": "1990",
       "email": "polemarch@bostonkapsi.org"
     },
-    "keeperOfRecords": {
-      "name": "André Morgan",
-      "email": "kor@bostonkapsi.org"
-    }
+    "executiveBoard": [
+      {"position": "Vice Polemarch", "name": "TBD", "email": "vp@bostonkapsi.org"},
+      {"position": "Keeper of Records", "name": "TBD", "email": "kor@bostonkapsi.org"},
+      {"position": "Keeper of Exchequer", "name": "TBD", "email": "koe@bostonkapsi.org"},
+      {"position": "Strategus", "name": "TBD", "email": null},
+      {"position": "Lt. Strategus", "name": "TBD", "email": null},
+      {"position": "Historian", "name": "TBD", "email": null},
+      {"position": "Chaplain", "name": "TBD", "email": null}
+    ],
+    "committees": [
+      {"name": "Guide Right Director", "chair": "TBD"},
+      {"name": "Kappa League Director", "chair": "TBD"},
+      {"name": "Social Action Chairman", "chair": "TBD"},
+      {"name": "Scholarship Chairman", "chair": "TBD"}
+    ]
   },
 
   "contact": {
@@ -65,7 +76,38 @@
 
   "province": {
     "name": "Northeastern Province",
-    "website": "https://kapsinep.org/"
+    "abbreviation": "NEP",
+    "website": "https://kapsinep.org/",
+    "address": "499 Adams Street, P.O. Box 423 Milton, MA 02186",
+    "email": "info@Kapsinep.org",
+    "polemarch": {
+      "name": "Theodore R. Sanchious",
+      "nickname": "Ted"
+    },
+    "officers": [
+      {"position": "Province Polemarch", "name": "Theodore R. Sanchious"},
+      {"position": "Sr. Province Vice Polemarch", "name": "Pierre Oscar"},
+      {"position": "Jr. Province Vice Polemarch", "name": "Keanen Andrews"},
+      {"position": "Province Keeper of Records", "name": "Jermaine Myrie"},
+      {"position": "Province Keeper of Exchequer", "name": "Kelvin L. Sims, Sr."},
+      {"position": "Strategus", "name": "Teddy Lockhart"},
+      {"position": "Lt. Strategus", "name": "Sean Edmonson"},
+      {"position": "Nominating Committee Chairman", "name": "Richard W. King, Jr."},
+      {"position": "Historian", "name": "Michael J. DeShield"}
+    ],
+    "boardMembers": [
+      {"position": "Northern Alumni Board Member", "name": "Shawn D. Byrd"},
+      {"position": "Northern Region Collegiate Board Member", "name": "Jeremiah Peebles"},
+      {"position": "Central Alumni Board Member", "name": "Jose Zenon"},
+      {"position": "Central Region Collegiate Board Member", "name": "Gyrord Gregiore"},
+      {"position": "Southern Alumni Board Member", "name": "Richard Horton"},
+      {"position": "Southern Region Collegiate Board Member", "name": "Collin Cochran"},
+      {"position": "Chief of Staff", "name": "Stefan Roberts"},
+      {"position": "Deputy Chief of Staff", "name": "Derick Griffith"},
+      {"position": "Chaplain", "name": "Dr. Eric D. Garnes"},
+      {"position": "Director of Organizational Effectiveness", "name": "Lee Smith"},
+      {"position": "Legal Counsel", "name": "Bryan R. Williams, Esq."}
+    ]
   },
 
   "branding": {

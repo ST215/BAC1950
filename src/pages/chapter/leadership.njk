@@ -26,11 +26,34 @@ permalink: /chapter/leadership/
         <p><a href="mailto:{{ site.currentLeadership.polemarch.email }}">{{ site.currentLeadership.polemarch.email }}</a></p>
       </div>
 
+      {% for officer in site.currentLeadership.executiveBoard %}
       <div class="card profile-card">
-        <h3>{{ site.currentLeadership.keeperOfRecords.name }}</h3>
-        <p class="title">Keeper of Records</p>
-        <p><a href="mailto:{{ site.currentLeadership.keeperOfRecords.email }}">{{ site.currentLeadership.keeperOfRecords.email }}</a></p>
+        <h3>{{ officer.name }}</h3>
+        <p class="title">{{ officer.position }}</p>
+        {% if officer.email %}
+        <p><a href="mailto:{{ officer.email }}">{{ officer.email }}</a></p>
+        {% endif %}
       </div>
+      {% endfor %}
+    </div>
+
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Committee Chairs</h2>
+    </div>
+
+    <div class="card-grid">
+      {% for committee in site.currentLeadership.committees %}
+      <div class="card profile-card">
+        <h3>{{ committee.chair }}</h3>
+        <p class="title">{{ committee.name }}</p>
+      </div>
+      {% endfor %}
     </div>
 
     <a href="#top" class="back-to-top">↑ Back to Top</a>
