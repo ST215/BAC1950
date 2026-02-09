@@ -15,30 +15,80 @@ permalink: /fraternity/leadership/
 <section class="page-section">
   <div class="container">
     <div class="section-header">
-      <h2>Grand Board of Directors</h2>
+      <h2>{{ site.grandChapter.grandPolemarch.number | ordinal }} Grand Polemarch</h2>
+    </div>
+
+    <div class="text-center">
+      <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-xs);">{{ site.grandChapter.grandPolemarch.name }}</h3>
+      <p>{{ site.grandChapter.grandPolemarch.initiatingChapter }} — {{ site.grandChapter.grandPolemarch.initiationYear }}</p>
+      <p><em>"{{ site.grandChapter.grandPolemarch.theme }}"</em></p>
+    </div>
+
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Grand Chapter Officers</h2>
     </div>
 
     <div class="card-grid">
+      {% for officer in site.grandChapter.officers %}
       <div class="card profile-card">
-        <h3>{{ site.grandChapter.grandPolemarch.name }}</h3>
-        <p class="title">{{ site.grandChapter.grandPolemarch.number | ordinal }} Grand Polemarch</p>
-        <p>Leading the fraternity with the theme: <em>"{{ site.grandChapter.grandPolemarch.theme }}"</em></p>
+        <h3>{{ officer.name }}</h3>
+        <p class="title">{{ officer.position }}</p>
       </div>
+      {% endfor %}
+    </div>
 
-      <div class="card profile-card">
-        <h3>{{ site.grandChapter.seniorGrandVicePolemarch.name }}</h3>
-        <p class="title">Senior Grand Vice Polemarch</p>
-      </div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
 
-      <div class="card profile-card">
-        <h3>{{ site.grandChapter.juniorGrandVicePolemarch.name }}</h3>
-        <p class="title">Junior Grand Vice Polemarch</p>
-      </div>
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Grand Board of Directors</h2>
+    </div>
 
-      <div class="card profile-card">
-        <h3>{{ site.grandChapter.grandKeeperOfRecords.name }}</h3>
-        <p class="title">Grand Keeper of Records</p>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg);">
+      <div>
+        <h4>Alumni Members</h4>
+        <ul style="margin-left: var(--spacing-md);">
+          {% for member in site.grandChapter.boardOfDirectors.alumni %}
+          <li>{{ member }}</li>
+          {% endfor %}
+        </ul>
       </div>
+      <div>
+        <h4>Undergraduate Members</h4>
+        <ul style="margin-left: var(--spacing-md);">
+          {% for member in site.grandChapter.boardOfDirectors.undergraduate %}
+          <li>{{ member }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Administrative Staff</h2>
+    </div>
+
+    <div class="card-grid">
+      {% for staff in site.grandChapter.administrativeStaff %}
+      <div class="card profile-card">
+        <h3>{{ staff.name }}</h3>
+        <p class="title">{{ staff.position }}</p>
+      </div>
+      {% endfor %}
     </div>
 
     <a href="#top" class="back-to-top">↑ Back to Top</a>
@@ -68,6 +118,7 @@ permalink: /fraternity/leadership/
     </div>
     <div class="text-center">
       <p>The Boston (MA) Alumni Chapter is a proud member of the <strong>{{ site.province.name }}</strong>.</p>
+      <p><strong>Province Polemarch:</strong> {{ site.province.polemarch.name }}</p>
       <div class="mt-2">
         <a href="{{ site.province.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary external-link">Visit Province Website</a>
       </div>

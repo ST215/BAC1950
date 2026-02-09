@@ -57,17 +57,39 @@
     "grandPolemarch": {
       "name": "Jimmy McMikle",
       "number": 35,
+      "initiatingChapter": "Alpha (Indiana University)",
+      "initiationYear": "Spring 1991",
       "theme": "PERFORMANCE OVER POLITICS"
     },
-    "seniorGrandVicePolemarch": {
-      "name": "Robert L. Jenkins, Jr., Esq."
+    "officers": [
+      {"position": "Senior Grand Vice Polemarch", "name": "Robert L. Jenkins, Jr., Esq."},
+      {"position": "Junior Grand Vice Polemarch", "name": "Victor L. Mattison"},
+      {"position": "Grand Keeper of Records", "name": "Kevin D. Kyles"},
+      {"position": "Grand Keeper of Exchequer", "name": "Rhen C. Bass, Sr., CPA"},
+      {"position": "Grand Strategus", "name": "Lorenza A. Russell, Jr."},
+      {"position": "Grand Lt. Strategus", "name": "Justin I. Alexis"},
+      {"position": "Grand Historian", "name": "Kevin P. Scott"},
+      {"position": "Grand Chapter Nominating Committee Chairman", "name": "Michael F. Brown"}
+    ],
+    "boardOfDirectors": {
+      "alumni": [
+        "Damon O. Barry, Esq.",
+        "Dr. Leonard E. Clemons",
+        "Jwyanza B. Watt"
+      ],
+      "undergraduate": [
+        "Cameron D. Morgan",
+        "Isaiah M. Robinson",
+        "Jaden G. York"
+      ]
     },
-    "juniorGrandVicePolemarch": {
-      "name": "Jordan Q. Smith"
-    },
-    "grandKeeperOfRecords": {
-      "name": "Kevin D. Kyles"
-    },
+    "administrativeStaff": [
+      {"position": "Chief of Staff", "name": "Craig C. Chisholm"},
+      {"position": "Deputy Chief of Staff", "name": "Britton L. Smith"},
+      {"position": "Chief Administrative Officer", "name": "Charles E. Exum, Jr."},
+      {"position": "General Counsel", "name": "Cleophus Thomas, Jr., Esq."},
+      {"position": "Journal Editor", "name": "Cleveland Ferguson III, Esq."}
+    ],
     "headquarters": {
       "address": "2322-24 North Broad Street, Philadelphia, PA 19132-4590",
       "website": "https://kappaalphapsi1911.com/"
