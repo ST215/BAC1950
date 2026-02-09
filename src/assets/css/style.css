@@ -479,6 +479,95 @@ textarea:focus-visible,
   margin-bottom: var(--space-6);
 }
 
+/* Chapter logo in hero */
+.hero .chapter-logo {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: var(--space-6);
+}
+
+/* Hero branded: tighter padding when followed by photo */
+.hero-branded {
+  padding-bottom: var(--space-10);
+}
+
+.hero-branded .tagline {
+  margin-bottom: var(--space-2);
+}
+
+/* Hero Photo Section */
+.hero-photo {
+  background-color: var(--color-primary);
+  padding: var(--space-8) 0;
+  position: relative;
+}
+
+.hero-photo-wrapper {
+  max-width: var(--content-width-large);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.hero-photo-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  display: block;
+}
+
+.hero-photo-cta {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1068px) {
+  .hero-photo-wrapper {
+    max-width: var(--content-width-medium);
+  }
+
+  .hero-photo-image {
+    max-height: 400px;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .hero-photo-wrapper {
+    width: 87.5%;
+    padding: 0;
+  }
+
+  .hero-photo {
+    padding: var(--space-6) 0;
+  }
+
+  .hero-photo-image {
+    max-height: 280px;
+    border-radius: var(--radius-md);
+  }
+
+  .hero-photo-cta {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-6);
+  }
+
+  .hero .chapter-logo {
+    max-width: 140px;
+  }
+
+  .hero-branded {
+    padding-bottom: var(--space-8);
+  }
+}
+
 /* Apple HIG medium: reduce hero padding */
 @media only screen and (max-width: 1068px) {
   .hero {
