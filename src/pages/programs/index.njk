@@ -12,6 +12,12 @@ permalink: /programs/
   </div>
 </section>
 
+<section class="hero-photo">
+  <div class="hero-photo-wrapper">
+    {% image "/assets/images/events/community-giveaway.jpg", "Boston Alumni Chapter community service event", "(max-width: 768px) 100vw, 1200px", [600, 900, 1200], "eager" %}
+  </div>
+</section>
+
 <section class="page-section">
   <div class="container">
     <div class="section-header">
@@ -19,7 +25,6 @@ permalink: /programs/
     </div>
     <p class="text-center">{{ programs.guideRight.description }}</p>
     <p class="text-center"><strong>Purpose:</strong> {{ programs.guideRight.purpose }}</p>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
@@ -40,6 +45,9 @@ permalink: /programs/
       </div>
       {% endfor %}
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
+
+<div class="text-center" style="padding: var(--space-8) 0;">
+  <a href="#top" class="back-to-top">↑ Back to Top</a>
+</div>

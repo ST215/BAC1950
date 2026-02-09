@@ -27,7 +27,7 @@ permalink: /news/
       <div class="card-grid mt-2">
         {% for image in item.images %}
         <div class="text-center">
-          <img src="{{ image.src }}" alt="{{ image.alt }}" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+          {% image image.src, image.alt, "(max-width: 768px) 100vw, 600px", [300, 450, 600], "lazy", null, null %}
           <p style="font-size: 0.875rem; color: var(--gray); margin-top: var(--spacing-xs);">{{ image.caption }}</p>
         </div>
         {% endfor %}
@@ -38,8 +38,6 @@ permalink: /news/
       </blockquote>
     </article>
     {% endfor %}
-
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 {% endif %}
@@ -62,7 +60,9 @@ permalink: /news/
       </div>
       {% endfor %}
     </div>
-
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
+
+<div class="text-center" style="padding: var(--space-8) 0;">
+  <a href="#top" class="back-to-top">↑ Back to Top</a>
+</div>

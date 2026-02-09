@@ -24,14 +24,14 @@ permalink: /chapter/undergraduate-chapters/
   <div class="container">
     <div class="section-header" style="display: flex; align-items: center; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
       {% if chapter.logo %}
-      <img src="{{ chapter.logo }}" alt="{{ chapter.name }} Crest" style="max-width: 80px; height: auto;">
+      {% image chapter.logo, chapter.name + " Crest", "80px", [80, 160], "lazy", null, null %}
       {% endif %}
       <h2 style="margin: 0;">{{ chapter.name }} ({{ chapter.greekLetters }})</h2>
     </div>
 
     {% if chapter.photo %}
     <div class="text-center" style="margin: var(--spacing-md) 0;">
-      <img src="{{ chapter.photo }}" alt="Brothers of {{ chapter.name }}" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      {% image chapter.photo, "Brothers of " + chapter.name, "(max-width: 768px) 100vw, 800px", [400, 600, 800], "lazy", null, null %}
     </div>
     {% endif %}
 

@@ -4,16 +4,16 @@
   "abbreviation": "BAC",
   "tagline": "Achievement in Every Field of Human Endeavor",
   "description": "The official website of the Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc., keeping the spirit of Phi Nu Pi active in Greater Boston since 1950.",
-  "url": "https://bostonkapsi.org",
+  "url": "https://bac1950.pages.dev",
   "founded": "June 3, 1950",
   "foundedYear": 1950,
   "charterMembersCount": 37,
-  "polemarchsCount": 37,
-  
+  "polemarchsCount": 38,
+
   "currentLeadership": {
     "polemarch": {
       "name": "André S. Morgan, Ph.D., Ed.L.D.",
-      "number": 37,
+      "number": 38,
       "termStart": 2025,
       "initiatingChapter": "Eta Sigma",
       "initiationDate": "1990",
@@ -150,8 +150,8 @@
   },
 
   "socialMedia": {
-    "facebook": "",
-    "instagram": "",
+    "facebook": "https://www.facebook.com/BostonNupes/",
+    "instagram": "https://www.instagram.com/bostonnupes/",
     "twitter": "",
     "youtube": ""
   },

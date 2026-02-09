@@ -12,15 +12,23 @@ permalink: /fraternity/
   </div>
 </section>
 
+<section class="hero-photo">
+  <div class="hero-photo-wrapper">
+    {% image "/assets/images/events/community-giveaway-2.jpg", "Kappa Alpha Psi brothers in service to the community", "(max-width: 768px) 100vw, 1200px", [600, 900, 1200], "eager" %}
+  </div>
+</section>
+
 <section class="page-section">
   <div class="container">
     <div class="section-header">
+      {% image "/assets/images/branding/kappa-crest.png", "Kappa Alpha Psi Coat of Arms", "150px", [150, 300], "lazy", null, null %}
       <h2>About Kappa Alpha Psi</h2>
     </div>
-    <p>Kappa Alpha Psi Fraternity, Inc. (ΚΑΨ) is a collegiate Greek-letter fraternity with a predominantly African-American membership. The fraternity was founded on {{ site.fraternity.founded }}, on the campus of {{ site.fraternity.foundingLocation }}.</p>
-    <p>The fundamental purpose of Kappa Alpha Psi is achievement. The fraternity's motto is <strong>"{{ site.fraternity.motto }}"</strong>.</p>
-    <p>Today, Kappa Alpha Psi boasts {{ site.fraternity.membershipCount }} members in {{ site.fraternity.chaptersCount }} chapters worldwide.</p>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
+    <div class="text-center">
+      <p>Kappa Alpha Psi Fraternity, Inc. (ΚΑΨ) is a collegiate Greek-letter fraternity with a predominantly African-American membership. The fraternity was founded on {{ site.fraternity.founded }}, on the campus of {{ site.fraternity.foundingLocation }}.</p>
+      <p>The fundamental purpose of Kappa Alpha Psi is achievement. The fraternity's motto is <strong>"{{ site.fraternity.motto }}"</strong>.</p>
+      <p>Today, Kappa Alpha Psi boasts {{ site.fraternity.membershipCount }} members in {{ site.fraternity.chaptersCount }} chapters worldwide.</p>
+    </div>
   </div>
 </section>
 
@@ -52,6 +60,9 @@ permalink: /fraternity/
         </div>
       </div>
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
+
+<div class="text-center" style="padding: var(--space-8) 0;">
+  <a href="#top" class="back-to-top">↑ Back to Top</a>
+</div>

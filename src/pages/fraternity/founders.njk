@@ -30,7 +30,7 @@ permalink: /fraternity/founders/
       <div style="display: flex; align-items: flex-start; gap: var(--spacing-lg); flex-wrap: wrap;">
         {% if founder.image %}
         <div style="flex-shrink: 0;">
-          <img src="{{ founder.image }}" alt="{{ founder.name }}" style="width: 150px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+          {% image founder.image, founder.name, "150px", [150, 300], "lazy", null, "founder-image" %}
         </div>
         {% endif %}
         <div style="flex: 1; min-width: 200px;">

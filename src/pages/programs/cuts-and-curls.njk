@@ -9,7 +9,7 @@ permalink: /programs/cuts-and-curls/
 
 <section class="hero">
   <div class="container">
-    <img src="/assets/images/programs/cuts-curls-icon.gif" alt="Cuts and Curls" class="crest" style="max-width: 180px;">
+    {% image "/assets/images/programs/cuts-curls-icon.gif", "Cuts and Curls", "180px", [180, 360], "eager", null, "crest" %}
     <h1>{{ cc.fullName }}</h1>
     <p class="tagline">"{{ cc.tagline }}"</p>
   </div>
@@ -17,7 +17,7 @@ permalink: /programs/cuts-and-curls/
 
 <section class="hero-photo">
   <div class="hero-photo-wrapper">
-    <img src="/assets/images/events/community-giveaway.jpg" alt="Community members at Cuts and Curls event" class="hero-photo-image">
+    {% image "/assets/images/events/community-giveaway.jpg", "Community members at Cuts and Curls event", "(max-width: 768px) 100vw, 1200px", [600, 900, 1200], "eager" %}
   </div>
 </section>
 
@@ -28,7 +28,6 @@ permalink: /programs/cuts-and-curls/
     </div>
     <p>{{ cc.description }}</p>
     <p><strong>Community Impact:</strong> {{ cc.communityImpact }}</p>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
@@ -69,12 +68,14 @@ permalink: /programs/cuts-and-curls/
         </div>
       </div>
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
 <section class="page-section">
   <div class="container">
+    <div class="text-center" style="margin-bottom: var(--spacing-lg);">
+      {% image "/assets/images/events/community-giveaway-2.jpg", "Community members at Cuts and Curls event", "(max-width: 768px) 100vw, 800px", [400, 600, 800] %}
+    </div>
     <div class="section-header">
       <h2>Event Details</h2>
     </div>
@@ -82,7 +83,6 @@ permalink: /programs/cuts-and-curls/
       <p><strong>Location:</strong> {{ cc.location }}</p>
       <p><strong>Frequency:</strong> {{ cc.frequency }}</p>
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
@@ -98,6 +98,9 @@ permalink: /programs/cuts-and-curls/
         <a href="/contact/" class="btn btn-primary">Contact Us</a>
       </div>
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
+
+<div class="text-center" style="padding: var(--space-8) 0;">
+  <a href="#top" class="back-to-top">↑ Back to Top</a>
+</div>

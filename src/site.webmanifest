@@ -1,0 +1,26 @@
+{
+  "name": "Boston (MA) Alumni Chapter - Kappa Alpha Psi",
+  "short_name": "Boston Kappas",
+  "description": "Official website of the Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#70110C",
+  "icons": [
+    {
+      "src": "/assets/images/branding/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/branding/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/branding/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

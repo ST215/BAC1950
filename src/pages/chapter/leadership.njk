@@ -7,6 +7,7 @@ permalink: /chapter/leadership/
 
 <section class="hero">
   <div class="container">
+    {% image "/assets/images/branding/chapter-coa.gif", "Boston (MA) Alumni Chapter Coat of Arms", "120px", [120, 240], "eager", null, "crest" %}
     <h1>Chapter Leadership</h1>
     <p class="tagline">Boston (MA) Alumni Chapter</p>
   </div>
@@ -20,24 +21,32 @@ permalink: /chapter/leadership/
 
     <div class="card-grid">
       <div class="card profile-card">
-        <h3>{{ site.currentLeadership.polemarch.name }}</h3>
-        <p class="title">{{ site.currentLeadership.polemarch.number | ordinal }} Polemarch</p>
-        <p>Initiated: {{ site.currentLeadership.polemarch.initiatingChapter }}, {{ site.currentLeadership.polemarch.initiationDate }}</p>
-        <p><a href="mailto:{{ site.currentLeadership.polemarch.email }}">{{ site.currentLeadership.polemarch.email }}</a></p>
+        <div class="profile-image">
+          {% image "/assets/images/leadership/polemarch.jpg", site.currentLeadership.polemarch.name, "200px", [200, 400], "lazy", null, null %}
+        </div>
+        <div class="card-content">
+          <h3>{{ site.currentLeadership.polemarch.name }}</h3>
+          <p class="title">{{ site.currentLeadership.polemarch.number | ordinal }} Polemarch</p>
+          <p>Initiated: {{ site.currentLeadership.polemarch.initiatingChapter }}, {{ site.currentLeadership.polemarch.initiationDate }}</p>
+          <p><a href="mailto:{{ site.currentLeadership.polemarch.email }}">{{ site.currentLeadership.polemarch.email }}</a></p>
+        </div>
       </div>
 
       {% for officer in site.currentLeadership.executiveBoard %}
       <div class="card profile-card">
-        <h3>{{ officer.name }}</h3>
-        <p class="title">{{ officer.position }}</p>
-        {% if officer.email %}
-        <p><a href="mailto:{{ officer.email }}">{{ officer.email }}</a></p>
-        {% endif %}
+        <div class="profile-image">
+          {% image "/assets/images/branding/chapter-logo-optimized.png", officer.position, "150px", [150, 300], "lazy", null, null %}
+        </div>
+        <div class="card-content">
+          <h3>{{ officer.name }}</h3>
+          <p class="title">{{ officer.position }}</p>
+          {% if officer.email %}
+          <p><a href="mailto:{{ officer.email }}">{{ officer.email }}</a></p>
+          {% endif %}
+        </div>
       </div>
       {% endfor %}
     </div>
-
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
@@ -50,13 +59,16 @@ permalink: /chapter/leadership/
     <div class="card-grid">
       {% for committee in site.currentLeadership.committees %}
       <div class="card profile-card">
-        <h3>{{ committee.chair }}</h3>
-        <p class="title">{{ committee.name }}</p>
+        <div class="profile-image profile-image-sm">
+          {% image "/assets/images/branding/chapter-logo-optimized.png", committee.name, "100px", [100, 200], "lazy", null, null %}
+        </div>
+        <div class="card-content">
+          <h3>{{ committee.chair }}</h3>
+          <p class="title">{{ committee.name }}</p>
+        </div>
       </div>
       {% endfor %}
     </div>
-
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
@@ -69,7 +81,6 @@ permalink: /chapter/leadership/
       <p><strong>Chapter Meetings:</strong> {{ site.meetings.frequency }} at {{ site.meetings.time }}</p>
       <p>For meeting locations and additional information, please contact the Keeper of Records.</p>
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
@@ -81,6 +92,9 @@ permalink: /chapter/leadership/
     <div class="card-grid">
       {% for chapter in undergradChapters.chapters %}
       <div class="card">
+        <div class="profile-image profile-image-sm">
+          {% image chapter.logo, chapter.name, "80px", [80, 160], "lazy", null, null %}
+        </div>
         <div class="card-content">
           <h3 class="card-title">{{ chapter.name }}</h3>
           <p class="card-text">{{ chapter.school }}</p>
@@ -89,6 +103,9 @@ permalink: /chapter/leadership/
       </div>
       {% endfor %}
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
+
+<div class="text-center" style="padding: var(--space-8) 0;">
+  <a href="#top" class="back-to-top">↑ Back to Top</a>
+</div>

@@ -9,7 +9,7 @@ permalink: /programs/kappa-league/
 
 <section class="hero">
   <div class="container">
-    <img src="/assets/images/branding/kappa-league-logo.png" alt="Kappa League Logo" class="crest" style="max-width: 200px;">
+    {% image "/assets/images/branding/kappa-league-logo.png", "Kappa League Logo", "200px", [200, 400], "eager", null, "crest" %}
     <h1>{{ kl.fullName }}</h1>
     <p class="tagline">"{{ kl.tagline }}"</p>
   </div>
@@ -24,7 +24,6 @@ permalink: /programs/kappa-league/
     </div>
     <p>{{ kl.description }}</p>
     <p><strong>Mission:</strong> {{ kl.mission }}</p>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
@@ -38,7 +37,6 @@ permalink: /programs/kappa-league/
       <li><strong>Gender:</strong> {{ kl.eligibility.gender }}</li>
       <li><strong>Location:</strong> {{ kl.eligibility.location }}</li>
     </ul>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
@@ -62,7 +60,6 @@ permalink: /programs/kappa-league/
       </div>
       {% endfor %}
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
@@ -78,7 +75,6 @@ permalink: /programs/kappa-league/
       </div>
       {% endfor %}
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
@@ -92,7 +88,6 @@ permalink: /programs/kappa-league/
       <li>{{ req }}</li>
       {% endfor %}
     </ul>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
@@ -109,6 +104,9 @@ permalink: /programs/kappa-league/
         <a href="{{ kl.externalLinks.youtube }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary external-link">Kappa League TV</a>
       </div>
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
+
+<div class="text-center" style="padding: var(--space-8) 0;">
+  <a href="#top" class="back-to-top">↑ Back to Top</a>
+</div>

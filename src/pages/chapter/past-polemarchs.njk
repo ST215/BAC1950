@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Past Polemarchs
-description: All 36 Polemarchs who have led the Boston (MA) Alumni Chapter of Kappa Alpha Psi since 1950.
+description: All {{ site.polemarchsCount }} Polemarchs who have led the Boston (MA) Alumni Chapter of Kappa Alpha Psi since 1950.
 permalink: /chapter/past-polemarchs/
 ---
 
@@ -14,55 +14,31 @@ permalink: /chapter/past-polemarchs/
 
 <section class="page-section">
   <div class="container">
-    <p class="text-center">{{ polemarchs.note }}</p>
-    <p class="text-center"><em>{{ polemarchs.deceasedMarker }} indicates deceased</em></p>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
+    <div class="section-header">
+      <p>{{ polemarchs.note }}</p>
+      <p class="legend"><span class="deceased-marker">*</span> indicates deceased</p>
+    </div>
+
+    <div class="polemarchs-grid">
+      {% for pol in polemarchs.polemarchs %}
+      <div class="polemarch-card{% if pol.deceased %} deceased{% endif %}">
+        {% if pol.image %}
+        <div class="polemarch-photo">
+          {% image pol.image, "Brother " + pol.name, "200px", [200, 400], "lazy", null, null %}
+        </div>
+        {% endif %}
+        <div class="polemarch-number">{{ pol.number | ordinal }}</div>
+        <h3 class="polemarch-name">{{ pol.name }}{% if pol.deceased %}<span class="deceased-marker">*</span>{% endif %}</h3>
+        <p class="polemarch-term">{{ pol.term }}</p>
+        <p class="polemarch-initiation">{{ pol.initiatingChapter }}</p>
+        <p class="polemarch-date">{{ pol.initiationDate }}</p>
+        {% if pol.notable %}<p class="polemarch-notable">{{ pol.notable }}</p>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
-<section class="page-section">
-  <div class="container">
-    <table class="data-table">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Name</th>
-          <th>Term</th>
-          <th>Initiating Chapter</th>
-          <th>Initiation Date</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for pol in polemarchs.polemarchs %}
-        <tr>
-          <td>{{ pol.number }}</td>
-          <td>
-            {{ pol.name }}{% if pol.deceased %}*{% endif %}
-            {% if pol.notable %}<br><small style="color: var(--gray);">{{ pol.notable }}</small>{% endif %}
-          </td>
-          <td>{{ pol.term }}</td>
-          <td>{{ pol.initiatingChapter }}</td>
-          <td>{{ pol.initiationDate }}</td>
-        </tr>
-        {% if loop.index % 12 == 0 %}
-        </tbody>
-      </table>
-      <a href="#top" class="back-to-top">↑ Back to Top</a>
-      <table class="data-table" style="margin-top: var(--spacing-lg);">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Term</th>
-            <th>Initiating Chapter</th>
-            <th>Initiation Date</th>
-          </tr>
-        </thead>
-        <tbody>
-        {% endif %}
-        {% endfor %}
-      </tbody>
-    </table>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
-  </div>
-</section>
+<div class="text-center" style="padding: var(--space-8) 0;">
+  <a href="#top" class="back-to-top">↑ Back to Top</a>
+</div>

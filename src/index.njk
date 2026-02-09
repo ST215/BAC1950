@@ -1,27 +1,21 @@
 ---
 layout: base.njk
-title: Home
-description: Official website of the Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc. Serving Greater Boston since 1950.
+title: Kappa Alpha Psi - Serving Greater Boston Since 1950
+description: Official website of the Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc. Achievement in every field of human endeavor.
 ---
 
 <section class="hero hero-branded">
   <div class="container">
-    <img src="/assets/images/branding/chapter-logo.gif" alt="Boston (MA) Alumni Chapter Coat of Arms" class="chapter-logo">
+    {% image "/assets/images/branding/chapter-logo-optimized.png", "Boston (MA) Alumni Chapter Coat of Arms", "245px", [245, 490], "eager", "high", "chapter-logo" %}
     <h1>Boston (MA) Alumni Chapter</h1>
     <p class="tagline">"{{ site.tagline }}"</p>
-    <p>Serving Greater Boston Since {{ site.foundedYear }}</p>
+    <p class="text-center">Serving Greater Boston Since {{ site.foundedYear }}</p>
   </div>
 </section>
 
 <section class="hero-photo">
   <div class="hero-photo-wrapper">
-    <img src="/assets/images/events/chapter-photo-2025.jpeg" alt="Brothers of the Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc., 2025" class="hero-photo-image">
-  </div>
-  <div class="container">
-    <div class="hero-photo-cta">
-      <a href="/membership/" class="btn btn-primary">Become a Member</a>
-      <a href="/contact/" class="btn btn-secondary">Contact Us</a>
-    </div>
+    {% image "/assets/images/events/chapter-photo-2025.jpeg", "Brothers of the Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc., 2025", "(max-width: 768px) 100vw, 950px", [400, 600, 900, 1200], "eager", "high" %}
   </div>
 </section>
 
@@ -32,9 +26,7 @@ description: Official website of the Boston (MA) Alumni Chapter of Kappa Alpha P
     </div>
     <div class="polemarch-message">
       <div class="polemarch-message-photo">
-        <img src="/assets/images/leadership/polemarch.jpg"
-             alt="Brother {{ site.currentLeadership.polemarch.name }}, {{ site.currentLeadership.polemarch.number | ordinal }} Polemarch of the Boston (MA) Alumni Chapter"
-             class="polemarch-portrait">
+        {% image "/assets/images/leadership/polemarch.jpg", "Brother " + site.currentLeadership.polemarch.name + ", " + (site.currentLeadership.polemarch.number | ordinal) + " Polemarch of the Boston (MA) Alumni Chapter", "300px", [300, 600], "eager", null, "polemarch-portrait" %}
         <div class="polemarch-message-name">
           <h3>{{ site.currentLeadership.polemarch.name }}</h3>
           <p>{{ site.currentLeadership.polemarch.number | ordinal }} Polemarch</p>
@@ -53,7 +45,6 @@ description: Official website of the Boston (MA) Alumni Chapter of Kappa Alpha P
         <span>Polemarch</span></p>
       </div>
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
@@ -69,7 +60,6 @@ description: Official website of the Boston (MA) Alumni Chapter of Kappa Alpha P
         <a href="/fraternity/history/" class="btn btn-secondary">Learn More About Our History</a>
       </div>
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
@@ -94,7 +84,7 @@ description: Official website of the Boston (MA) Alumni Chapter of Kappa Alpha P
       <div class="card">
         <div class="card-content">
           <h3 class="card-title">3 Undergraduate Chapters</h3>
-          <p class="card-text">We support undergraduate brothers at MIT, Northeastern, and UMass Boston.</p>
+          <p class="card-text">We advise Chi (BU), Theta Iota (MIT), and Lambda Xi (Brown) chapters.</p>
           <a href="/chapter/undergraduate-chapters/" class="btn btn-secondary mt-1">View Chapters</a>
         </div>
       </div>
@@ -106,7 +96,6 @@ description: Official website of the Boston (MA) Alumni Chapter of Kappa Alpha P
         </div>
       </div>
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
@@ -115,12 +104,13 @@ description: Official website of the Boston (MA) Alumni Chapter of Kappa Alpha P
     <div class="section-header">
       <h2>Current Grand Chapter Leadership</h2>
     </div>
-    <p class="text-center">{{ site.grandChapter.grandPolemarch.number | ordinal }} Grand Polemarch: <strong>{{ site.grandChapter.grandPolemarch.name }}</strong></p>
-    <p class="text-center"><em>"{{ site.grandChapter.grandPolemarch.theme }}"</em></p>
-    <div class="text-center mt-2">
-      <a href="{{ site.externalLinks.national.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary external-link">Visit Kappa Alpha Psi International</a>
+    <div class="text-center">
+      <p>{{ site.grandChapter.grandPolemarch.number | ordinal }} Grand Polemarch: <strong>{{ site.grandChapter.grandPolemarch.name }}</strong></p>
+      <p><em>"{{ site.grandChapter.grandPolemarch.theme }}"</em></p>
+      <div class="mt-2">
+        <a href="{{ site.externalLinks.national.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary external-link">Visit Kappa Alpha Psi International</a>
+      </div>
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
 
@@ -138,6 +128,9 @@ description: Official website of the Boston (MA) Alumni Chapter of Kappa Alpha P
         <a href="/contact/" class="btn btn-primary">Get in Touch</a>
       </div>
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
   </div>
 </section>
+
+<div class="text-center" style="padding: var(--space-8) 0;">
+  <a href="#top" class="back-to-top">↑ Back to Top</a>
+</div>

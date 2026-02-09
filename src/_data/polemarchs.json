@@ -9,7 +9,7 @@
       "initiatingChapter": "Alpha Epsilon",
       "initiationDate": "Fall 1934",
       "deceased": true,
-      "image": null,
+      "image": "/assets/images/leadership/henry-a-hill.png",
       "notable": "Co-founded National Polychemicals, Inc. and the Riverside Research Laboratories. Became the 1st Black president of the American Chemical Society in 1977."
     },
     {
@@ -353,13 +353,23 @@
       "notable": null
     },
     {
-      "number": 36,
+      "number": 37,
       "name": "Anthony Munro",
-      "term": "2023-present",
+      "term": "2023-2025",
       "initiatingChapter": "Boston Alumni",
       "initiationDate": "Fall 2017",
       "deceased": false,
-      "image": null,
+      "image": "/assets/images/leadership/anthony-munro.png",
+      "notable": null
+    },
+    {
+      "number": 38,
+      "name": "André S. Morgan, Ph.D., Ed.L.D.",
+      "term": "2025-present",
+      "initiatingChapter": "Eta Sigma",
+      "initiationDate": "1990",
+      "deceased": false,
+      "image": "/assets/images/leadership/polemarch.jpg",
       "notable": "Current Polemarch"
     }
   ]
