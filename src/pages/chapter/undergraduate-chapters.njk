@@ -40,7 +40,6 @@ permalink: /chapter/undergraduate-chapters/
         <p><strong>University:</strong> {{ chapter.school }}</p>
         <p><strong>Location:</strong> {{ chapter.location }}</p>
         <p><strong>Chartered:</strong> {{ chapter.chartered }}</p>
-        <p><strong>Charter Members:</strong> {{ chapter.charterMembers }}</p>
         <p><strong>Undergraduate Advisor:</strong> {{ chapter.advisor.name }}</p>
       </div>
       <div>
@@ -49,6 +48,15 @@ permalink: /chapter/undergraduate-chapters/
         <p><em>{{ chapter.notable }}</em></p>
         {% endif %}
       </div>
+    </div>
+
+    <div style="margin-top: var(--spacing-md);">
+      <h4>Charter Members{% if chapter.charterMembersNickname %} - "The {{ chapter.charterMembersNickname }}"{% endif %}</h4>
+      <ul style="margin-left: var(--spacing-lg); column-count: 2; column-gap: var(--spacing-lg);">
+        {% for member in chapter.charterMembers %}
+        <li>{{ member }}</li>
+        {% endfor %}
+      </ul>
     </div>
 
     {% if chapter.activities.length > 0 %}

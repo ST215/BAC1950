@@ -1,0 +1,37 @@
+{
+  "articles": [
+    {
+      "id": "kappa-115-anniversary",
+      "title": "Historic Black Fraternity Celebrates 115 Years",
+      "source": "Bay State Banner",
+      "author": "Deidre Montague",
+      "date": "2026-01-14",
+      "url": "https://baystatebanner.com/2026/01/14/historic-black-fraternity-celebrates-115-years/",
+      "excerpt": "Kappa Alpha Psi Fraternity, Inc. is marking a significant milestone this January—115 years since its founding on January 5, 1911, at Indiana University Bloomington.",
+      "featured": true,
+      "image": null
+    }
+  ],
+  "recognition": [
+    {
+      "id": "boston-citation-2026",
+      "title": "City of Boston Certificate of Recognition",
+      "date": "2026-01-05",
+      "presenter": "Mayor Michelle Wu",
+      "description": "Certificate of Recognition presented to The Boston Alumni Chapter of Kappa Alpha Psi Fraternity Incorporated in recognition of the organization's steadfast devotion to Achievement in Every Field of Human Endeavor, and for more than 75 years of unwavering service to the Boston community.",
+      "images": [
+        {
+          "src": "/assets/images/recognition/boston-citation-presentation-2026.jpeg",
+          "alt": "Boston Alumni Chapter brothers receiving Certificate of Recognition from City of Boston representative",
+          "caption": "Brothers of the Boston Alumni Chapter receive Certificate of Recognition from the City of Boston"
+        },
+        {
+          "src": "/assets/images/recognition/boston-citation-certificate-2026.jpeg",
+          "alt": "City of Boston Certificate of Recognition presented to Boston Alumni Chapter",
+          "caption": "Certificate of Recognition from Mayor Michelle Wu"
+        }
+      ],
+      "fullText": "CERTIFICATE OF RECOGNITION presented to The Boston Alumni Chapter of Kappa Alpha Psi Fraternity Incorporated. In recognition of your organization's steadfast devotion to Achievement in Every Field of Human Endeavor, and for more than 75 years of unwavering service to the Boston community—uplifting, guiding, and inspiring generations through your organization's enduring commitment and purpose. On behalf of The City of Boston, we honor your organization and its valuable contributions to our city. — Michelle Wu, Mayor of Boston, January 5, 2026"
+    }
+  ]
+}

@@ -8,7 +8,15 @@
       "school": "Boston University",
       "location": "Boston, MA",
       "chartered": "February 15, 1924",
-      "charterMembers": "Significant Six",
+      "charterMembersNickname": "Significant Six",
+      "charterMembers": [
+        "Maceo Hubbard",
+        "Julien Evans",
+        "Courtney Cooley",
+        "Theodore Nathaniel D. Scott",
+        "J. Logan Jenkins Jr.",
+        "John Hunter"
+      ],
       "advisor": {
         "name": "Jonathan Thompson",
         "title": "Undergraduate Advisor"
@@ -32,7 +40,17 @@
       "school": "Massachusetts Institute of Technology",
       "location": "Cambridge, MA",
       "chartered": "October 11, 1975",
-      "charterMembers": "Nine Brothers",
+      "charterMembersNickname": "Elegant Eight",
+      "charterMembers": [
+        "William A. Black",
+        "Bernard H. Robinson",
+        "Fredrick (\"Fred\") Thompson",
+        "Stanley J. Washington",
+        "Glenn E. Perkins Jr.",
+        "Samuel Nixon Jr.",
+        "Leonard Nethersole",
+        "Philip G. Hampton"
+      ],
       "advisor": {
         "name": "Kevin Sibley",
         "title": "Undergraduate Advisor"
@@ -59,7 +77,16 @@
       "school": "Brown University",
       "location": "Providence, RI",
       "chartered": "March 12, 1983",
-      "charterMembers": "Seven men",
+      "charterMembersNickname": "Seven Charter Members",
+      "charterMembers": [
+        "David Carter",
+        "Mike Evans",
+        "Danoy Harris",
+        "Darryl Lowen",
+        "Grover Rudolph",
+        "Derrick Burns",
+        "James Flemming"
+      ],
       "advisor": {
         "name": "William Whitehead",
         "title": "Undergraduate Advisor"

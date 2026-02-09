@@ -61,6 +61,11 @@
       ]
     },
     {
+      "label": "News",
+      "url": "/news/",
+      "children": null
+    },
+    {
       "label": "Membership",
       "url": "/membership/",
       "children": [

@@ -1,0 +1,68 @@
+---
+layout: base.njk
+title: In the News
+description: News, media coverage, and recognition of the Boston (MA) Alumni Chapter of Kappa Alpha Psi.
+permalink: /news/
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>In the News</h1>
+    <p class="tagline">Media Coverage & Recognition</p>
+  </div>
+</section>
+
+{% if news.recognition.length > 0 %}
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Recognition & Awards</h2>
+    </div>
+
+    {% for item in news.recognition %}
+    <article style="margin-bottom: var(--spacing-xl);">
+      <h3>{{ item.title }}</h3>
+      <p><strong>{{ item.date | formatDate }}</strong> — Presented by {{ item.presenter }}</p>
+
+      <div class="card-grid mt-2">
+        {% for image in item.images %}
+        <div class="text-center">
+          <img src="{{ image.src }}" alt="{{ image.alt }}" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+          <p style="font-size: 0.875rem; color: var(--gray); margin-top: var(--spacing-xs);">{{ image.caption }}</p>
+        </div>
+        {% endfor %}
+      </div>
+
+      <blockquote style="background: var(--cream); padding: var(--spacing-md); border-left: 4px solid var(--crimson); margin-top: var(--spacing-md); font-style: italic;">
+        {{ item.fullText }}
+      </blockquote>
+    </article>
+    {% endfor %}
+
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
+{% endif %}
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Media Coverage</h2>
+    </div>
+
+    <div class="card-grid">
+      {% for article in news.articles %}
+      <div class="card">
+        <div class="card-content">
+          <h3 class="card-title">{{ article.title }}</h3>
+          <p style="font-size: 0.875rem; color: var(--gray);">{{ article.source }} — {{ article.date | formatDate }}</p>
+          <p class="card-text">{{ article.excerpt }}</p>
+          <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mt-1 external-link">Read Full Article</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</section>
