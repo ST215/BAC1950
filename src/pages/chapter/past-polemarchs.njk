@@ -22,11 +22,9 @@ permalink: /chapter/past-polemarchs/
     <div class="polemarchs-grid">
       {% for pol in polemarchs.polemarchs %}
       <div class="polemarch-card{% if pol.deceased %} deceased{% endif %}">
-        {% if pol.image %}
         <div class="polemarch-photo">
-          {% image pol.image, "Brother " + pol.name, "200px", [200, 400], "lazy", null, null %}
+          {% image "/assets/images/branding/chapter-logo-optimized.png", "Boston Alumni Chapter", "150px", [150, 300], "lazy", null, null %}
         </div>
-        {% endif %}
         <div class="polemarch-number">{{ pol.number | ordinal }}</div>
         <h3 class="polemarch-name">{{ pol.name }}{% if pol.deceased %}<span class="deceased-marker">*</span>{% endif %}</h3>
         <p class="polemarch-term">{{ pol.term }}</p>

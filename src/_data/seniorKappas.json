@@ -1,0 +1,37 @@
+{
+  "title": "Senior Kappa Brothers",
+  "intro": "The Boston (MA) Alumni Chapter proudly honors our Senior Kappa Brothers — members who have dedicated 50 or more years to the bond of Kappa Alpha Psi Fraternity, Inc. These brothers represent the living legacy of our organization, having carried the torch of Achievement in Every Field of Human Endeavor across decades of service, leadership, and brotherhood.",
+  "whiteJacket": "Only members who have reached the fifty-year milestone as a member of Kappa Alpha Psi are authorized to wear the iconic 50-Year Member White Jacket — a distinguished symbol of a half-century of unwavering commitment to the bond of Phi Nu Pi.",
+  "seniorKappaAffairs": "Senior Kappa Affairs is an official program of Kappa Alpha Psi Fraternity, Inc. established to recruit, reclaim, and retain members who are 60 years of age or older as active, contributing brothers. The program encourages chapters to involve senior members in meaningful activities and community service initiatives. Senior Kappa Week is observed annually during the third week in May.",
+  "seniorKappas": [
+    {
+      "name": "Brother Name",
+      "initiatingChapter": "Chapter Name",
+      "initiationDate": "Spring 1970",
+      "yearsInBond": "55+",
+      "bio": null
+    },
+    {
+      "name": "Brother Name",
+      "initiatingChapter": "Chapter Name",
+      "initiationDate": "Fall 1972",
+      "yearsInBond": "53+",
+      "bio": null
+    },
+    {
+      "name": "Brother Name",
+      "initiatingChapter": "Chapter Name",
+      "initiationDate": "Spring 1975",
+      "yearsInBond": "50+",
+      "bio": null
+    }
+  ],
+  "contact": {
+    "message": "Do you know a Boston Alumni Chapter brother with 50 or more years in the bond? We want to make sure every Senior Kappa Brother is recognized and honored. Please contact us so we can add them to this page.",
+    "email": "info@bostonkapsi.org"
+  },
+  "externalLinks": {
+    "national": "https://kappaalphapsi1911.com/senior-kappa-affairs/",
+    "province": "https://kapsinep.org/senior-kappa-affairs/"
+  }
+}
