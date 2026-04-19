@@ -7,10 +7,38 @@ permalink: /news/
 
 <section class="hero">
   <div class="container">
-    <h1>In the News</h1>
+    <h1 class="hero-title">In the News</h1>
     <p class="tagline">Media Coverage & Recognition</p>
   </div>
 </section>
+
+{% if events.events.length > 0 %}
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Chapter Events</h2>
+    </div>
+
+    <div class="card-grid">
+      {% for event in events.events %}
+      <article class="card" itemscope itemtype="https://schema.org/Event">
+        <div class="card-content">
+          <h3 class="card-title" itemprop="name">{{ event.title }}</h3>
+          <p class="news-item-caption">
+            <time itemprop="startDate" datetime="{{ event.date }}T{{ event.startTime }}">{{ event.date | formatDate }}</time>
+            <span itemprop="location" itemscope itemtype="https://schema.org/Place">
+              &middot; <span itemprop="name">{{ event.venue.name }}</span>
+            </span>
+          </p>
+          <p class="card-text" itemprop="description">{{ event.subtitle }}</p>
+          <a href="/events/{{ event.slug }}/" class="btn btn-secondary mt-1">View Recap</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
 
 {% if news.recognition.length > 0 %}
 <section class="page-section">
@@ -20,7 +48,7 @@ permalink: /news/
     </div>
 
     {% for item in news.recognition %}
-    <article style="margin-bottom: var(--spacing-xl);">
+    <article class="news-item">
       <h3>{{ item.title }}</h3>
       <p><strong>{{ item.date | formatDate }}</strong> — Presented by {{ item.presenter }}</p>
 
@@ -28,12 +56,12 @@ permalink: /news/
         {% for image in item.images %}
         <div class="text-center">
           {% image image.src, image.alt, "(max-width: 768px) 100vw, 600px", [300, 450, 600], "lazy", null, null %}
-          <p style="font-size: 0.875rem; color: var(--gray); margin-top: var(--spacing-xs);">{{ image.caption }}</p>
+          <p class="news-item-caption">{{ image.caption }}</p>
         </div>
         {% endfor %}
       </div>
 
-      <blockquote style="background: var(--cream); padding: var(--spacing-md); border-left: 4px solid var(--crimson); margin-top: var(--spacing-md); font-style: italic;">
+      <blockquote class="news-item-quote">
         {{ item.fullText }}
       </blockquote>
     </article>
@@ -50,19 +78,22 @@ permalink: /news/
 
     <div class="card-grid">
       {% for article in news.articles %}
-      <div class="card">
+      <article class="card" itemscope itemtype="https://schema.org/NewsArticle">
         <div class="card-content">
-          <h3 class="card-title">{{ article.title }}</h3>
-          <p style="font-size: 0.875rem; color: var(--gray);">{{ article.source }} — {{ article.date | formatDate }}</p>
-          <p class="card-text">{{ article.excerpt }}</p>
-          <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mt-1 external-link">Read Full Article</a>
+          <h3 class="card-title" itemprop="headline">{{ article.title }}</h3>
+          <p class="news-item-caption">
+            <span itemprop="publisher">{{ article.source }}</span> &mdash;
+            <time itemprop="datePublished" datetime="{{ article.date }}">{{ article.date | formatDate }}</time>
+          </p>
+          <p class="card-text" itemprop="description">{{ article.excerpt }}</p>
+          <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mt-1 external-link" itemprop="url">Read Full Article</a>
         </div>
-      </div>
+      </article>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<div class="text-center" style="padding: var(--space-8) 0;">
+<div class="text-center news-back-to-top">
   <a href="#top" class="back-to-top">↑ Back to Top</a>
 </div>

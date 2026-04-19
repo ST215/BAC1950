@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Official website of the Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc.",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve",
-    "start": "npx @11ty/eleventy --serve"
+    "build:js": "esbuild src/assets/js/pretext/index.js --bundle --minify --format=iife --global-name=PretextEnhancements --outfile=src/assets/js/pretext.bundle.js",
+    "build": "npm run build:js && npx @11ty/eleventy",
+    "serve": "npm run build:js && npx @11ty/eleventy --serve",
+    "start": "npm run build:js && npx @11ty/eleventy --serve",
+    "process-event": "node scripts/process-event-photos.js"
   },
   "keywords": [
     "kappa-alpha-psi",
@@ -17,9 +19,12 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.2",
+    "esbuild": "^0.28.0",
+    "sharp": "^0.34.5"
   },
   "dependencies": {
-    "@11ty/eleventy-img": "^6.0.4"
+    "@11ty/eleventy-img": "^6.0.4",
+    "@chenglou/pretext": "^0.0.5"
   }
 }

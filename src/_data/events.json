@@ -1,0 +1,48 @@
+{
+  "events": [
+    {
+      "id": "frontline-to-forefront",
+      "slug": "frontline-to-forefront",
+      "title": "From the Frontline to the Forefront",
+      "subtitle": "A Journey Through American Justice",
+      "type": "A Fireside Chat",
+      "date": "2026-04-18",
+      "startTime": "12:00",
+      "endTime": "14:00",
+      "venue": {
+        "name": "Wesley United Methodist Church",
+        "street": "1076 Washington Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "",
+        "lat": 42.3397,
+        "lng": -71.0715
+      },
+      "description": [
+        "The Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc. hosted \u201cFrom the Frontline to the Forefront: A Journey Through American Justice,\u201d a fireside chat at Wesley United Methodist Church featuring Dr. Larome Myrick, Executive Director of Juvenile Justice for the Rhode Island Department of Children, Youth and Families.",
+        "Dr. Myrick chronicled his career trajectory as a criminal justice professional \u2014 beginning as a correctional officer, rising through the ranks into management, and arriving at his current executive role. Drawing on experience in both adult and youth correction systems, he gave particular attention to how policy decisions and systemic challenges influence the efficacy of various models of reform and rehabilitation."
+      ],
+      "flyer": "/assets/images/events/frontline-to-forefront/flyer.png",
+      "speakers": [
+        {
+          "name": "Bro. Larome Myrick, PhD",
+          "role": "Featured Speaker",
+          "bio": "Executive Director of Juvenile Justice, Rhode Island Department of Children, Youth and Families. Dr. Myrick rose through the ranks of both adult and youth corrections, bringing firsthand insight into reform, rehabilitation, and systemic policy.",
+          "url": "https://drmyrickconsulting.org"
+        }
+      ],
+      "moderator": {
+        "name": "Christian H. Bijoux, PhD, MPH, MBA",
+        "role": "Moderator",
+        "bio": "Deputy Director of Community Safety & Well-Being Research, Springfield University.",
+        "url": "https://cyj.georgetown.edu/about-us/meet-the-staff/chris-bijoux/"
+      },
+      "galleryManifest": "frontline-to-forefront",
+      "photography": {
+        "credit": "Stanley H. Griggs II",
+        "camera": "Sony \u03b17 III",
+        "lens": "Viltrox 85mm f/1.4 FE"
+      }
+    }
+  ]
+}

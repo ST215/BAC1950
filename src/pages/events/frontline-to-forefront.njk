@@ -1,0 +1,142 @@
+---
+layout: base.njk
+title: From the Frontline to the Forefront
+description: A fireside chat with Dr. Larome Myrick on his journey through American justice, hosted by the Boston (MA) Alumni Chapter of Kappa Alpha Psi.
+permalink: /events/frontline-to-forefront/
+extraHead: |
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+extraScripts: |
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+  <script src="/assets/js/event-map.js" defer></script>
+---
+
+{% set event = events.events[0] %}
+{% set gallery = galleryManifest[event.galleryManifest] %}
+
+<section class="hero event-hero">
+  <div class="container">
+    <p class="event-hero-kicker">{{ event.type }}</p>
+    <h1 class="hero-title event-hero-title" data-pretext-lines>{{ event.title }}</h1>
+    <p class="tagline event-hero-subtitle">{{ event.subtitle }}</p>
+    <p class="event-hero-meta">
+      <time datetime="{{ event.date }}T{{ event.startTime }}">{{ event.date | formatDate }}</time>
+      &middot;
+      <span>{{ event.startTime }}&ndash;{{ event.endTime }}</span>
+      &middot;
+      <span>{{ event.venue.name }}, {{ event.venue.city }}</span>
+    </p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="event-overview">
+      <div class="event-flyer">
+        {% image event.flyer, "Event flyer for From the Frontline to the Forefront", "(max-width: 735px) 100vw, 480px", [480, 720, 960], "lazy", null, null %}
+      </div>
+      <div class="event-description">
+        <h2>About the Event</h2>
+        {% for para in event.description %}
+        <p>{{ para }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Featured Speaker &amp; Moderator</h2>
+    </div>
+    <div class="event-speaker-grid">
+      {% for speaker in event.speakers %}
+      <article class="card event-speaker-card">
+        <div class="card-content">
+          <p class="event-speaker-role">{{ speaker.role }}</p>
+          <h3 class="card-title">{{ speaker.name }}</h3>
+          <p class="card-text">{{ speaker.bio }}</p>
+          {% if speaker.url %}
+          <a href="{{ speaker.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mt-1 external-link">Learn More</a>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+      {% if event.moderator %}
+      <article class="card event-speaker-card">
+        <div class="card-content">
+          <p class="event-speaker-role">{{ event.moderator.role }}</p>
+          <h3 class="card-title">{{ event.moderator.name }}</h3>
+          <p class="card-text">{{ event.moderator.bio }}</p>
+          {% if event.moderator.url %}
+          <a href="{{ event.moderator.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mt-1 external-link">Learn More</a>
+          {% endif %}
+        </div>
+      </article>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Venue</h2>
+    </div>
+    <div class="event-venue-grid">
+      <div class="event-venue-card card">
+        <div class="card-content">
+          <h3 class="card-title">{{ event.venue.name }}</h3>
+          <address class="event-venue-address">
+            {{ event.venue.street }}<br>
+            {{ event.venue.city }}, {{ event.venue.state }} {{ event.venue.zip }}
+          </address>
+          <a href="https://www.google.com/maps/dir/?api=1&destination={{ event.venue.lat }},{{ event.venue.lng }}"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn-secondary mt-1 external-link">Get Directions</a>
+        </div>
+      </div>
+      <div id="event-map" class="event-map"
+           data-lat="{{ event.venue.lat }}"
+           data-lng="{{ event.venue.lng }}"
+           data-venue="{{ event.venue.name }}"
+           data-address="{{ event.venue.street }}, {{ event.venue.city }}, {{ event.venue.state }}"
+           aria-label="Map showing the venue location"></div>
+    </div>
+  </div>
+</section>
+
+{% if gallery and gallery.images.length > 0 %}
+<section class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Photo Gallery</h2>
+      <p class="news-item-caption">{{ gallery.count }} photos from the event</p>
+    </div>
+    <div class="event-gallery">
+      {% for img in gallery.images %}
+      <figure class="event-gallery-item">
+        {% image "/assets/images/events/" + event.galleryManifest + "/" + img.file, img.alt, "(max-width: 735px) 50vw, (max-width: 1068px) 33vw, 25vw", [600, 900, 1400], "lazy", null, "event-gallery-img enlargeable" %}
+      </figure>
+      {% endfor %}
+    </div>
+
+    {% if event.photography %}
+    <aside class="photo-credit" aria-label="Photography credit">
+      <p class="photo-credit-label">Photography</p>
+      <p class="photo-credit-name">{{ event.photography.credit }}</p>
+      <p class="photo-credit-gear">
+        <span>{{ event.photography.camera }}</span>
+        <span class="photo-credit-sep" aria-hidden="true">&middot;</span>
+        <span>{{ event.photography.lens }}</span>
+      </p>
+    </aside>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+
+<div class="text-center news-back-to-top">
+  <a href="/news/" class="back-to-top">&larr; Back to News</a>
+</div>
+

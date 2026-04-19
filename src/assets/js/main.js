@@ -63,8 +63,37 @@ function createLightbox() {
     });
   });
 
+  function largestSrcFromSrcset(srcset) {
+    if (!srcset) return null;
+    let best = null;
+    let bestW = 0;
+    srcset.split(',').forEach(function(entry) {
+      const parts = entry.trim().split(/\s+/);
+      const url = parts[0];
+      const w = parts[1] ? parseInt(parts[1], 10) : 0;
+      if (w > bestW) { bestW = w; best = url; }
+    });
+    return best;
+  }
+
+  function bestSourceFor(img) {
+    const picture = img.closest('picture');
+    if (picture) {
+      const sources = picture.querySelectorAll('source');
+      for (let i = 0; i < sources.length; i++) {
+        const type = sources[i].getAttribute('type') || '';
+        if (type.includes('webp')) {
+          const largest = largestSrcFromSrcset(sources[i].getAttribute('srcset'));
+          if (largest) return largest;
+        }
+      }
+    }
+    const fromImg = largestSrcFromSrcset(img.getAttribute('srcset'));
+    return fromImg || img.currentSrc || img.src;
+  }
+
   function openLightbox(img) {
-    lightboxImage.src = img.src;
+    lightboxImage.src = bestSourceFor(img);
     lightboxImage.alt = img.alt;
     lightboxCaption.textContent = img.alt;
     lightbox.classList.add('active');

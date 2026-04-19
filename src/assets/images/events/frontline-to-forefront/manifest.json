@@ -1,0 +1,601 @@
+{
+  "slug": "frontline-to-forefront",
+  "processedAt": "2026-04-19T19:18:21.549Z",
+  "count": 99,
+  "images": [
+    {
+      "file": "img-01.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 1 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-02.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 2 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-03.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 3 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-04.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 4 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-05.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 5 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-06.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 6 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-07.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 7 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-08.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 8 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-09.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 9 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-10.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 10 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-11.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 11 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-12.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 12 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-13.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 13 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-14.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 14 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-15.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 15 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-16.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 16 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-17.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 17 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-18.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 18 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-19.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 19 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-20.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 20 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-21.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 21 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-22.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 22 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-23.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 23 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-24.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 24 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-25.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 25 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-26.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 26 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-27.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 27 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-28.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 28 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-29.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 29 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-30.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 30 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-31.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 31 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-32.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 32 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-33.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 33 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-34.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 34 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-35.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 35 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-36.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 36 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-37.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 37 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-38.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 38 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-39.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 39 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-40.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 40 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-41.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 41 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-42.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 42 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-43.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 43 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-44.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 44 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-45.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 45 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-46.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 46 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-47.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 47 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-48.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 48 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-49.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 49 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-50.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 50 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-51.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 51 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-52.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 52 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-53.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 53 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-54.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 54 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-55.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 55 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-56.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 56 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-57.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 57 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-58.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 58 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-59.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 59 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-60.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 60 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-61.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 61 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-62.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 62 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-63.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 63 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-64.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 64 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-65.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 65 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-66.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 66 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-67.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 67 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-68.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 68 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-69.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 69 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-70.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 70 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-71.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 71 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-72.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 72 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-73.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 73 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-74.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 74 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-75.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 75 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-76.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 76 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-77.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 77 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-78.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 78 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-79.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 79 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-80.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 80 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-81.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 81 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-82.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 82 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-83.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 83 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-84.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 84 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-85.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 85 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-86.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 86 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-87.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 87 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-88.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 88 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-89.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 89 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-90.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 90 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-91.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 91 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-92.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 92 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-93.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 93 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-94.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 94 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-95.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 95 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-96.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 96 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-97.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 97 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-98.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 98 from the From the Frontline to the Forefront event"
+    },
+    {
+      "file": "img-99.webp",
+      "width": 2400,
+      "height": 1350,
+      "alt": "Photo 99 from the From the Frontline to the Forefront event"
+    }
+  ]
+}
