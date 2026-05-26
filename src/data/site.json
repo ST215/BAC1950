@@ -20,19 +20,28 @@
       "email": "polemarch@bostonkapsi.org"
     },
     "executiveBoard": [
-      {"position": "Vice Polemarch", "name": "TBD", "email": "vp@bostonkapsi.org"},
-      {"position": "Keeper of Records", "name": "TBD", "email": "kor@bostonkapsi.org"},
-      {"position": "Keeper of Exchequer", "name": "TBD", "email": "koe@bostonkapsi.org"},
-      {"position": "Strategus", "name": "TBD", "email": null},
-      {"position": "Lt. Strategus", "name": "TBD", "email": null},
-      {"position": "Historian", "name": "TBD", "email": null},
-      {"position": "Chaplain", "name": "TBD", "email": null}
+      {"position": "Vice Polemarch", "name": "Kristopher Small", "email": "vp@bostonkapsi.org"},
+      {"position": "Keeper of Records", "name": "Louis Beco", "email": "kor@bostonkapsi.org"},
+      {"position": "Keeper of Exchequer", "name": "Ramon Evans", "email": "koe@bostonkapsi.org"},
+      {"position": "Strategus", "name": "Jonte Joseph", "email": null},
+      {"position": "Lt. Strategus", "name": "Adler Eliacin", "email": null},
+      {"position": "Historian", "name": "Dr. Larome Myrick", "email": null},
+      {"position": "Reporter", "name": "Dr. Larome Myrick", "email": null}
+    ],
+    "boardOfDirectors": [
+      {"position": "Board Member", "name": "Anthony Munro", "email": null},
+      {"position": "Board Member", "name": "Kevin Foster", "email": null},
+      {"position": "Board Member", "name": "Dr. Keith Wilson", "email": null}
     ],
     "committees": [
-      {"name": "Guide Right Director", "chair": "TBD"},
-      {"name": "Kappa League Director", "chair": "TBD"},
-      {"name": "Social Action Chairman", "chair": "TBD"},
-      {"name": "Scholarship Chairman", "chair": "TBD"}
+      {"name": "Culture and Education", "chair": "Trent Masiki"},
+      {"name": "Fundraising", "chair": "James Hardison"},
+      {"name": "Greater Boston Kappa Charities", "chair": "TBD"},
+      {"name": "Guide Right / Kappa League", "chair": "Christian Williams"},
+      {"name": "Kollective Impact", "chair": "Gary St.Fleur"},
+      {"name": "Peak Engagement", "chair": "Steve Berlack"},
+      {"name": "Technology", "chair": "Stanley Griggs"},
+      {"name": "Undergraduate Affairs", "chair": "Anthony Munro"}
     ]
   },
 
@@ -62,14 +71,14 @@
       "theme": "PERFORMANCE OVER POLITICS"
     },
     "officers": [
-      {"position": "Senior Grand Vice Polemarch", "name": "Robert L. Jenkins, Jr., Esq."},
-      {"position": "Junior Grand Vice Polemarch", "name": "Victor L. Mattison"},
-      {"position": "Grand Keeper of Records", "name": "Kevin D. Kyles"},
-      {"position": "Grand Keeper of Exchequer", "name": "Rhen C. Bass, Sr., CPA"},
-      {"position": "Grand Strategus", "name": "Lorenza A. Russell, Jr."},
-      {"position": "Grand Lt. Strategus", "name": "Justin I. Alexis"},
-      {"position": "Grand Historian", "name": "Kevin P. Scott"},
-      {"position": "Grand Chapter Nominating Committee Chairman", "name": "Michael F. Brown"}
+      {"position": "Senior Grand Vice Polemarch", "name": "Robert L. Jenkins, Jr., Esq.", "initiatingChapter": "TBD", "initiationYear": "TBD"},
+      {"position": "Junior Grand Vice Polemarch", "name": "Victor L. Mattison", "initiatingChapter": "TBD", "initiationYear": "TBD"},
+      {"position": "Grand Keeper of Records", "name": "Kevin D. Kyles", "initiatingChapter": "TBD", "initiationYear": "TBD"},
+      {"position": "Grand Keeper of Exchequer", "name": "Rhen C. Bass, Sr., CPA", "initiatingChapter": "TBD", "initiationYear": "TBD"},
+      {"position": "Grand Strategus", "name": "Lorenza A. Russell, Jr.", "initiatingChapter": "TBD", "initiationYear": "TBD"},
+      {"position": "Grand Lt. Strategus", "name": "Justin I. Alexis", "initiatingChapter": "TBD", "initiationYear": "TBD"},
+      {"position": "Grand Historian", "name": "Kevin P. Scott", "initiatingChapter": "TBD", "initiationYear": "TBD"},
+      {"position": "Grand Chapter Nominating Committee Chairman", "name": "Michael F. Brown", "initiatingChapter": "TBD", "initiationYear": "TBD"}
     ],
     "boardOfDirectors": {
       "alumni": [
