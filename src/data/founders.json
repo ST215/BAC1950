@@ -4,19 +4,20 @@
     {
       "id": 1,
       "name": "Elder Watson Diggs",
-      "nickname": "Father of Kappa",
+      "nickname": "The Father of Kappa",
       "image": "/assets/images/founders/diggs-elder-watson.jpg",
       "birthDate": "December 23, 1883",
-      "birthPlace": "Hopkinsville, Christian County, Kentucky",
+      "birthPlace": "Christian County, Kentucky",
       "deathDate": "November 8, 1947",
       "burialLocation": "Crown Hill Cemetery, Indianapolis, Indiana",
       "education": [
         "Indiana State Normal School (1908)",
-        "Indiana University, A.B. in Education (1916) - First African-American to graduate with A.B. from IU School of Education",
-        "Howard University, M.A. in Education (1944)"
+        "Howard University (1909)",
+        "Indiana University, A.B. (1916) - First African American to earn A.B. from IU School of Education",
+        "Indiana University, Master of Education (1944)"
       ],
       "profession": "Educator, Principal",
-      "militaryService": "First Lieutenant, 368th Infantry, WWI. Rose to Captain in Army Reserve Officers Training Corps.",
+      "militaryService": "Commissioned First Lieutenant at Fort Des Moines Officers Training Camp during WWI; served in Europe with the 368th Infantry; rose to Captain in Army Reserve Officers Training Corps; past commander of American Legion Post No. 107.",
       "characteristics": "Quiet, polished, scholarly, a prolific writer",
       "contributions": [
         "First Grand Polemarch (served first 6 years)",
@@ -45,10 +46,10 @@
     {
       "id": 2,
       "name": "Byron Kenneth Armstrong",
-      "nickname": null,
+      "nickname": "Boomski",
       "image": "/assets/images/founders/armstrong-byron.jpg",
-      "birthDate": null,
-      "birthPlace": null,
+      "birthDate": "April 8, 1892",
+      "birthPlace": "Westfield, Hamilton County, Indiana",
       "deathDate": "June 28, 1980",
       "burialLocation": "Inglewood Cemetery, Inglewood, California",
       "education": [
@@ -59,7 +60,7 @@
       ],
       "profession": "Professor, Dean, Personnel Director",
       "militaryService": "Investigator for the Department of Labor during WWI",
-      "characteristics": "Primary potent force behind the founding",
+      "characteristics": "A scholar, imaginative and outspoken",
       "contributions": [
         "Created the fraternity motto",
         "Assisted Diggs in preparing the Coat of Arms",
@@ -82,11 +83,11 @@
     },
     {
       "id": 3,
-      "name": "Ezra Dee Alexander",
+      "name": "Dr. Ezra Dee Alexander",
       "nickname": "Dee",
       "image": "/assets/images/founders/alexander-ezra.jpg",
       "birthDate": "July 18, 1891",
-      "birthPlace": "Monroe County, Bloomington, Indiana",
+      "birthPlace": "Bloomington, Indiana",
       "deathDate": "September 29, 1971",
       "burialLocation": "Crown Hill Cemetery, Indianapolis, Indiana",
       "education": [
@@ -135,10 +136,12 @@
         "One of first three freshman initiates of Alpha of Kappa Alpha Nu",
         "Among first to affiliate with Detroit (MI) Alumni Chapter in 1920"
       ],
-      "fraternityPositions": [],
+      "fraternityPositions": [
+        "Strategus and Keeper of Records, Detroit (MI) Alumni Chapter (1925)"
+      ],
       "legacy": "Was an active member of several organizations including the NAACP, the Elks, and the Veterans of Foreign Wars.",
       "quote": null,
-      "bio": "Founder Henry Tourner Asher, an unassuming, dependable supporter of Negro youth, equal rights, higher education and religious affairs and son of a Baptist Minister, was the eldest of seven children. He moved to Bloomington, Indiana, attended public schools and graduated from Bloomington High School in 1910. He enrolled at Indiana University in 1910. He became an instructor at Lincoln Institute at Jefferson City, Missouri from 1914-1915. After completing his military service in 1919, he chose to give up a possible teaching career at Wilberforce University for one in real estate. He subsequently ended up in Detroit, where he decided to enter the postal service. He spent the remainder of his life in Detroit, Michigan."
+      "bio": "Founder Henry Tourner Asher, an unassuming, dependable supporter of Negro youth, equal rights, higher education and religious affairs and son of a Baptist Minister, was the eldest of seven children. He moved to Bloomington, Indiana, attended public schools and graduated from Bloomington High School in 1910. He enrolled at Indiana University in 1910. He became an instructor at Lincoln Institute at Jefferson City, Missouri from 1914-1915. After completing his military service in 1919, he chose to give up a possible teaching career at Wilberforce University for one in real estate. He subsequently ended up in Detroit, where he decided to enter the postal service. He married Celia Craig in 1936, and later married Bessie. He spent the remainder of his life in Detroit, Michigan."
     },
     {
       "id": 5,
@@ -214,7 +217,7 @@
         "Clark High School, Evansville",
         "Indiana University (Fall 1910 - Summer 1911)"
       ],
-      "profession": "Coal Miner, Railroad Worker",
+      "profession": "Coal Miner, Railroad Worker, Union Secretary and Treasurer",
       "militaryService": null,
       "characteristics": "Witty in nature and an enigma to most in the Fraternity",
       "contributions": [
@@ -239,7 +242,7 @@
       "burialLocation": "Crown Hill Cemetery, Indianapolis, Indiana",
       "education": [
         "Scribner High School (1909)",
-        "Indiana University, A.B. (1915)",
+        "Indiana University, A.B. in Chemistry (1915)",
         "Indiana Dental School (part of Indiana University), D.D.S. (1920)"
       ],
       "profession": "Dentist",
@@ -275,7 +278,7 @@
         "Indiana University (Fall 1910 - Spring 1911)"
       ],
       "profession": "Journalist, Entrepreneur",
-      "militaryService": "Combat Medic, WWI. Cited for bravery with Expeditionary Forces in France. Received 2nd highest medal for valor. Two Distinguished Service Awards from Presidents Truman and Eisenhower. Served on Selective Service Board during WWII and Korean War.",
+      "militaryService": "Combat Medic, WWI. Cited for bravery with the Expeditionary Forces in France; received the Distinguished Service Cross. Two Distinguished Service Awards from Presidents Truman and Eisenhower. Served on Selective Service Board during WWII and Korean War.",
       "characteristics": "Civic and religious leader, journalist and entrepreneur. Youngest Founder at 17 years of age.",
       "contributions": [
         "Served on Fraternity's Incorporation Committee",
@@ -286,7 +289,7 @@
       ],
       "legacy": "The Fraternity's last living Founder. Awarded the Laurel Wreath (24th laureate, 1976) - the award he cherished most. The Edward Giles Irvin Award is named in his honor, bestowed upon the most outstanding Undergraduate Chapter.",
       "quote": null,
-      "bio": "Founder Edward Giles Irvin, a civic and religious leader, journalist and entrepreneur, was the seventh of nine children of an African Methodist Episcopal minister. Following graduation from Kokomo Indiana High School in 1910, he enrolled at Indiana University the same year. While attending Indiana University, at only 17 years of age, Irvin was the youngest one of ten Black students who assisted to found Kappa Alpha Psi® Fraternity, Inc. Irvin and the other Founders endured and persevered acts of racial hatred and hostility as students, then organized this fraternity dedicated to the principles of achievement and to alleviate the isolation and raise the sights of Black undergraduates. Irvin left the University following the spring term of 1911. After leaving the University, Irvin pursued a career in journalism until World War I. Following his honorable discharge from the Army, he met Maywilla, who became his wife. He subsequently moved to Indianapolis and was on the staff of the Indianapolis Freeman, the first Negro newspaper in the nation with pictures. In 1922, he established the Shining Star, a weekly newspaper based in Anderson, IN. He subsequently moved to Gary, IN in 1923, to become the editor of the Gary Sun newspaper. Irvin moved to Chicago, IL, in 1928, to work as the sports editor for the Chicago Daily Bulletin newspaper. After it collapsed, he worked at the U.S. Post Office and became the owner and operator of the Afro-American Manufacturing Company, a distributor of candy, novelties and specialty items. Irvin enjoyed sporting events and sponsored basketball and track events at small schools in Indiana. Deeply rooted in the community, he was also an active member of the Masonic order, the Odd Fellows, and the St. James African Methodist Church. He was also a trustee of St. James A.M.E. Church in Chicago and founded and edited the lay newspaper, Voice of the A.M.E. Laymen. He was the third Founder to receive the Laurel Wreath award. He is survived by his daughter, Dorothy Mayweather."
+      "bio": "Founder Edward Giles Irvin, a civic and religious leader, journalist and entrepreneur, was the seventh of nine children of an African Methodist Episcopal minister. Following graduation from Kokomo Indiana High School in 1910, he enrolled at Indiana University the same year. While attending Indiana University, at only 17 years of age, Irvin was the youngest one of ten Black students who assisted to found Kappa Alpha Psi® Fraternity, Inc. Irvin and the other Founders endured and persevered acts of racial hatred and hostility as students, then organized this fraternity dedicated to the principles of achievement and to alleviate the isolation and raise the sights of Black undergraduates. Irvin left the University following the spring term of 1911. After leaving the University, Irvin pursued a career in journalism until World War I. Following his honorable discharge from the Army, he met Maywilla, who became his wife. He subsequently moved to Indianapolis and was on the staff of the Indianapolis Freeman, the first Negro newspaper in the nation with pictures. In 1922, he established the Shining Star, a weekly newspaper based in Anderson, IN. He subsequently moved to Gary, IN in 1923, to become the editor of the Gary Sun newspaper. Irvin moved to Chicago, IL, in 1928, to work as the sports editor for the Chicago Daily Bulletin newspaper. After it collapsed, he worked at the U.S. Post Office and became the owner and operator of the Afro-American Manufacturing Company, a distributor of candy, novelties and specialty items. Irvin enjoyed sporting events and sponsored basketball and track events at small schools in Indiana. Deeply rooted in the community, he was also an active member of the Masonic order, the Odd Fellows, and the St. James African Methodist Church. He was also a trustee of St. James A.M.E. Church in Chicago and founded and edited the lay newspaper, Voice of the A.M.E. Laymen. He was the third Founder to receive the Laurel Wreath award. He is survived by his daughter, Dorothy Manyweather."
     },
     {
       "id": 10,
