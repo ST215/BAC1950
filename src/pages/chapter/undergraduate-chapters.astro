@@ -1,0 +1,118 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SmartImage from '../../components/SmartImage.astro';
+import undergrad from '../../data/undergrad-chapters.json';
+---
+<BaseLayout
+  title="Undergraduate Chapters"
+  description="Boston Alumni Chapter advises Chi (BU), Theta Iota (MIT), and Lambda Xi (Brown) undergraduate chapters."
+>
+  <section class="hero">
+    <div class="container">
+      <h1>Undergraduate Chapters</h1>
+      <p class="tagline">Advising the Next Generation of Achievers</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <p class="text-center">{undergrad.introduction}</p>
+      <a href="#top" class="back-to-top">↑ Back to Top</a>
+    </div>
+  </section>
+
+  {undergrad.chapters.map((chapter: any) => (
+    <section class="page-section" id={chapter.id}>
+      <div class="container">
+        <div class="section-header" style="display: flex; align-items: center; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+          {chapter.logo && (
+            <SmartImage
+              src={chapter.logo}
+              alt={`${chapter.name} Crest`}
+              sizes="80px"
+              widths={[80, 160]}
+            />
+          )}
+          <h2 style="margin: 0;">{chapter.name} ({chapter.greekLetters})</h2>
+        </div>
+
+        {chapter.photo && (
+          <div class="text-center" style="margin: var(--spacing-md) 0;">
+            <SmartImage
+              src={chapter.photo}
+              alt={`Brothers of ${chapter.name}`}
+              sizes="(max-width: 768px) 100vw, 800px"
+              widths={[400, 600, 800]}
+            />
+          </div>
+        )}
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg);">
+          <div>
+            <p><strong>University:</strong> {chapter.school}</p>
+            <p><strong>Location:</strong> {chapter.location}</p>
+            <p><strong>Chartered:</strong> {chapter.chartered}</p>
+            <p><strong>Undergraduate Advisor:</strong> {chapter.advisor.name}</p>
+          </div>
+          <div>
+            <p>{chapter.description}</p>
+            {chapter.notable && <p><em>{chapter.notable}</em></p>}
+          </div>
+        </div>
+
+        <div style="margin-top: var(--spacing-md);">
+          <h4>
+            Charter Members
+            {chapter.charterMembersNickname && ` - "The ${chapter.charterMembersNickname}"`}
+          </h4>
+          <ul style="margin-left: var(--spacing-lg); column-count: 2; column-gap: var(--spacing-lg);">
+            {chapter.charterMembers.map((member: string) => (
+              <li>{member}</li>
+            ))}
+          </ul>
+        </div>
+
+        {chapter.activities && chapter.activities.length > 0 && (
+          <div style="margin-top: var(--spacing-md);">
+            <h4>Activities & Community Service</h4>
+            <ul style="margin-left: var(--spacing-lg);">
+              {chapter.activities.map((activity: string) => (
+                <li>{activity}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {chapter.reach && (
+          <div style="margin-top: var(--spacing-md);">
+            <h4>Chapter Reach</h4>
+            <ul style="margin-left: var(--spacing-lg);">
+              {chapter.reach.map((school: string) => (
+                <li>{school}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {chapter.awards && (
+          <div style="margin-top: var(--spacing-md);">
+            <h4>Awards & Recognition</h4>
+            <ul style="margin-left: var(--spacing-lg);">
+              {chapter.awards.map((award: string) => (
+                <li>{award}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {chapter.vision && (
+          <div style="margin-top: var(--spacing-md);">
+            <p><strong>Vision:</strong> {chapter.vision}</p>
+          </div>
+        )}
+
+        <a href="#top" class="back-to-top">↑ Back to Top</a>
+      </div>
+    </section>
+  ))}
+</BaseLayout>

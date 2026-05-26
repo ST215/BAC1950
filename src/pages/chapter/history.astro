@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SmartImage from '../../components/SmartImage.astro';
+import site from '../../data/site.json';
+---
+<BaseLayout
+  title="Chapter History"
+  description="The history of the Boston (MA) Alumni Chapter of Kappa Alpha Psi, chartered June 3, 1950."
+>
+  <section class="hero">
+    <div class="container">
+      <SmartImage
+        src="/assets/images/branding/chapter-coa.gif"
+        alt="Boston (MA) Alumni Chapter Coat of Arms"
+        sizes="150px"
+        widths={[150, 300]}
+        loading="eager"
+        class="crest"
+      />
+      <h1>Chapter History</h1>
+      <p class="tagline">Chartered {site.founded}</p>
+    </div>
+  </section>
+
+  <section class="hero-photo">
+    <div class="hero-photo-wrapper">
+      <SmartImage
+        src="/assets/images/events/chapter-photo-2025.jpeg"
+        alt="Brothers of the Boston Alumni Chapter"
+        sizes="(max-width: 768px) 100vw, 1200px"
+        widths={[600, 900, 1200]}
+        loading="eager"
+      />
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Founding</h2>
+      </div>
+      <div class="text-center" style="margin-bottom: var(--spacing-lg);">
+        <SmartImage
+          src="/assets/images/events/founders-day.gif"
+          alt="Historic Founders Day celebration"
+          sizes="(max-width: 768px) 100vw, 600px"
+          widths={[300, 400, 600]}
+        />
+        <p style="font-size: 0.875rem; color: var(--gray); margin-top: var(--spacing-xs);">TBD — caption needs updating</p>
+      </div>
+      <p>The Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc. was chartered on {site.founded} with {site.charterMembersCount} charter members. These dedicated brothers laid the foundation for what would become one of the most active alumni chapters in the Northeastern Province.</p>
+      <p>Our first Polemarch was Brother Henry A. Hill, who served from 1950 to 1953. Brother Hill went on to become the first Black president of the American Chemical Society in 1977, exemplifying the fraternity's commitment to achievement in every field of human endeavor.</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Notable Hosted Events</h2>
+      </div>
+      <p>The Boston (MA) Alumni Chapter has been honored to host several important fraternity events:</p>
+      <ul style="margin-left: var(--spacing-lg);">
+        {site.hostedEvents.map((event: any) => (
+          <li><strong>{event.event}</strong> ({event.year})</li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Legacy</h2>
+      </div>
+      <div class="text-center" style="margin-bottom: var(--spacing-lg);">
+        <SmartImage
+          src="/assets/images/events/j5-2019.gif"
+          alt="Boston Alumni Chapter Founders Day celebration, January 5, 2019"
+          sizes="(max-width: 768px) 100vw, 800px"
+          widths={[400, 600, 800]}
+        />
+        <p style="font-size: 0.875rem; color: var(--gray); margin-top: var(--spacing-xs);">Founders Day Celebration, January 5, 2019</p>
+      </div>
+      <p>Since our founding, the Boston (MA) Alumni Chapter has been led by {site.polemarchsCount} Polemarchs. Our chapter has remained committed to the fraternity's fundamental purpose of achievement, mentoring young men through the Kappa League program and serving the Greater Boston community.</p>
+      <p>We continue to advise three undergraduate chapters: Chi Chapter at Boston University, Theta Iota Chapter at MIT, and Lambda Xi Chapter at Brown University.</p>
+      <div class="text-center mt-2">
+        <a href="/chapter/past-polemarchs/" class="btn btn-primary">View Our Past Polemarchs</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center" style="padding: var(--space-8) 0;">
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</BaseLayout>

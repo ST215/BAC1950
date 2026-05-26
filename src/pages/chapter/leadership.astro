@@ -1,0 +1,173 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SmartImage from '../../components/SmartImage.astro';
+import site from '../../data/site.json';
+import undergrad from '../../data/undergrad-chapters.json';
+import { ordinal } from '../../utils/format';
+---
+<BaseLayout
+  title="Chapter Leadership"
+  description="Current leadership of the Boston (MA) Alumni Chapter of Kappa Alpha Psi."
+>
+  <section class="hero">
+    <div class="container">
+      <SmartImage
+        src="/assets/images/branding/chapter-coa.gif"
+        alt="Boston (MA) Alumni Chapter Coat of Arms"
+        sizes="120px"
+        widths={[120, 240]}
+        loading="eager"
+        class="crest"
+      />
+      <h1>Chapter Leadership</h1>
+      <p class="tagline">Boston (MA) Alumni Chapter</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Executive Board</h2>
+      </div>
+
+      <div class="card-grid">
+        <div class="card profile-card">
+          <div class="profile-image">
+            <SmartImage
+              src="/assets/images/leadership/polemarch.jpg"
+              alt={site.currentLeadership.polemarch.name}
+              sizes="200px"
+              widths={[200, 400]}
+            />
+          </div>
+          <div class="card-content">
+            <h3>{site.currentLeadership.polemarch.name}</h3>
+            <p class="title">{ordinal(site.currentLeadership.polemarch.number)} Polemarch</p>
+            <p>Initiated: {site.currentLeadership.polemarch.initiatingChapter}, {site.currentLeadership.polemarch.initiationDate}</p>
+            <p><a href={`mailto:${site.currentLeadership.polemarch.email}`}>{site.currentLeadership.polemarch.email}</a></p>
+          </div>
+        </div>
+
+        {site.currentLeadership.executiveBoard.map((officer: any) => (
+          <div class="card profile-card">
+            <div class="profile-image">
+              <SmartImage
+                src="/assets/images/branding/chapter-logo-optimized.png"
+                alt={officer.position}
+                sizes="150px"
+                widths={[150, 300]}
+              />
+            </div>
+            <div class="card-content">
+              <h3>{officer.name}</h3>
+              <p class="title">{officer.position}</p>
+              {officer.email && (
+                <p><a href={`mailto:${officer.email}`}>{officer.email}</a></p>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Board of Directors</h2>
+      </div>
+
+      <div class="card-grid">
+        {site.currentLeadership.boardOfDirectors.map((member: any) => (
+          <div class="card profile-card">
+            <div class="profile-image">
+              <SmartImage
+                src="/assets/images/branding/chapter-logo-optimized.png"
+                alt={member.position}
+                sizes="150px"
+                widths={[150, 300]}
+              />
+            </div>
+            <div class="card-content">
+              <h3>{member.name}</h3>
+              <p class="title">{member.position}</p>
+              {member.email && (
+                <p><a href={`mailto:${member.email}`}>{member.email}</a></p>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Committee Chairs</h2>
+      </div>
+
+      <div class="card-grid">
+        {site.currentLeadership.committees.map((committee: any) => (
+          <div class="card profile-card">
+            <div class="profile-image profile-image-sm">
+              <SmartImage
+                src="/assets/images/branding/chapter-logo-optimized.png"
+                alt={committee.name}
+                sizes="100px"
+                widths={[100, 200]}
+              />
+            </div>
+            <div class="card-content">
+              <h3>{committee.chair}</h3>
+              <p class="title">{committee.name}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Meeting Information</h2>
+      </div>
+      <div class="text-center">
+        <p><strong>Chapter Meetings:</strong> {site.meetings.frequency} at {site.meetings.time}</p>
+        <p>For meeting locations and additional information, please contact the Keeper of Records.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Undergraduate Advisors</h2>
+      </div>
+      <div class="card-grid">
+        {undergrad.chapters.map((chapter: any) => (
+          <div class="card">
+            <div class="profile-image profile-image-sm">
+              <SmartImage
+                src={chapter.logo}
+                alt={chapter.name}
+                sizes="80px"
+                widths={[80, 160]}
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">{chapter.name}</h3>
+              <p class="card-text">{chapter.school}</p>
+              <p><strong>Advisor:</strong> {chapter.advisor.name}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center" style="padding: var(--space-8) 0;">
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</BaseLayout>

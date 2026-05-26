@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SmartImage from '../../components/SmartImage.astro';
+import programs from '../../data/programs.json';
+import { truncate } from '../../utils/format';
+---
+<BaseLayout
+  title="Programs"
+  description="Community programs of the Boston (MA) Alumni Chapter including Kappa League and Cuts & Curls."
+>
+  <section class="hero">
+    <div class="container">
+      <h1>Our Programs</h1>
+      <p class="tagline">Guide Right - Inspiring Service in the Public's Interest</p>
+    </div>
+  </section>
+
+  <section class="hero-photo">
+    <div class="hero-photo-wrapper">
+      <SmartImage
+        src="/assets/images/events/community-giveaway.jpg"
+        alt="Boston Alumni Chapter community service event"
+        sizes="(max-width: 768px) 100vw, 1200px"
+        widths={[600, 900, 1200]}
+        loading="eager"
+      />
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>{programs.guideRight.name}</h2>
+      </div>
+      <p class="text-center">{programs.guideRight.description}</p>
+      <p class="text-center"><strong>Purpose:</strong> {programs.guideRight.purpose}</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Local Programs</h2>
+      </div>
+      <div class="card-grid">
+        {programs.programs.map((program: any) => (
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">{program.name}</h3>
+              <p class="card-text"><em>"{program.tagline}"</em></p>
+              <p class="card-text">{truncate(program.description, 150)}</p>
+              <a href={`/programs/${program.id}/`} class="btn btn-secondary mt-1">Learn More</a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center" style="padding: var(--space-8) 0;">
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</BaseLayout>

@@ -1,0 +1,86 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import site from '../data/site.json';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+const desc = description ?? site.description;
+const pageUrl = new URL(Astro.url.pathname, site.url).toString();
+const ogImage = new URL('/assets/images/branding/og-image.jpg', site.url).toString();
+const ogLogo = new URL('/assets/images/branding/chapter-logo-optimized.png', site.url).toString();
+const titleFull = `${title} | ${site.shortName}`;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{titleFull}</title>
+  <meta name="description" content={desc} />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={pageUrl} />
+  <meta property="og:title" content={titleFull} />
+  <meta property="og:description" content={desc} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:secure_url" content={ogImage} />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc." />
+  <meta property="og:site_name" content={site.name} />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:logo" content={ogLogo} />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={titleFull} />
+  <meta name="twitter:description" content={desc} />
+  <meta name="twitter:image" content={ogImage} />
+  <meta name="twitter:image:alt" content="Boston (MA) Alumni Chapter of Kappa Alpha Psi Fraternity, Inc." />
+
+  <meta itemprop="name" content={titleFull} />
+  <meta itemprop="description" content={desc} />
+  <meta itemprop="image" content={ogImage} />
+  <link rel="image_src" href={ogImage} />
+
+  <meta name="theme-color" content="#70110C" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" /></noscript>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/branding/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/branding/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/branding/apple-touch-icon.png" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <slot name="head" />
+</head>
+<body id="top">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <Header />
+
+  <main id="main-content">
+    <slot />
+  </main>
+
+  <Footer />
+
+  <script>
+    import '../scripts/pretext/index.js';
+  </script>
+  <script src="/scripts/main.js" is:inline defer></script>
+  <slot name="scripts" />
+</body>
+</html>

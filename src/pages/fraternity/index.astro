@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SmartImage from '../../components/SmartImage.astro';
+import site from '../../data/site.json';
+---
+<BaseLayout
+  title="Fraternity"
+  description="Learn about Kappa Alpha Psi Fraternity, Inc. - our history, founders, and leadership since 1911."
+>
+  <section class="hero">
+    <div class="container">
+      <h1>The Fraternity</h1>
+      <p class="tagline">Kappa Alpha Psi Fraternity, Inc.</p>
+    </div>
+  </section>
+
+  <section class="hero-photo">
+    <div class="hero-photo-wrapper">
+      <SmartImage
+        src="/assets/images/events/community-giveaway-2.jpg"
+        alt="Kappa Alpha Psi brothers in service to the community"
+        sizes="(max-width: 768px) 100vw, 1200px"
+        widths={[600, 900, 1200]}
+        loading="eager"
+      />
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <SmartImage
+          src="/assets/images/branding/kappa-crest.png"
+          alt="Kappa Alpha Psi Coat of Arms"
+          sizes="150px"
+          widths={[150, 300]}
+        />
+        <h2>About Kappa Alpha Psi</h2>
+      </div>
+      <div class="text-center">
+        <p>Kappa Alpha Psi Fraternity, Inc. (ΚΑΨ) is a collegiate Greek-letter fraternity with a predominantly African-American membership. The fraternity was founded on {site.fraternity.founded}, on the campus of {site.fraternity.foundingLocation}.</p>
+        <p>The fundamental purpose of Kappa Alpha Psi is achievement. The fraternity's motto is <strong>"{site.fraternity.motto}"</strong>.</p>
+        <p>Today, Kappa Alpha Psi boasts {site.fraternity.membershipCount} members in {site.fraternity.chaptersCount} chapters worldwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Explore Our Heritage</h2>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">Fraternity History</h3>
+            <p class="card-text">Learn about the founding and growth of Kappa Alpha Psi since 1911.</p>
+            <a href="/fraternity/history/" class="btn btn-secondary mt-1">Read History</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">Our Founders</h3>
+            <p class="card-text">Meet the 10 visionary men who founded Kappa Alpha Psi.</p>
+            <a href="/fraternity/founders/" class="btn btn-secondary mt-1">Meet Founders</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">Grand Chapter Leadership</h3>
+            <p class="card-text">The current leadership of Kappa Alpha Psi International.</p>
+            <a href="/fraternity/leadership/" class="btn btn-secondary mt-1">View Leadership</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center" style="padding: var(--space-8) 0;">
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</BaseLayout>

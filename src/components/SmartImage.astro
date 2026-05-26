@@ -1,0 +1,39 @@
+---
+import { Picture } from 'astro:assets';
+import { resolveImage } from '../utils/images';
+
+interface Props {
+  src: string;
+  alt: string;
+  sizes?: string;
+  widths?: number[];
+  loading?: 'lazy' | 'eager';
+  fetchpriority?: 'high' | 'low' | 'auto';
+  class?: string;
+}
+
+const {
+  src,
+  alt,
+  sizes = '100vw',
+  widths = [400, 800, 1200],
+  loading = 'lazy',
+  fetchpriority,
+  class: className,
+} = Astro.props;
+
+const meta = resolveImage(src);
+const isAnimatedGif = src.toLowerCase().endsWith('.gif');
+const formats: ('avif' | 'webp')[] = isAnimatedGif ? ['webp'] : ['avif', 'webp'];
+---
+<Picture
+  src={meta}
+  alt={alt}
+  sizes={sizes}
+  widths={widths}
+  formats={formats}
+  loading={loading}
+  decoding="async"
+  {...(fetchpriority && { fetchpriority })}
+  {...(className && { class: className })}
+/>

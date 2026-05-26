@@ -1,0 +1,130 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SmartImage from '../components/SmartImage.astro';
+import events from '../data/events.json';
+import news from '../data/news.json';
+import { formatDate, truncate } from '../utils/format';
+---
+<BaseLayout
+  title="In the News"
+  description="News, media coverage, and recognition of the Boston (MA) Alumni Chapter of Kappa Alpha Psi."
+>
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">In the News</h1>
+      <p class="tagline">Media Coverage & Recognition</p>
+    </div>
+  </section>
+
+  {events.events.length > 0 && (
+    <section class="page-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Chapter Events</h2>
+        </div>
+
+        <div class="card-grid">
+          {events.events.map((event: any) => (
+            <article class="card" itemscope itemtype="https://schema.org/Event">
+              {event.flyer && (
+                <a href={`/events/${event.slug}/`} class="card-thumb-link" aria-hidden="true" tabindex="-1">
+                  <img
+                    src={event.flyer}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    class="card-thumb"
+                  />
+                </a>
+              )}
+              <div class="card-content">
+                <h3 class="card-title" itemprop="name">{event.title}</h3>
+                <p class="news-item-caption">
+                  <time itemprop="startDate" datetime={`${event.date}T${event.startTime}`}>{formatDate(event.date)}</time>
+                  <span itemprop="location" itemscope itemtype="https://schema.org/Place">
+                    &middot; <span itemprop="name">{event.venue.name}</span>
+                  </span>
+                </p>
+                <p class="card-text" itemprop="description">{event.subtitle}</p>
+                <a href={`/events/${event.slug}/`} class="btn btn-secondary mt-1">View Recap</a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {news.recognition && news.recognition.length > 0 && (
+    <section class="page-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Recognition & Awards</h2>
+        </div>
+
+        <div class="card-grid">
+          {news.recognition.map((item: any) => (
+            <article class="card">
+              {item.images?.[0] && (
+                <SmartImage
+                  src={item.images[0].src}
+                  alt={item.images[0].alt}
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  widths={[300, 450, 600]}
+                  class="recognition-card-thumb"
+                />
+              )}
+              <div class="card-content">
+                <h3 class="card-title">{item.title}</h3>
+                <p class="news-item-caption">
+                  <time datetime={item.date}>{formatDate(item.date)}</time> &middot; Presented by {item.presenter}
+                </p>
+                <p class="card-text">{truncate(item.description, 180)}</p>
+                <a href={`/recognition/${item.id}/`} class="btn btn-secondary mt-1">View Recognition</a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Media Coverage</h2>
+      </div>
+
+      <div class="card-grid">
+        {news.articles.map((article: any) => (
+          <article class="card" itemscope itemtype="https://schema.org/NewsArticle">
+            {article.image && (
+              <a href={article.url} target="_blank" rel="noopener noreferrer" class="card-thumb-link" aria-hidden="true" tabindex="-1">
+                <img
+                  src={article.image.src}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  class="card-thumb"
+                />
+              </a>
+            )}
+            <div class="card-content">
+              <h3 class="card-title" itemprop="headline">{article.title}</h3>
+              <p class="news-item-caption">
+                <span itemprop="publisher">{article.source}</span> &mdash;
+                <time itemprop="datePublished" datetime={article.date}>{formatDate(article.date)}</time>
+              </p>
+              <p class="card-text" itemprop="description">{article.excerpt}</p>
+              <a href={article.url} target="_blank" rel="noopener noreferrer" class="btn btn-secondary mt-1 external-link" itemprop="url">Read Full Article</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center news-back-to-top">
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</BaseLayout>

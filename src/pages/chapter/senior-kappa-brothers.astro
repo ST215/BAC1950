@@ -1,0 +1,119 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SmartImage from '../../components/SmartImage.astro';
+import seniorKappas from '../../data/senior-kappas.json';
+---
+<BaseLayout
+  title="Senior Kappa Brothers"
+  description="Honoring the Senior Kappa Brothers of the Boston (MA) Alumni Chapter — members with 50 or more years in the bond of Kappa Alpha Psi."
+>
+  <section class="hero">
+    <div class="container">
+      <SmartImage
+        src="/assets/images/branding/chapter-coa.gif"
+        alt="Boston (MA) Alumni Chapter Coat of Arms"
+        sizes="120px"
+        widths={[120, 240]}
+        loading="eager"
+        class="crest"
+      />
+      <h1>Senior Kappa Brothers</h1>
+      <p class="tagline">50 Years or More in the Bond</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Honoring a Half-Century of Brotherhood</h2>
+      </div>
+      <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+        <p>{seniorKappas.intro}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>The 50-Year White Jacket</h2>
+      </div>
+      <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+        <blockquote style="border-left: 4px solid var(--color-primary); background: var(--color-background-secondary, #faf8f4); padding: var(--space-6); border-radius: var(--radius-md); text-align: left; font-style: italic;">
+          {seniorKappas.whiteJacket}
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Senior Brothers</h2>
+      </div>
+
+      {seniorKappas.seniorKappas.length > 0 ? (
+        <div class="card-grid">
+          {seniorKappas.seniorKappas.map((brother: any) => (
+            <div class="card profile-card">
+              <div class="profile-image">
+                <SmartImage
+                  src="/assets/images/branding/chapter-logo-optimized.png"
+                  alt="Boston Alumni Chapter"
+                  sizes="150px"
+                  widths={[150, 300]}
+                />
+              </div>
+              <div class="card-content">
+                <h3>{brother.name}</h3>
+                <p class="title">{brother.yearsInBond} Years in the Bond</p>
+                <p>{brother.initiatingChapter}</p>
+                <p style="color: var(--color-label-secondary);">Initiated: {brother.initiationDate}</p>
+                {brother.bio && (
+                  <p style="margin-top: var(--space-2); font-size: 0.875rem;">{brother.bio}</p>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="text-center">
+          <p>Senior Kappa Brother profiles are being gathered. Check back soon.</p>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Senior Kappa Affairs</h2>
+      </div>
+      <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+        <p>{seniorKappas.seniorKappaAffairs}</p>
+        <div style="margin-top: var(--space-6); display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+          <a href={seniorKappas.externalLinks.national} target="_blank" rel="noopener noreferrer" class="btn btn-primary">National Senior Kappa Affairs</a>
+          <a href={seniorKappas.externalLinks.province} target="_blank" rel="noopener noreferrer" class="btn btn-secondary">NEP Senior Kappa Affairs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Know a Senior Kappa Brother?</h2>
+      </div>
+      <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+        <p>{seniorKappas.contact.message}</p>
+        <div style="margin-top: var(--space-6);">
+          <a href={`mailto:${seniorKappas.contact.email}`} class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center" style="padding: var(--space-8) 0;">
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</BaseLayout>

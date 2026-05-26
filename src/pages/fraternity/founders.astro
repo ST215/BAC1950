@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SmartImage from '../../components/SmartImage.astro';
+import foundersData from '../../data/founders.json';
+
+const { introduction, founders } = foundersData;
+---
+<BaseLayout
+  title="Our Founders"
+  description="Meet the 10 founders of Kappa Alpha Psi Fraternity, Inc. who established the fraternity on January 5, 1911."
+>
+  <section class="hero">
+    <div class="container">
+      <h1>Our Founders</h1>
+      <p class="tagline">The Ten Revered Founders of Kappa Alpha Psi</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <p class="text-center">{introduction}</p>
+      <a href="#top" class="back-to-top">↑ Back to Top</a>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Revered Founders</h2>
+      </div>
+
+      {founders.map((founder: any, i: number) => (
+        <>
+          <article class="founder-profile" id={`founder-${founder.id}`} style="margin-bottom: var(--spacing-xl); padding-bottom: var(--spacing-xl); border-bottom: 1px solid var(--gray-light);">
+            {founder.image && (
+              <div style="text-align: center; margin-bottom: var(--spacing-md);">
+                <SmartImage
+                  src={founder.image}
+                  alt={founder.name}
+                  sizes="150px"
+                  widths={[150, 300]}
+                  class="founder-image"
+                />
+              </div>
+            )}
+            <div style="text-align: center; margin-bottom: var(--spacing-md);">
+              <h3 style="margin: 0 auto var(--space-1); text-align: center;">{founder.name}</h3>
+              <p style="font-weight: 600; color: var(--crimson); margin: 0; text-align: center;">Founder</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); margin-top: var(--spacing-md);">
+              <div>
+                <p><strong>Born:</strong> {founder.birthDate || 'Unknown'}{founder.birthPlace && `, ${founder.birthPlace}`}</p>
+                <p><strong>Died:</strong> {founder.deathDate}</p>
+                <p><strong>Profession:</strong> {founder.profession}</p>
+                {founder.militaryService && (
+                  <p><strong>Military Service:</strong> {founder.militaryService}</p>
+                )}
+              </div>
+              <div>
+                <p><strong>Education:</strong></p>
+                <ul style="padding-left: 1.25em; margin-left: 0;">
+                  {founder.education.map((edu: string) => (
+                    <li>{edu}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div style="margin-top: var(--spacing-md);">
+              <p><strong>Biography:</strong> {founder.bio}</p>
+            </div>
+
+            {founder.contributions && founder.contributions.length > 0 && (
+              <div style="margin-top: var(--spacing-md);">
+                <p><strong>Key Contributions:</strong></p>
+                <ul style="padding-left: 1.25em; margin-left: 0;">
+                  {founder.contributions.map((contribution: string) => (
+                    <li>{contribution}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {founder.quote && (
+              <blockquote style="background: var(--cream); padding: var(--spacing-md); border-left: 4px solid var(--crimson); margin-top: var(--spacing-md); font-style: italic;">
+                "{founder.quote}"
+              </blockquote>
+            )}
+
+            {founder.legacy && (
+              <p style="margin-top: var(--spacing-md);"><strong>Legacy:</strong> {founder.legacy}</p>
+            )}
+          </article>
+
+          {((i + 1) % 3 === 0) && (
+            <a href="#top" class="back-to-top">↑ Back to Top</a>
+          )}
+        </>
+      ))}
+
+      <a href="#top" class="back-to-top">↑ Back to Top</a>
+    </div>
+  </section>
+</BaseLayout>

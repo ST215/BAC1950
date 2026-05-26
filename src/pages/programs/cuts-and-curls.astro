@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SmartImage from '../../components/SmartImage.astro';
+import programs from '../../data/programs.json';
+
+const cc = programs.programs.find((p: any) => p.id === 'cuts-and-curls');
+if (!cc) throw new Error('cuts-and-curls program record missing');
+---
+<BaseLayout
+  title="Cuts and Curls"
+  description="Free Cuts and Curls Back to School Event - preparing Boston students for success."
+>
+  <section class="hero">
+    <div class="container">
+      <SmartImage
+        src="/assets/images/programs/cuts-curls-icon.gif"
+        alt="Cuts and Curls"
+        sizes="180px"
+        widths={[180, 360]}
+        loading="eager"
+        class="crest"
+      />
+      <h1>{cc.fullName}</h1>
+      <p class="tagline">"{cc.tagline}"</p>
+    </div>
+  </section>
+
+  <section class="hero-photo">
+    <div class="hero-photo-wrapper">
+      <SmartImage
+        src="/assets/images/events/community-giveaway.jpg"
+        alt="Community members at Cuts and Curls event"
+        sizes="(max-width: 768px) 100vw, 1200px"
+        widths={[600, 900, 1200]}
+        loading="eager"
+      />
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Cuts and Curls</h2>
+      </div>
+      <p>{cc.description}</p>
+      <p><strong>Community Impact:</strong> {cc.communityImpact}</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Services Provided</h2>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">For Boys</h3>
+            <ul style="margin-left: var(--spacing-sm);">
+              {cc.services.boys.map((service: string) => (
+                <li>{service}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">For Girls</h3>
+            <ul style="margin-left: var(--spacing-sm);">
+              {cc.services.girls.map((service: string) => (
+                <li>{service}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">For Everyone</h3>
+            <ul style="margin-left: var(--spacing-sm);">
+              {cc.services.all.map((service: string) => (
+                <li>{service}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: var(--spacing-lg);">
+        <SmartImage
+          src="/assets/images/events/community-giveaway-2.jpg"
+          alt="Community members at Cuts and Curls event"
+          sizes="(max-width: 768px) 100vw, 800px"
+          widths={[400, 600, 800]}
+        />
+      </div>
+      <div class="section-header">
+        <h2>Event Details</h2>
+      </div>
+      <div class="text-center">
+        <p><strong>Location:</strong> {cc.location}</p>
+        <p><strong>Frequency:</strong> {cc.frequency}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Stay Informed</h2>
+      </div>
+      <div class="text-center">
+        <p>{cc.callToAction}</p>
+        <p>Contact us at: <a href={`mailto:${cc.contactEmail}`}>{cc.contactEmail}</a></p>
+        <div class="mt-2">
+          <a href="/contact/" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center" style="padding: var(--space-8) 0;">
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</BaseLayout>

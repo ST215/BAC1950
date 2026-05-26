@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SmartImage from '../../components/SmartImage.astro';
+import programs from '../../data/programs.json';
+
+const kl = programs.programs.find((p: any) => p.id === 'kappa-league');
+if (!kl) throw new Error('kappa-league program record missing');
+---
+<BaseLayout
+  title="Kappa League"
+  description="Kappa League youth mentorship program - training young men for leadership in Greater Boston."
+>
+  <section class="hero">
+    <div class="container">
+      <SmartImage
+        src="/assets/images/branding/kappa-league-logo.png"
+        alt="Kappa League Logo"
+        sizes="200px"
+        widths={[200, 400]}
+        loading="eager"
+        class="crest"
+      />
+      <h1>{kl.fullName}</h1>
+      <p class="tagline">"{kl.tagline}"</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Kappa League</h2>
+      </div>
+      <p>{kl.description}</p>
+      <p><strong>Mission:</strong> {kl.mission}</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Eligibility</h2>
+      </div>
+      <ul style="margin-left: var(--spacing-lg);">
+        <li><strong>Grades:</strong> {kl.eligibility.grades}</li>
+        <li><strong>Gender:</strong> {kl.eligibility.gender}</li>
+        <li><strong>Location:</strong> {kl.eligibility.location}</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Five Phases of Development</h2>
+      </div>
+      <p>{kl.objectives}</p>
+      <div class="card-grid mt-2">
+        {kl.fivePhases.map((phase: any, i: number) => (
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">{i + 1}. {phase.name}</h3>
+              <ul style="margin-left: var(--spacing-sm);">
+                {phase.components.map((comp: string) => (
+                  <li>{comp}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Workshops & Training</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--spacing-sm);">
+        {kl.workshops.map((workshop: string) => (
+          <div style="background: var(--cream); padding: var(--spacing-sm); border-radius: 4px;">
+            {workshop}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Member Requirements</h2>
+      </div>
+      <ul style="margin-left: var(--spacing-lg);">
+        {kl.memberRequirements.map((req: string) => (
+          <li>{req}</li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get Involved</h2>
+      </div>
+      <div class="text-center">
+        <p>For more information about enrolling your son in Kappa League, please contact us:</p>
+        <p><a href={`mailto:${kl.contactEmail}`}>{kl.contactEmail}</a></p>
+        <div class="mt-2">
+          <a href={kl.externalLinks.national} target="_blank" rel="noopener noreferrer" class="btn btn-primary external-link">National Kappa League</a>
+          <a href={kl.externalLinks.youtube} target="_blank" rel="noopener noreferrer" class="btn btn-secondary external-link">Kappa League TV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center" style="padding: var(--space-8) 0;">
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </div>
+</BaseLayout>

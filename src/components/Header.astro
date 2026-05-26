@@ -1,0 +1,51 @@
+---
+import SmartImage from './SmartImage.astro';
+import navigation from '../data/navigation.json';
+---
+<header class="site-header">
+  <div class="header-container">
+    <a href="/" class="site-logo">
+      <SmartImage
+        src="/assets/images/branding/kappa-crest.png"
+        alt="Kappa Alpha Psi Coat of Arms"
+        sizes="50px"
+        widths={[50, 100]}
+        loading="eager"
+        fetchpriority="high"
+      />
+      <span class="site-logo-text">Boston (MA) Alumni Chapter<br />Kappa Alpha Psi</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        {navigation.mainNav.map((item) => (
+          <li class="nav-item">
+            <a href={item.url} class="nav-link">{item.label}</a>
+            {item.children && (
+              <ul class="nav-dropdown">
+                {item.children.map((child: any) => (
+                  <li>
+                    <a
+                      href={child.url}
+                      {...(child.external && {
+                        target: '_blank',
+                        rel: 'noopener noreferrer',
+                        class: 'external-link',
+                      })}
+                    >
+                      {child.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>

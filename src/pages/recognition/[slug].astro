@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SmartImage from '../../components/SmartImage.astro';
+import news from '../../data/news.json';
+import { formatDate } from '../../utils/format';
+
+export function getStaticPaths() {
+  return news.recognition.map((item: any) => ({
+    params: { slug: item.id },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+---
+<BaseLayout
+  title={item.title}
+  description={item.description}
+>
+  <section class="hero">
+    <div class="container">
+      <p class="event-hero-kicker">Recognition & Awards</p>
+      <h1 class="hero-title">{item.title}</h1>
+      <p class="tagline">Presented by {item.presenter} · <time datetime={item.date}>{formatDate(item.date)}</time></p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>About</h2>
+      </div>
+      <p>{item.description}</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Images</h2>
+      </div>
+      {item.images.map((image: any) => (
+        <figure class="recognition-image-row">
+          <SmartImage
+            src={image.src}
+            alt={image.alt}
+            sizes="(max-width: 768px) 100vw, 800px"
+            widths={[400, 600, 800, 1200]}
+          />
+          {image.caption && <figcaption class="news-item-caption">{image.caption}</figcaption>}
+        </figure>
+      ))}
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Citation</h2>
+      </div>
+      <blockquote class="news-item-quote">
+        {item.fullText}
+      </blockquote>
+    </div>
+  </section>
+
+  <div class="text-center news-back-to-top">
+    <a href="/news/" class="back-to-top">&larr; Back to News</a>
+  </div>
+</BaseLayout>
