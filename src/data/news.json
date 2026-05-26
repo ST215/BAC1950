@@ -9,7 +9,10 @@
       "url": "https://baystatebanner.com/2026/01/14/historic-black-fraternity-celebrates-115-years/",
       "excerpt": "Kappa Alpha Psi Fraternity, Inc. is marking a significant milestone this January—115 years since its founding on January 5, 1911, at Indiana University Bloomington.",
       "featured": true,
-      "image": null
+      "image": {
+        "src": "/assets/images/news/bay-state-banner-115-years.png",
+        "alt": "Bay State Banner article preview: Historic Black fraternity celebrates 115 years"
+      }
     }
   ],
   "recognition": [

@@ -22,7 +22,7 @@
         "title": "Undergraduate Advisor"
       },
       "logo": "/assets/images/chapters/chi-bu.gif",
-      "photo": null,
+      "photo": "/assets/images/chapters/chi-photo.jpeg",
       "description": "The Mighty Chi Chapter of Kappa Alpha Psi Fraternity, Inc. was chartered by the Significant Six on the campus of Boston University. Being a city-wide chapter, the Chi Chapter has members from all over the Boston Area.",
       "activities": [
         "Works closely with the Paul Robeson Institute for Positive Self-Development (PRI) to tutor Boston's high school students each week in mathematics, science, English, and social studies",
@@ -53,11 +53,11 @@
         "Philip G. Hampton"
       ],
       "advisor": {
-        "name": "Kevin Sibley",
+        "name": "TBD",
         "title": "Undergraduate Advisor"
       },
       "logo": "/assets/images/chapters/theta-iota-mit.gif",
-      "photo": "/assets/images/chapters/theta-iota-photo.jpg",
+      "photo": "/assets/images/chapters/theta-iota-photo.jpeg",
       "description": "Theta Iota Chapter was chartered at the Massachusetts Institute of Technology. For the nine Brothers of this Chapter, it was the realization of an idea to bring a black fraternity to their campus, and make it a viable organization within their black community.",
       "activities": [],
       "reach": [
@@ -79,7 +79,7 @@
       "school": "Brown University",
       "location": "Providence, RI",
       "chartered": "March 12, 1983",
-      "charterMembersNickname": "Seven Charter Members",
+      "charterMembersNickname": null,
       "charterMembers": [
         "David Carter",
         "Mike Evans",
