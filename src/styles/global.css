@@ -184,8 +184,9 @@ p {
   max-width: 66ch;  /* Apple HIG: optimal reading line length */
 }
 
-/* When paragraph is inside a centered container, center it too */
-.text-center p {
+/* When paragraph is inside a centered container, or .text-center is on the p itself, drop max-width so the block fills the container and the centered text renders truly centered */
+.text-center p,
+p.text-center {
   max-width: none;
 }
 
@@ -397,11 +398,13 @@ textarea:focus-visible,
   }
 }
 
-.nav-item:hover .nav-dropdown,
-.nav-item:focus-within .nav-dropdown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
+@media only screen and (min-width: 736px) {
+  .nav-item:hover .nav-dropdown,
+  .nav-item:focus-within .nav-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
 }
 
 .nav-dropdown a {
@@ -1025,13 +1028,17 @@ main {
 /* --- Back to Top (Apple HIG: 44px touch target) --- */
 
 .back-to-top {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-2);
   color: var(--color-primary);
   font-size: var(--text-footnote);
   min-height: var(--touch-target-min);   /* Apple HIG: touch target */
   margin-top: var(--space-8);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   transition: color var(--duration-fast) var(--ease-default);
 }
 
@@ -1448,6 +1455,39 @@ main {
 
 .news-back-to-top {
   padding: var(--space-8) 0;
+}
+
+.recognition-card-thumb,
+.recognition-card-thumb img,
+.card-thumb {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: var(--radius-md);
+  border-top-right-radius: var(--radius-md);
+}
+
+.card-thumb-link {
+  display: block;
+}
+
+.recognition-image-row {
+  max-width: 800px;
+  margin: var(--space-6) auto;
+  text-align: center;
+}
+
+.recognition-image-row img,
+.recognition-image-row picture {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.recognition-image-row picture img {
+  border-radius: var(--radius-md);
 }
 
 /* --- Event Page Components --- */
